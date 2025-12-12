@@ -40,6 +40,14 @@
   }
 
   /* Dromgoole's footer custom styles */
+  {%- liquid
+    assign column_count = 1
+    assign column_count = column_count | plus: section.blocks.size
+    if section.settings.newsletter_enable
+      assign column_count = column_count | plus: 1
+    endif
+  -%}
+
   .dromgooles-footer__content-top {
     display: grid;
     grid-template-columns: 1fr;
@@ -48,7 +56,11 @@
 
   @media screen and (min-width: 750px) {
     .dromgooles-footer__content-top {
-      grid-template-columns: 1.2fr repeat(2, 0.8fr) 1.2fr;
+      /* Dynamic columns: brand (1.2fr) + menu blocks (0.8fr each) + newsletter (1.2fr if enabled) */
+      grid-template-columns: 
+        1.2fr 
+        {% if section.blocks.size > 0 %}repeat({{ section.blocks.size }}, 0.8fr){% endif %}
+        {% if section.settings.newsletter_enable %}1.2fr{% endif %};
       gap: 2rem;
     }
   }
