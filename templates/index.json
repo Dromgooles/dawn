@@ -109,6 +109,16 @@
         "padding_bottom": 0
       }
     },
+    "dromgooles_spacer_hihXbe": {
+      "type": "dromgooles-spacer",
+      "name": "Spacer",
+      "settings": {
+        "height_desktop": 40,
+        "height_mobile": 20,
+        "show_background": false,
+        "color_scheme": ""
+      }
+    },
     "featured_collection": {
       "type": "dromgooles-featured-collection",
       "settings": {
@@ -368,6 +378,7 @@
   },
   "order": [
     "dromgooles_slideshow",
+    "dromgooles_spacer_hihXbe",
     "featured_collection",
     "collection_list",
     "collection_list_jg4aXn",
