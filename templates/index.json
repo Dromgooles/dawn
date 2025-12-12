@@ -149,6 +149,16 @@
         "padding_bottom": 36
       }
     },
+    "dromgooles_spacer_qab9Cp": {
+      "type": "dromgooles-spacer",
+      "name": "Spacer",
+      "settings": {
+        "height_desktop": 40,
+        "height_mobile": 20,
+        "show_background": false,
+        "color_scheme": ""
+      }
+    },
     "collection_list": {
       "type": "dromgooles-collection-list",
       "blocks": {
@@ -247,6 +257,16 @@
         "padding_bottom": 36
       }
     },
+    "dromgooles_spacer_8iWU9d": {
+      "type": "dromgooles-spacer",
+      "name": "Spacer",
+      "settings": {
+        "height_desktop": 40,
+        "height_mobile": 20,
+        "show_background": false,
+        "color_scheme": ""
+      }
+    },
     "featured_collection_last_chance": {
       "type": "dromgooles-featured-collection",
       "settings": {
@@ -275,6 +295,16 @@
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 36
+      }
+    },
+    "dromgooles_spacer_TfTUj3": {
+      "type": "dromgooles-spacer",
+      "name": "Spacer",
+      "settings": {
+        "height_desktop": 40,
+        "height_mobile": 20,
+        "show_background": false,
+        "color_scheme": ""
       }
     },
     "multicolumn_brands": {
@@ -346,6 +376,16 @@
         "padding_bottom": 36
       }
     },
+    "dromgooles_spacer_kEEaDD": {
+      "type": "dromgooles-spacer",
+      "name": "Spacer",
+      "settings": {
+        "height_desktop": 40,
+        "height_mobile": 20,
+        "show_background": false,
+        "color_scheme": ""
+      }
+    },
     "1765569591b6aabb90": {
       "type": "apps",
       "blocks": {
@@ -380,10 +420,14 @@
     "dromgooles_slideshow",
     "dromgooles_spacer_hihXbe",
     "featured_collection",
+    "dromgooles_spacer_qab9Cp",
     "collection_list",
     "collection_list_jg4aXn",
+    "dromgooles_spacer_8iWU9d",
     "featured_collection_last_chance",
+    "dromgooles_spacer_TfTUj3",
     "multicolumn_brands",
+    "dromgooles_spacer_kEEaDD",
     "1765569591b6aabb90"
   ]
 }
