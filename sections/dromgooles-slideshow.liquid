@@ -38,6 +38,37 @@
   {%- endstyle -%}
 {%- endif -%}
 
+{%- if section.settings.slide_height == 'custom_ratio' -%}
+  {%- liquid
+    assign ratio_width = section.settings.aspect_ratio_width | default: 16
+    assign ratio_height = section.settings.aspect_ratio_height | default: 5
+    assign mobile_ratio_width = section.settings.mobile_aspect_ratio_width | default: ratio_width
+    assign mobile_ratio_height = section.settings.mobile_aspect_ratio_height | default: ratio_height
+    assign desktop_padding = ratio_height | times: 100.0 | divided_by: ratio_width
+    assign mobile_padding = mobile_ratio_height | times: 100.0 | divided_by: mobile_ratio_width
+  -%}
+  {%- style -%}
+    @media screen and (max-width: 749px) {
+      #Slider-{{ section.id }}::before,
+      #Slider-{{ section.id }} .media::before,
+      #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: {{ mobile_padding }}%;
+        content: '';
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      #Slider-{{ section.id }}::before,
+      #Slider-{{ section.id }} .media::before {
+        padding-bottom: {{ desktop_padding }}%;
+        content: '';
+        display: block;
+      }
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -144,8 +175,16 @@
     </div>
   {%- endif -%}
 
+  {%- liquid
+    # For custom_ratio, use adapt_image class since our inline styles handle the actual ratio
+    assign banner_height_class = section.settings.slide_height
+    if section.settings.slide_height == 'custom_ratio'
+      assign banner_height_class = 'adapt_image'
+    endif
+  -%}
+
   <div
-    class="slideshow banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+    class="slideshow banner banner--{{ banner_height_class }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
     id="Slider-{{ section.id }}"
     aria-live="polite"
     aria-atomic="true"
@@ -327,6 +366,10 @@
           "label": "t:sections.slideshow.settings.slide_height.options__1.label"
         },
         {
+          "value": "custom_ratio",
+          "label": "Custom aspect ratio"
+        },
+        {
           "value": "small",
           "label": "t:sections.slideshow.settings.slide_height.options__2.label"
         },
@@ -341,6 +384,39 @@
       ],
       "default": "adapt_image",
       "label": "t:sections.slideshow.settings.slide_height.label"
+    },
+    {
+      "type": "header",
+      "content": "Custom aspect ratio",
+      "info": "Only applies when 'Custom aspect ratio' is selected above. For 3200×1000 banners, use 16:5 or 32:10."
+    },
+    {
+      "type": "number",
+      "id": "aspect_ratio_width",
+      "label": "Desktop width",
+      "default": 16,
+      "info": "Width portion of aspect ratio (e.g., 16 for 16:5)"
+    },
+    {
+      "type": "number",
+      "id": "aspect_ratio_height",
+      "label": "Desktop height",
+      "default": 5,
+      "info": "Height portion of aspect ratio (e.g., 5 for 16:5)"
+    },
+    {
+      "type": "number",
+      "id": "mobile_aspect_ratio_width",
+      "label": "Mobile width",
+      "default": 16,
+      "info": "Leave same as desktop, or adjust for mobile-specific ratio"
+    },
+    {
+      "type": "number",
+      "id": "mobile_aspect_ratio_height",
+      "label": "Mobile height",
+      "default": 9,
+      "info": "Mobile images often look better taller (e.g., 16:9)"
     },
     {
       "type": "select",
