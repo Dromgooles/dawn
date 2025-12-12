@@ -140,30 +140,34 @@
       }
     },
     "collection_list": {
-      "type": "collection-list",
+      "type": "dromgooles-collection-list",
       "blocks": {
         "collection_fountain_pens": {
           "type": "featured_collection",
           "settings": {
-            "collection": "fountain-pens"
+            "collection": "fountain-pens",
+            "custom_title": ""
           }
         },
         "collection_rollerballs": {
           "type": "featured_collection",
           "settings": {
-            "collection": "rollerballs"
+            "collection": "rollerballs",
+            "custom_title": ""
           }
         },
         "collection_ballpoints": {
           "type": "featured_collection",
           "settings": {
-            "collection": "ballpoints"
+            "collection": "ballpoints",
+            "custom_title": ""
           }
         },
         "collection_stationery": {
           "type": "featured_collection",
           "settings": {
-            "collection": "bottled-ink"
+            "collection": "bottled-ink",
+            "custom_title": ""
           }
         }
       },
@@ -176,6 +180,7 @@
       "settings": {
         "title": "Pens & Ink",
         "heading_size": "h2",
+        "header_alignment": "center",
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
@@ -187,24 +192,27 @@
       }
     },
     "collection_list_jg4aXn": {
-      "type": "collection-list",
+      "type": "dromgooles-collection-list",
       "blocks": {
         "featured_collection_Dxbnbm": {
           "type": "featured_collection",
           "settings": {
-            "collection": "calendars-agendas-old"
+            "collection": "calendars-agendas-old",
+            "custom_title": ""
           }
         },
         "featured_collection_qPAT4V": {
           "type": "featured_collection",
           "settings": {
-            "collection": "notebook-accessories"
+            "collection": "notebook-accessories",
+            "custom_title": ""
           }
         },
         "featured_collection_RefGcm": {
           "type": "featured_collection",
           "settings": {
-            "collection": "stationery"
+            "collection": "stationery",
+            "custom_title": ""
           }
         }
       },
@@ -216,6 +224,8 @@
       "settings": {
         "title": "Stationery & Paper",
         "heading_size": "h2",
+        "header_alignment": "center",
+        "grid_alignment": "center",
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",

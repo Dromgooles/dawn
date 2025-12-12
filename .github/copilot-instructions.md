@@ -192,3 +192,149 @@ git fetch upstream && git pull upstream main
 <link rel="stylesheet" href="{{ 'style.css' | asset_url }}" media="print" onload="this.media='all'">
 ```
 
+## Liquid Whitespace Control
+
+**Preventing unwanted whitespace** - Use `{%-` and `-%}` for tags, `{{-` and `-}}` for outputs when whitespace matters:
+
+```liquid
+{% comment %} BAD - Creates newlines before/after content {% endcomment %}
+<div class="hours-box">
+    {{ block.settings.hours }}
+</div>
+
+{% comment %} GOOD - No extra whitespace {% endcomment %}
+<div class="hours-box">{{- block.settings.hours | strip -}}</div>
+```
+
+**Textarea content with intentional newlines** - Use `strip` + `newline_to_br`:
+```liquid
+{% comment %} Respects user's line breaks without adding extra whitespace {% endcomment %}
+{{- block.settings.hours | strip | newline_to_br -}}
+```
+
+This is especially important for:
+- Content boxes where leading/trailing space affects appearance
+- Inline elements where whitespace creates unwanted gaps
+- Any content from `textarea` schema fields
+
+## Block-Based Section Architecture
+
+**Prefer blocks over hardcoded settings** for flexible, reorderable content:
+
+```liquid
+{% comment %} BAD - Hardcoded structure {% endcomment %}
+{% schema %}
+{
+  "settings": [
+    { "id": "column_1_heading", ... },
+    { "id": "column_2_heading", ... },
+    { "id": "column_3_heading", ... }
+  ]
+}
+{% endschema %}
+
+{% comment %} GOOD - Block-based, reorderable {% endcomment %}
+{% schema %}
+{
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        { "id": "heading", ... }
+      ]
+    }
+  ]
+}
+{% endschema %}
+```
+
+**Dynamic grid sizing** based on block count:
+```liquid
+{%- style -%}
+  @media screen and (min-width: 750px) {
+    .footer__columns {
+      grid-template-columns: repeat({{ section.blocks.size | default: 1 }}, 1fr);
+    }
+  }
+{%- endstyle -%}
+```
+
+**Block type limits** - Use `"limit": 1` for singleton blocks (e.g., brand info, newsletter):
+```json
+{
+  "type": "brand",
+  "name": "Brand info",
+  "limit": 1,
+  "settings": [...]
+}
+```
+
+## Section Groups Configuration
+
+**Footer/Header group JSON** - When using custom sections in groups, define blocks explicitly:
+
+```json
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "dromgooles-footer",
+      "blocks": {
+        "brand": {
+          "type": "brand",
+          "settings": { ... }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": { "heading": "Customer Service", "menu": "footer" }
+        }
+      },
+      "block_order": ["brand", "menu-1", "menu-2", "newsletter"],
+      "settings": { ... }
+    }
+  },
+  "order": ["footer"]
+}
+```
+
+## CSS Patterns for Flexible Layouts
+
+**Multi-column content splitting** - Let content flow across columns:
+```css
+@media screen and (min-width: 750px) {
+  .footer__menu ul {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+  
+  .footer__menu li {
+    break-inside: avoid;  /* Prevent awkward breaks */
+  }
+}
+```
+
+**Single-block expansion** - When only one block exists, spread across available space:
+```css
+.columns--single .column {
+  column-count: 3;
+  column-gap: 3rem;
+}
+```
+
+## Custom Dromgoole's Sections
+
+| Section | Purpose | Key Features |
+|---------|---------|--------------|
+| `dromgooles-slideshow.liquid` | Homepage slideshow | `media_link` for clickable slides, custom aspect ratios (16:5 for banners) |
+| `dromgooles-featured-collection.liquid` | Collection grid | Header alignment options (left/center/right) |
+| `dromgooles-footer.liquid` | Site footer | Block-based columns (brand, menu, newsletter), dynamic grid |
+
+## Common Gotchas
+
+1. **Textarea whitespace** - Always use `| strip | newline_to_br` for textarea content in tight containers
+2. **Block order** - JSON `block_order` array must match block IDs exactly
+3. **Schema validation** - Block `type` must match schema definition; header `content` max ~50 chars
+4. **CSS z-index** - Slideshow overlays need z-index management for clickable elements
+5. **Image aspect ratios** - Use `padding-bottom` percentage trick or `aspect-ratio` CSS property
