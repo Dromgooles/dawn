@@ -12,45 +12,43 @@
   "type": "footer",
   "sections": {
     "footer": {
-      "type": "footer",
+      "type": "dromgooles-footer",
       "blocks": {
-        "footer-0": {
-          "type": "link_list",
+        "menu-customer-service": {
+          "type": "menu",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Customer Service",
             "menu": "footer"
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "menu-account": {
+          "type": "menu",
           "settings": {
-            "heading": "Info",
+            "heading": "My Account",
             "menu": "footer"
-          }
-        },
-        "footer-2": {
-          "type": "text",
-          "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "menu-customer-service",
+        "menu-account"
       ],
       "settings": {
         "color_scheme": "scheme-6",
+        "logo_width": 200,
+        "tagline": "A family owned business that's been putting ink on paper since 1961!",
+        "phone": "713.526.4651",
+        "email": "cs.dromgooles@gmail.com",
+        "address": "2515 Rice Blvd. Houston, TX 77005",
+        "hours": "8:30-5:30 M-F | 9-5 Saturday | Closed Sunday",
+        "hours_box_color": "#c06014",
+        "hours_box_text_color": "#ffffff",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": false,
-        "enable_language_selector": false,
+        "newsletter_heading": "Newsletter",
+        "newsletter_text": "Stay up to date with new releases, promotions, events, and news with our newsletter and email updates.",
+        "button_color": "#c06014",
+        "button_text_color": "#ffffff",
         "payment_enable": true,
-        "show_policy": false,
         "margin_top": 48,
         "padding_top": 36,
         "padding_bottom": 36
