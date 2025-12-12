@@ -7,19 +7,33 @@
 {% endcomment %}
 
 {%- style -%}
-  .section-{{ section.id }}-spacer {
+  #shopify-section-{{ section.id }} {
+    display: block !important;
+    min-height: {{ section.settings.height_mobile }}px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #shopify-section-{{ section.id }} .dromgooles-spacer {
+    display: block;
     height: {{ section.settings.height_mobile }}px;
-    background-color: {% if section.settings.show_background %}rgb(var(--color-background)){% else %}transparent{% endif %};
+    width: 100%;
+    {%- if section.settings.show_background -%}
+      background-color: rgb(var(--color-background));
+    {%- endif -%}
   }
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-spacer {
+    #shopify-section-{{ section.id }} {
+      min-height: {{ section.settings.height_desktop }}px !important;
+    }
+    #shopify-section-{{ section.id }} .dromgooles-spacer {
       height: {{ section.settings.height_desktop }}px;
     }
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }}-spacer color-{{ section.settings.color_scheme }}"></div>
+<div class="dromgooles-spacer{% if section.settings.show_background %} color-{{ section.settings.color_scheme }}{% endif %}" aria-hidden="true">&nbsp;</div>
 
 {% schema %}
 {
