@@ -94,7 +94,11 @@
       "settings": {
         "media_link": true,
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "custom_ratio",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 5,
         "slider_visual": "numbers",
         "auto_rotate": true,
         "change_slides_speed": 5,
