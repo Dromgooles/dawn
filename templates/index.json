@@ -146,21 +146,21 @@
           "type": "featured_collection",
           "settings": {
             "collection": "fountain-pens",
-            "custom_title": ""
+            "custom_title": "Fountain Pens"
           }
         },
         "collection_rollerballs": {
           "type": "featured_collection",
           "settings": {
             "collection": "rollerballs",
-            "custom_title": ""
+            "custom_title": "Rollerballs & Fineliners"
           }
         },
         "collection_ballpoints": {
           "type": "featured_collection",
           "settings": {
             "collection": "ballpoints",
-            "custom_title": ""
+            "custom_title": "Ballpoints"
           }
         },
         "collection_stationery": {
@@ -181,6 +181,7 @@
         "title": "Pens & Ink",
         "heading_size": "h2",
         "header_alignment": "center",
+        "grid_alignment": "left",
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
