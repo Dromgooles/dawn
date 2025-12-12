@@ -14,37 +14,56 @@
     "footer": {
       "type": "dromgooles-footer",
       "blocks": {
+        "brand": {
+          "type": "brand",
+          "settings": {
+            "logo_width": 200,
+            "tagline": "A family owned business that's been putting ink on paper since 1961!",
+            "phone": "713.526.4651",
+            "email": "cs.dromgooles@gmail.com",
+            "address": "2515 Rice Blvd. Houston, TX 77005",
+            "hours": "8:30-5:30 M-F | 9-5 Saturday\nClosed Sundays",
+            "hours_box_color": "#c06014",
+            "hours_box_text_color": "#ffffff"
+          }
+        },
         "menu-customer-service": {
           "type": "menu",
           "settings": {
             "heading": "Customer Service",
             "menu": "footer"
           }
+        },
+        "menu-account": {
+          "type": "menu",
+          "settings": {
+            "heading": "My Account",
+            "menu": "footer"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Newsletter",
+            "text": "Stay up to date with new releases, promotions, events, and news with our newsletter and email updates.",
+            "email_placeholder": "Email",
+            "show_name_fields": true,
+            "first_name_placeholder": "First Name",
+            "last_name_placeholder": "Last Name",
+            "button_text": "Submit",
+            "button_color": "#c06014",
+            "button_text_color": "#ffffff"
+          }
         }
       },
       "block_order": [
-        "menu-customer-service"
+        "brand",
+        "menu-customer-service",
+        "menu-account",
+        "newsletter"
       ],
       "settings": {
         "color_scheme": "scheme-6",
-        "logo": "shopify://shop_images/Footer_Logo.png",
-        "logo_width": 200,
-        "tagline": "A family owned business that's been putting ink on paper since 1961!",
-        "phone": "713.526.4651",
-        "email": "cs.dromgooles@gmail.com",
-        "address": "2515 Rice Blvd. Houston, TX 77005",
-        "hours": "8:30-5:30 M-F | 9-5 Saturday\nClosed Sundays",
-        "hours_box_color": "#c06014",
-        "hours_box_text_color": "#ffffff",
-        "newsletter_enable": true,
-        "newsletter_heading": "Newsletter",
-        "newsletter_text": "Stay up to date with new releases, promotions, events, and news with our newsletter and email updates.",
-        "email_placeholder": "Email",
-        "first_name_placeholder": "First Name",
-        "last_name_placeholder": "Last Name",
-        "button_text": "Submit",
-        "button_color": "#c06014",
-        "button_text_color": "#ffffff",
         "payment_enable": true,
         "margin_top": 48,
         "padding_top": 36,
