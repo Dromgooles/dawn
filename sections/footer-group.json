@@ -20,10 +20,18 @@
             "heading": "Customer Service",
             "menu": "footer"
           }
+        },
+        "menu_tHrbwh": {
+          "type": "menu",
+          "settings": {
+            "heading": "Quick Links",
+            "menu": "footer"
+          }
         }
       },
       "block_order": [
-        "menu-customer-service"
+        "menu-customer-service",
+        "menu_tHrbwh"
       ],
       "settings": {
         "color_scheme": "scheme-6",
