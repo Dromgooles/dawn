@@ -267,7 +267,7 @@
       }
     },
     "multicolumn_brands": {
-      "type": "multicolumn",
+      "type": "dromgooles-multicolumn",
       "blocks": {
         "brand_1": {
           "type": "column",
@@ -319,8 +319,10 @@
       "settings": {
         "title": "Trusted Quality",
         "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
+        "header_alignment": "center",
+        "image_width": "full",
+        "image_ratio": "contain",
+        "max_image_height": 80,
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
