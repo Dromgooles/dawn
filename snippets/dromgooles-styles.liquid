@@ -22,6 +22,54 @@
   Styles load as "print" media then switch to "all" after page load.
 {%- endcomment -%}
 <link rel="stylesheet" href="{{ 'dromgooles.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'dromgooles-brands-index.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- comment -%}
+  Load custom JavaScript enhancements.
+  Uses defer to avoid blocking render.
+{%- endcomment -%}
+<script src="{{ 'dromgooles-brands-index.js' | asset_url }}" defer="defer"></script>
+
+{%- comment -%}
+  Gift card recipient auto-check:
+  Automatically checks "I want to send this as a gift" on gift card product pages.
+  Waits for recipient-form custom element to initialize before checking.
+{%- endcomment -%}
+{%- if product.gift_card? -%}
+<script>
+  (function() {
+    'use strict';
+    
+    function autoCheckRecipient() {
+      const recipientForm = document.querySelector('recipient-form');
+      if (!recipientForm) return;
+      
+      const checkbox = recipientForm.querySelector('input[type="checkbox"]');
+      if (!checkbox) return;
+      
+      // Wait for the checkbox to be enabled (done by recipient-form.js)
+      if (checkbox.disabled) {
+        requestAnimationFrame(autoCheckRecipient);
+        return;
+      }
+      
+      // Only check if not already checked
+      if (!checkbox.checked) {
+        checkbox.checked = true;
+        // Dispatch change event to trigger recipient-form's showRecipientForm()
+        checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    }
+    
+    // Start checking once DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', autoCheckRecipient);
+    } else {
+      autoCheckRecipient();
+    }
+  })();
+</script>
+{%- endif -%}
 
 {%- comment -%}
   Fallback for browsers with JavaScript disabled.

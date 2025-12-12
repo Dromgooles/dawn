@@ -1,0 +1,180 @@
+/**
+ * Dromgoole's Brands Alphabetical Index Styles
+ * 
+ * Adds iOS Contacts-style alphabetical grouping and quick
+ * letter navigation to the Brands menu in the header drawer.
+ * 
+ * This is a pure CSS overlay - targets existing Dawn classes
+ * plus classes added dynamically by dromgooles-brands-index.js
+ */
+
+/* Container for brands submenu with index (class added by JS) */
+.menu-drawer__submenu--brands-indexed {
+  position: relative;
+}
+
+.menu-drawer__submenu--brands-indexed .menu-drawer__inner-submenu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Brands list container with scrolling */
+.brands-indexed-list {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 3rem; /* Make room for the letter bar */
+  scroll-behavior: smooth;
+}
+
+/* Letter group header */
+.brands-letter-header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(var(--color-background));
+  padding: 0.8rem 3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(var(--color-foreground), 0.6);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+  z-index: 1;
+}
+
+/* Individual brand items within groups */
+.brands-letter-group .menu-drawer__menu-item {
+  padding-left: 3rem;
+}
+
+/* Quick letter navigation bar */
+.brands-letter-bar {
+  position: absolute;
+  right: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  z-index: 10;
+  padding: 0.5rem 0;
+  background-color: rgba(var(--color-background), 0.9);
+  border-radius: 1rem;
+}
+
+.brands-letter-bar__letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.brands-letter-bar__letter:hover,
+.brands-letter-bar__letter:focus {
+  color: rgba(var(--color-foreground), 0.6);
+  transform: scale(1.2);
+}
+
+.brands-letter-bar__letter--active {
+  color: rgb(var(--color-button));
+  font-weight: 700;
+}
+
+.brands-letter-bar__letter--disabled {
+  color: rgba(var(--color-foreground), 0.25);
+  pointer-events: none;
+}
+
+/* Touch feedback indicator */
+.brands-letter-indicator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(var(--color-foreground), 0.9);
+  color: rgb(var(--color-background));
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.15s ease,
+    visibility 0.15s ease;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.brands-letter-indicator--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Adjust close button to not overlap */
+.menu-drawer__submenu--brands-indexed .menu-drawer__close-button {
+  position: relative;
+  z-index: 5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 749px) {
+  .brands-letter-bar {
+    right: 0.2rem;
+    padding: 0.3rem 0;
+  }
+
+  .brands-letter-bar__letter {
+    width: 1.8rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  .brands-indexed-list {
+    padding-right: 2.5rem;
+  }
+}
+
+/* For very small screens, make letter bar even more compact */
+@media screen and (max-height: 600px) {
+  .brands-letter-bar__letter {
+    height: 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Smooth scrolling for the brands list */
+.brands-indexed-list {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide letter bar when not enough vertical space */
+@media screen and (max-height: 400px) {
+  .brands-letter-bar {
+    display: none;
+  }
+
+  .brands-indexed-list {
+    padding-right: 0;
+  }
+}
