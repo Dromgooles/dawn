@@ -26,9 +26,39 @@
   let indicatorTimeout = null;
 
   /**
+   * Check if our elements are still in the DOM
+   */
+  function elementsStillValid() {
+    return letterBar && letterBar.isConnected && listContainer && listContainer.isConnected;
+  }
+
+  /**
+   * Reset state for re-initialization
+   */
+  function reset() {
+    initialized = false;
+    brandsSubmenu = null;
+    letterBar = null;
+    letterIndicator = null;
+    listContainer = null;
+    letterHeaders = new Map();
+    availableLetters = new Set();
+    isDragging = false;
+    if (indicatorTimeout) {
+      clearTimeout(indicatorTimeout);
+      indicatorTimeout = null;
+    }
+  }
+
+  /**
    * Initialize the brands index when the submenu is found
    */
   function init() {
+    // If we think we're initialized but elements are gone, reset
+    if (initialized && !elementsStillValid()) {
+      reset();
+    }
+
     if (initialized) return;
 
     brandsSubmenu = document.getElementById(BRANDS_SUBMENU_ID);
@@ -185,6 +215,9 @@
    * Handle click on a letter
    */
   function handleLetterClick(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
     const button = event.target.closest('.brands-letter-bar__letter');
     if (!button || button.classList.contains('brands-letter-bar__letter--disabled')) return;
 
@@ -243,15 +276,26 @@
     const headerId = `brands-letter-${letter === '#' ? 'num' : letter}`;
     const header = document.getElementById(headerId);
 
-    if (header && listContainer) {
-      const closeButton = brandsSubmenu.querySelector('.menu-drawer__close-button');
-      const offset = closeButton ? closeButton.offsetHeight + 10 : 0;
+    if (!header) return;
 
-      listContainer.scrollTo({
-        top: header.offsetTop - offset,
-        behavior: 'smooth',
-      });
+    // Find the scrollable container
+    const scrollContainer = header.closest('.brands-indexed-list');
+    if (!scrollContainer) return;
+
+    // Get the header's position relative to the scroll container's content
+    // We need to account for all previous siblings' heights
+    let targetTop = 0;
+    let sibling = header;
+    while (sibling.previousElementSibling) {
+      sibling = sibling.previousElementSibling;
+      targetTop += sibling.offsetHeight;
     }
+
+    // Scroll to that position with smooth animation
+    scrollContainer.scrollTo({
+      top: targetTop,
+      behavior: 'smooth',
+    });
   }
 
   /**
