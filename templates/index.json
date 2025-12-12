@@ -174,7 +174,7 @@
         "collection_stationery"
       ],
       "settings": {
-        "title": "",
+        "title": "Pens & Ink",
         "heading_size": "h2",
         "image_ratio": "square",
         "columns_desktop": 4,
@@ -186,27 +186,44 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_last_chance": {
-      "type": "rich-text",
+    "collection_list_jg4aXn": {
+      "type": "collection-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "featured_collection_Dxbnbm": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Last Chance",
-            "heading_size": "h2"
+            "collection": "calendars-agendas-old"
+          }
+        },
+        "featured_collection_qPAT4V": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "notebook-accessories"
+          }
+        },
+        "featured_collection_RefGcm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "stationery"
           }
         }
       },
       "block_order": [
-        "heading"
+        "featured_collection_Dxbnbm",
+        "featured_collection_qPAT4V",
+        "featured_collection_RefGcm"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "title": "Stationery & Paper",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 4,
         "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 20
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "featured_collection_last_chance": {
@@ -214,9 +231,9 @@
       "settings": {
         "collection": "last-chance-products",
         "products_to_show": 4,
-        "title": "",
+        "title": "Last Chance",
         "heading_size": "h2",
-        "header_alignment": "left",
+        "header_alignment": "center",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -237,29 +254,6 @@
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_brands": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Trusted Quality",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "heading"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 20
       }
     },
     "multicolumn_brands": {
@@ -313,8 +307,8 @@
         "brand_4"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
+        "title": "Trusted Quality",
+        "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "adapt",
         "button_label": "",
@@ -328,15 +322,44 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "1765569591b6aabb90": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_CQgzNt": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_CQgzNt"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "dromgooles_slideshow",
     "featured_collection",
     "collection_list",
-    "rich_text_last_chance",
+    "collection_list_jg4aXn",
     "featured_collection_last_chance",
-    "rich_text_brands",
-    "multicolumn_brands"
+    "multicolumn_brands",
+    "1765569591b6aabb90"
   ]
 }
