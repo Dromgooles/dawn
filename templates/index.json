@@ -30,6 +30,24 @@
             "color_scheme": "scheme-1"
           }
         },
+        "slide_mTiPj7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Upcoming_April_Events_3201_x_1000_px_1.jpg",
+            "link": "https://www.dromgooles.com/search?q=liscio",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
         "slide_2": {
           "type": "slide",
           "settings": {
@@ -87,6 +105,7 @@
       },
       "block_order": [
         "slide_1",
+        "slide_mTiPj7",
         "slide_2",
         "slide_TPKhRt",
         "slide_r6hEyn"
