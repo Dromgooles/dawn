@@ -35,6 +35,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-6",
+        "logo": "shopify://shop_images/Footer_Logo.png",
         "logo_width": 200,
         "tagline": "A family owned business that's been putting ink on paper since 1961!",
         "phone": "713.526.4651",
@@ -46,6 +47,10 @@
         "newsletter_enable": true,
         "newsletter_heading": "Newsletter",
         "newsletter_text": "Stay up to date with new releases, promotions, events, and news with our newsletter and email updates.",
+        "email_placeholder": "Email",
+        "first_name_placeholder": "First Name",
+        "last_name_placeholder": "Last Name",
+        "button_text": "Submit",
         "button_color": "#c06014",
         "button_text_color": "#ffffff",
         "payment_enable": true,
