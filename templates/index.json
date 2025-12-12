@@ -275,33 +275,37 @@
         "brand_1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/colorverse_logo.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/all-colorverse"
           }
         },
         "brand_2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/tc_logo.webp",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/all-travelers-company"
           }
         },
         "brand_3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/montblanc_logo_1.jpg",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify://collections/all-montblanc"
           }
         },
         "brand_4": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Leuchtturm1917_LOGO.jpg",
             "title": "",
             "text": "",
             "link_label": "",
