@@ -15,7 +15,8 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "link": "",
+            "image": "shopify://shop_images/IMG_4684.png",
+            "link": "https://dromgooles.com",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -32,7 +33,44 @@
         "slide_2": {
           "type": "slide",
           "settings": {
-            "link": "",
+            "image": "shopify://shop_images/IMG_4620.png",
+            "link": "https://www.dromgooles.com/products/matthew-chen-nib-grinding-event-december-11-13th",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_TPKhRt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_4683.png",
+            "link": "https://www.dromgooles.com/products/twsbi-eco-fountain-pen-cosmos-with-onyx-trim",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_r6hEyn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_4682.png",
+            "link": "https://www.dromgooles.com/products/nahvalur-eclipse-retractable-fountain-pen-hepatizon-silver",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -49,7 +87,9 @@
       },
       "block_order": [
         "slide_1",
-        "slide_2"
+        "slide_2",
+        "slide_TPKhRt",
+        "slide_r6hEyn"
       ],
       "settings": {
         "media_link": true,
