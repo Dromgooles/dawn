@@ -145,31 +145,25 @@
         "collection_fountain_pens": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "fountain-pens"
           }
         },
         "collection_rollerballs": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "rollerballs"
           }
         },
         "collection_ballpoints": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "ballpoints"
           }
         },
         "collection_stationery": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
-          }
-        },
-        "collection_ink": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "collection": "bottled-ink"
           }
         }
       },
@@ -177,14 +171,13 @@
         "collection_fountain_pens",
         "collection_rollerballs",
         "collection_ballpoints",
-        "collection_stationery",
-        "collection_ink"
+        "collection_stationery"
       ],
       "settings": {
         "title": "",
         "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 5,
+        "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "show_view_all": false,
         "columns_mobile": "2",
