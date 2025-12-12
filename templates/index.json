@@ -74,10 +74,11 @@
       }
     },
     "featured_collection": {
-      "type": "featured-collection",
+      "type": "dromgooles-featured-collection",
       "settings": {
         "title": "",
         "heading_size": "h2",
+        "header_alignment": "center",
         "collection": "",
         "products_to_show": 5,
         "columns_desktop": 5,
@@ -191,10 +192,11 @@
       }
     },
     "featured_collection_last_chance": {
-      "type": "featured-collection",
+      "type": "dromgooles-featured-collection",
       "settings": {
         "title": "",
         "heading_size": "h2",
+        "header_alignment": "center",
         "collection": "",
         "products_to_show": 4,
         "columns_desktop": 4,
