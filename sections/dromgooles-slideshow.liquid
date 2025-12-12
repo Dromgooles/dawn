@@ -82,7 +82,7 @@
     }
   }
 
-  /* Media link - make entire slide clickable */
+  /* Media link - make entire slide clickable (desktop) */
   .dromgooles-slideshow .banner__media-link {
     display: block;
     position: absolute;
@@ -94,6 +94,18 @@
   .dromgooles-slideshow .banner__media-link .slideshow__media {
     position: absolute;
     inset: 0;
+  }
+
+  /* Mobile: banner--mobile-bottom changes .banner__media to position: relative,
+     so .banner__media-link also needs position: relative to maintain flow */
+  @media screen and (max-width: 749px) {
+    .dromgooles-slideshow.mobile-text-below .banner__media-link {
+      position: relative;
+    }
+
+    .dromgooles-slideshow.mobile-text-below .banner__media-link .slideshow__media {
+      position: relative;
+    }
   }
 
   /* Ensure the banner overlay doesn't block clicks */
