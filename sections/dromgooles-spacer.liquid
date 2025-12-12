@@ -1,0 +1,70 @@
+{% comment %}
+  CUSTOMIZED: Simple spacer section for adding vertical space
+  Author: Dromgoole's
+  Created: 2024
+
+  A minimal section that adds configurable vertical space between sections.
+{% endcomment %}
+
+{%- style -%}
+  .section-{{ section.id }}-spacer {
+    height: {{ section.settings.height_mobile }}px;
+    background-color: {% if section.settings.show_background %}rgb(var(--color-background)){% else %}transparent{% endif %};
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-spacer {
+      height: {{ section.settings.height_desktop }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-spacer color-{{ section.settings.color_scheme }}"></div>
+
+{% schema %}
+{
+  "name": "Spacer",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "height_desktop",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Height on desktop",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Height on mobile",
+      "default": 20
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background",
+      "label": "Show background color",
+      "default": false,
+      "info": "When enabled, uses the color scheme background"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Spacer"
+    }
+  ]
+}
+{% endschema %}
