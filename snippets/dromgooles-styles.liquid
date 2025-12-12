@@ -1,0 +1,31 @@
+{% comment %}
+  Dromgoole's Custom Styles Loader
+
+  This snippet loads Dromgoole's custom CSS overrides after Dawn's base styles.
+
+  INSTALLATION:
+  Add ONE line to layout/theme.liquid after the base.css stylesheet tag (around line 259):
+
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% render 'dromgooles-styles' %}  <!-- ADD THIS LINE -->
+
+  This is the ONLY modification needed to theme.liquid.
+  All custom styles are contained in assets/dromgooles.css
+
+  Author: Dromgoole's
+  Created: 2024
+  Dawn Version: 15.4.1
+{% endcomment %}
+
+{%- comment -%}
+  Load custom CSS using deferred loading pattern for performance.
+  Styles load as "print" media then switch to "all" after page load.
+{%- endcomment -%}
+<link rel="stylesheet" href="{{ 'dromgooles.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{%- comment -%}
+  Fallback for browsers with JavaScript disabled.
+{%- endcomment -%}
+<noscript>
+  <link rel="stylesheet" href="{{ 'dromgooles.css' | asset_url }}">
+</noscript>

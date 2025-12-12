@@ -2,7 +2,8 @@
   "current": "Default",
   "presets": {
     "Default": {
-      "logo_width": 90,
+      "favicon": "shopify://shop_images/favicon.jpg",
+      "logo_width": 250,
       "color_schemes": {
         "scheme-1": {
           "settings": {
@@ -17,11 +18,11 @@
         },
         "scheme-2": {
           "settings": {
-            "background": "#F3F3F3",
+            "background": "#d1d1d1",
             "background_gradient": "",
             "text": "#121212",
             "button": "#121212",
-            "button_label": "#F3F3F3",
+            "button_label": "#d1d1d1",
             "secondary_button_label": "#121212",
             "shadow": "#121212"
           }
@@ -50,19 +51,30 @@
         },
         "scheme-5": {
           "settings": {
-            "background": "#334FB4",
+            "background": "#c06014",
             "background_gradient": "",
             "text": "#FFFFFF",
             "button": "#FFFFFF",
-            "button_label": "#334FB4",
+            "button_label": "#c06014",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-6": {
+          "settings": {
+            "background": "#0b3c5d",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#0b3c5d",
             "secondary_button_label": "#FFFFFF",
             "shadow": "#121212"
           }
         }
       },
-      "type_header_font": "assistant_n4",
+      "type_header_font": "lato_n4",
       "heading_scale": 100,
-      "type_body_font": "assistant_n4",
+      "type_body_font": "lato_n4",
       "body_scale": 100,
       "page_width": 1200,
       "spacing_sections": 0,
@@ -165,7 +177,7 @@
       "predictive_search_enabled": true,
       "predictive_search_show_vendor": false,
       "predictive_search_show_price": false,
-      "currency_code_enabled": true,
+      "currency_code_enabled": false,
       "cart_type": "notification",
       "show_vendor": false,
       "show_cart_note": false,
