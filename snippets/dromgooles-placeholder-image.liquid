@@ -1,0 +1,20 @@
+{% comment %}
+  Renders a placeholder image for missing product/collection images
+  Author: Dromgoole's
+
+  Accepts:
+  - class: {String} Additional CSS classes (optional)
+
+  Usage:
+  {% render 'dromgooles-placeholder-image' %}
+  {% render 'dromgooles-placeholder-image', class: 'card__media' %}
+{% endcomment %}
+
+<img
+  src="{{ 'coming_soon.jpg' | file_url }}"
+  alt="Coming soon"
+  class="placeholder-image{% if class %} {{ class }}{% endif %}"
+  loading="lazy"
+  width="600"
+  height="600"
+>
