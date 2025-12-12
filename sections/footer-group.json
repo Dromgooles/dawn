@@ -17,6 +17,7 @@
         "brand": {
           "type": "brand",
           "settings": {
+            "logo": "shopify://shop_images/Footer_Logo.png",
             "logo_width": 200,
             "tagline": "A family owned business that's been putting ink on paper since 1961!",
             "phone": "713.526.4651",
@@ -31,13 +32,6 @@
           "type": "menu",
           "settings": {
             "heading": "Customer Service",
-            "menu": "footer"
-          }
-        },
-        "menu-account": {
-          "type": "menu",
-          "settings": {
-            "heading": "My Account",
             "menu": "footer"
           }
         },
@@ -59,7 +53,6 @@
       "block_order": [
         "brand",
         "menu-customer-service",
-        "menu-account",
         "newsletter"
       ],
       "settings": {
