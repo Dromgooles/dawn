@@ -45,7 +45,7 @@
         "hero_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/delta-magnifica-red-oversize-ballpoint-pen_1800x1800_88914214-6951-438a-a3b3-401d3fc06e6e.webp",
+            "image": "shopify://shop_images/554B0DEA-3CF5-4936-949E-20C736B7DF5E.jpg",
             "link": "shopify://collections/all-ballpoints",
             "image_overlay_opacity": 0,
             "heading": "Ballpoint Pens",
@@ -86,7 +86,7 @@
       "type": "dromgooles-featured-collection",
       "name": "Featured collection (Dromgoole's)",
       "settings": {
-        "collection": "new-arrivals-pens-pencils-copy",
+        "collection": "new-arrivals-rollerballs-copy",
         "products_to_show": 4,
         "title": "New Arrivals",
         "heading_size": "h1",
@@ -94,7 +94,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "enable_desktop_slider": false,
         "full_width": false,
         "quick_add": "none",
@@ -116,10 +116,38 @@
     "popular_brands": {
       "type": "dromgooles-collection-grid",
       "blocks": {
+        "montblanc": {
+          "type": "collection",
+          "settings": {
+            "collection": "montblanc-ballpoints",
+            "custom_title": "Montblanc",
+            "hide_title": true,
+            "image": "shopify://shop_images/Mont_Blanc_Logo.png",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "cross": {
+          "type": "collection",
+          "settings": {
+            "collection": "cross-ballpoint",
+            "custom_title": "",
+            "hide_title": true,
+            "image": "shopify://shop_images/cross_77e7d4b2-a9d1-4a23-a3e7-a42f43cb97c8.png",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
         "collection_4EgVLx": {
           "type": "collection",
           "settings": {
-            "collection": "retro-51-tornado-popper-ballpoints",
+            "collection": "retro-51-ballpoint",
             "custom_title": "",
             "hide_title": true,
             "image": "shopify://shop_images/Retro51_Logo.png",
@@ -130,13 +158,13 @@
             "border_radius": 0
           }
         },
-        "montblanc": {
+        "waterman": {
           "type": "collection",
           "settings": {
-            "collection": "montblanc-ballpoints",
-            "custom_title": "Montblanc",
+            "collection": "monteverde-ballpoint",
+            "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/Mont_Blanc_Logo.png",
+            "image": "shopify://shop_images/monteverde_logo.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -157,42 +185,14 @@
             "text_color": "",
             "border_radius": 0
           }
-        },
-        "waterman": {
-          "type": "collection",
-          "settings": {
-            "collection": "sheaffer-ballpoint",
-            "custom_title": "",
-            "hide_title": true,
-            "image": "shopify://shop_images/sheaffer_logo_1ad77a04-75fc-4835-a0be-6e2c7e098423.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "cross": {
-          "type": "collection",
-          "settings": {
-            "collection": "esterbrook-ballpoint",
-            "custom_title": "",
-            "hide_title": true,
-            "image": "shopify://shop_images/Esterbrook_Logo.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
         }
       },
       "block_order": [
-        "collection_4EgVLx",
         "montblanc",
-        "montegrappa",
+        "cross",
+        "collection_4EgVLx",
         "waterman",
-        "cross"
+        "montegrappa"
       ],
       "settings": {
         "title": "Popular Brands",
@@ -405,7 +405,7 @@
         "ballpoint_refills_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/957027-pelikan-338-ballpoint-refills-view-2_4df556d7-4569-4474-acee-42790d2c1541.jpg",
+            "image": "shopify://shop_images/w2500_a8713ab4-76b3-49b7-8c36-45efe9778a8b.webp",
             "image_overlay_opacity": 0,
             "heading": "Ballpoint Refills",
             "heading_size": "h2",
@@ -426,7 +426,7 @@
       ],
       "settings": {
         "layout": "grid",
-        "slide_height": "adapt_image",
+        "slide_height": "small",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
