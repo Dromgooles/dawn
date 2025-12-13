@@ -652,6 +652,37 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_3BPceA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xDX8gE": {
+          "type": "heading",
+          "settings": {
+            "heading": "What are the differences?",
+            "heading_size": "h2"
+          }
+        },
+        "text_HRbq76": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cartridges</strong> are pre-filled, disposable ink units that snap directly into the pen. They’re the easiest option. No mess, no maintenance: just replace and keep writing.</p><p><strong>Converters</strong> are refillable units that fit where a cartridge would go. They let you use bottled ink while keeping the convenience of a cartridge-style system.</p><p><strong>Piston fillers</strong> have a built‑in filling mechanism inside the pen body. They draw ink directly into the barrel, offering the largest ink capacity and a traditional fountain pen experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xDX8gE",
+        "text_HRbq76"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "pen_accessories": {
       "type": "dromgooles-collection-grid",
       "blocks": {
@@ -882,6 +913,7 @@
     "slideshow_f9CDHA",
     "shop_by_color",
     "shop_by_fill_system",
+    "rich_text_3BPceA",
     "pen_accessories",
     "other_instruments",
     "help_cta"
