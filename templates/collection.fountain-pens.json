@@ -473,8 +473,8 @@
       "settings": {
         "title": "Shop By Color",
         "heading_size": "h1",
-        "description": "<p>Fountain pens of every color of the rainbow!</p>",
-        "swatch_size": 100,
+        "description": "",
+        "swatch_size": 150,
         "show_label_inside": true,
         "color_scheme": "scheme-1",
         "padding_top": 36,
