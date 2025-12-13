@@ -404,12 +404,13 @@
         "rollerball_refills_slide": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/957027-pelikan-338-rollerball-refills-view-2_4df556d7-4569-4474-acee-42790d2c1541.jpg",
             "image_overlay_opacity": 0,
             "heading": "Rollerball Refills",
             "heading_size": "h2",
             "subheading": "Keep your rollerball pens writing smoothly with our selection of quality refills.",
             "button_label": "Shop Refills",
-            "link": "shopify://collections/rollerball-refills",
+            "link": "shopify://collections/refills-rollerball-fineliner",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
