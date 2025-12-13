@@ -535,7 +535,7 @@
         "header_alignment": "center",
         "description": "",
         "card_style": "standard",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "card_min_height": 130,
         "card_min_height_desktop": 130,
         "columns_desktop": 3,
