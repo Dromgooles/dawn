@@ -145,6 +145,86 @@ These Dawn base files should never be edited directly:
 - `config/settings_schema.json`
 - Any file without `dromgooles-` prefix
 
+## Custom Sections
+
+### dromgooles-slideshow.liquid
+
+Enhanced slideshow section with:
+- Clickable slide media (entire slide as link)
+- Custom aspect ratio controls (desktop and mobile)
+- Wide banner support (16:5 aspect ratio for category headers)
+
+### dromgooles-collection-grid.liquid
+
+Advanced collection grid with:
+- Per-block custom background colors and gradients
+- Border radius control for circular color swatches
+- Custom title text and color overrides
+- Hide title option for logo-only displays
+- Image style options (contain/cover)
+
+**Usage Examples:**
+- Color swatches: 6-column circular items with background colors
+- Brand logos: Standard cards with hidden titles
+- Category navigation: Standard cards with visible titles
+
+### dromgooles-promo-banner.liquid
+
+Promotional banner section with:
+- Full-width or boxed layout options
+- Background image with overlay opacity
+- Gradient background support
+- Configurable button styles (solid/outline)
+- Flexible text and button positioning
+
+### dromgooles-footer.liquid
+
+Custom footer with block-based columns for menus, brand info, and newsletter signup.
+
+### dromgooles-spacer.liquid
+
+Simple vertical spacing section with configurable height.
+
+### dromgooles-multicolumn.liquid
+
+Multi-column content layout section.
+
+## Collection Templates
+
+Custom landing page templates for featured collections. These templates disable the default product grid and banner, providing a rich editorial experience with:
+- Hero slideshow banners
+- Shop-by collections (colors, brands, types)
+- Promotional CTAs
+- Related category navigation
+
+| Template | Collection Handle | Description |
+|----------|-------------------|-------------|
+| `collection.fountain-pens.json` | fountain-pens | Comprehensive landing with 14 sections: brands, colors, fill systems, price ranges |
+| `collection.rollerballs.json` | rollerballs | Rollerball pen landing page with brands and color selection |
+| `collection.ballpoints.json` | ballpoints | Ballpoint pen landing page with brands and color selection |
+| `collection.bottled-ink.json` | bottled-ink | Ink collection with 12 color swatches and ink brand navigation |
+| `collection.calendars-agendas-old.json` | calendars-agendas-old | Planners and calendars with type and brand navigation |
+| `collection.notebook-accessories.json` | notebook-accessories | Notebooks and paper with FP-friendly paper emphasis |
+| `collection.stationery.json` | stationery | Fine stationery with sealing wax and desk accessories |
+
+### Template Structure Pattern
+
+Each collection template follows this structure:
+1. **banner** (disabled) - Default collection banner
+2. **product-grid** (disabled) - Default product grid
+3. **hero_slideshow** - Full-width category hero image
+4. **shop_by_*sections** - Collection grids for navigation
+5. **promo_banners** - Promotional CTAs between sections
+6. **help_cta** - Rich text with contact information
+
+### Assigning Templates
+
+In Shopify Admin:
+1. Go to Products → Collections
+2. Select the collection
+3. Under "Theme template", choose the matching template
+4. Save
+
 ## Future Customizations
 
 When adding new customizations:
@@ -157,5 +237,5 @@ When adding new customizations:
 
 ---
 
-*Last Updated: 2024*
+*Last Updated: 2025*
 *Dawn Version: 15.4.1*

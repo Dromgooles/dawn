@@ -238,7 +238,7 @@
         "featured_collection_Dxbnbm": {
           "type": "featured_collection",
           "settings": {
-            "collection": "calendars-agendas-old",
+            "collection": "calendars-agendas",
             "custom_title": ""
           }
         },

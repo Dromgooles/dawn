@@ -1,0 +1,413 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_slideshow": {
+      "type": "dromgooles-slideshow",
+      "blocks": {
+        "hero_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/stationery-dromgooles.jpg",
+            "link": "shopify://collections/all-stationery",
+            "image_overlay_opacity": 0,
+            "heading": "Stationery",
+            "heading_size": "h0",
+            "subheading": "Fine stationery, greeting cards, and correspondence essentials.",
+            "button_label": "Shop All Stationery",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": ["hero_slide"],
+      "settings": {
+        "media_link": false,
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Stationery collection hero banner",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "shop_by_category": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "note_cards": {
+          "type": "collection",
+          "settings": {
+            "collection": "note-cards",
+            "custom_title": "Note Cards",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "greeting_cards": {
+          "type": "collection",
+          "settings": {
+            "collection": "greeting-cards",
+            "custom_title": "Greeting Cards",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "letterhead": {
+          "type": "collection",
+          "settings": {
+            "collection": "letterhead",
+            "custom_title": "Letterhead",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "envelopes": {
+          "type": "collection",
+          "settings": {
+            "collection": "envelopes",
+            "custom_title": "Envelopes",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["note_cards", "greeting_cards", "letterhead", "envelopes"],
+      "settings": {
+        "title": "Shop By Category",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 170,
+        "card_min_height_desktop": 270,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "popular_brands": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "crane": {
+          "type": "collection",
+          "settings": {
+            "collection": "crane-stationery",
+            "custom_title": "Crane",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "g_lalo": {
+          "type": "collection",
+          "settings": {
+            "collection": "g-lalo-stationery",
+            "custom_title": "G. Lalo",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "clairefontaine": {
+          "type": "collection",
+          "settings": {
+            "collection": "clairefontaine-stationery",
+            "custom_title": "Clairefontaine",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "original_crown_mill": {
+          "type": "collection",
+          "settings": {
+            "collection": "original-crown-mill-stationery",
+            "custom_title": "Original Crown Mill",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["crane", "g_lalo", "clairefontaine", "original_crown_mill"],
+      "settings": {
+        "title": "Popular Brands",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 140,
+        "card_min_height_desktop": 180,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "sealing_wax_banner": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/sealing-wax-dromgooles.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 40,
+        "background_color": "#8B0000",
+        "background_gradient": "",
+        "heading": "Sealing Wax & Stamps",
+        "heading_size": "h0",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Add an elegant finishing touch to your correspondence with traditional sealing wax and custom stamps.</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop Sealing Wax",
+        "button_link": "shopify://collections/sealing-wax",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "desk_accessories": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "letter_openers": {
+          "type": "collection",
+          "settings": {
+            "collection": "letter-openers",
+            "custom_title": "Letter Openers",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "paper_weights": {
+          "type": "collection",
+          "settings": {
+            "collection": "paper-weights",
+            "custom_title": "Paper Weights",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "desk_sets": {
+          "type": "collection",
+          "settings": {
+            "collection": "desk-sets",
+            "custom_title": "Desk Sets",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "stamp_pads": {
+          "type": "collection",
+          "settings": {
+            "collection": "stamp-pads-ink",
+            "custom_title": "Stamp Pads & Ink",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["letter_openers", "paper_weights", "desk_sets", "stamp_pads"],
+      "settings": {
+        "title": "Desk Accessories",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 170,
+        "card_min_height_desktop": 270,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "pens_cta": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 40,
+        "background_color": "#1d2731",
+        "background_gradient": "",
+        "heading": "Looking for a Pen?",
+        "heading_size": "h0",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Browse our collection of fine writing instruments to pair with your stationery.</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop Fountain Pens",
+        "button_link": "shopify://collections/fountain-pens",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "help_cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help Choosing Stationery?",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our knowledgeable staff can help you find the perfect stationery for any occasion. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact-us",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "hero_slideshow",
+    "shop_by_category",
+    "popular_brands",
+    "sealing_wax_banner",
+    "desk_accessories",
+    "pens_cta",
+    "help_cta"
+  ]
+}

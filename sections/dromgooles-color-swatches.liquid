@@ -1,0 +1,299 @@
+{% comment %}
+  CUSTOM: Dromgoole's Color Swatches Section
+  Author: Dromgoole's
+  Created: 2025-01-XX
+
+  Simple colored pill/swatch grid for "Shop by Color" type navigation.
+  Uses Dawn's base styling with minimal customization.
+
+  Usage: Collection landing pages (e.g., fountain-pens "Shop by Color")
+{% endcomment %}
+
+{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .color-swatches-{{ section.id }} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .color-swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .color-swatch:hover {
+    transform: scale(1.05);
+  }
+
+  .color-swatch__pill {
+    min-width: {{ section.settings.swatch_size }}px;
+    height: calc({{ section.settings.swatch_size }}px * 0.45);
+    padding: 0 1.5rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .color-swatch__pill--has-image {
+    border: none;
+  }
+
+  .color-swatch__pill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .color-swatch__label {
+    margin-top: 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(var(--color-foreground), 0.85);
+    text-align: center;
+  }
+
+  .color-swatch__inner-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  {%- for block in section.blocks -%}
+    .color-swatch--{{ block.id }} .color-swatch__pill {
+      {% if block.settings.background_gradient != blank %}
+        background: {{ block.settings.background_gradient }};
+      {% elsif block.settings.background_color != blank and block.settings.background_color != 'rgba(0,0,0,0)' %}
+        background-color: {{ block.settings.background_color }};
+      {% else %}
+        background-color: #f0f0f0;
+      {% endif %}
+    }
+
+    .color-swatch--{{ block.id }} .color-swatch__inner-label {
+      {% if block.settings.text_color != blank and block.settings.text_color != 'rgba(0,0,0,0)' %}
+        color: {{ block.settings.text_color }};
+      {% else %}
+        color: inherit;
+      {% endif %}
+    }
+  {%- endfor -%}
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    {%- if section.settings.title != blank -%}
+      <div class="title-wrapper center">
+        <h2 class="collection-list-title inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.title }}
+        </h2>
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.description != blank -%}
+      <div class="collection-list-description rte center" style="margin-bottom: 2rem;">
+        {{ section.settings.description }}
+      </div>
+    {%- endif -%}
+
+    <ul class="color-swatches-{{ section.id }}">
+      {%- for block in section.blocks -%}
+        {%- assign collection = block.settings.collection -%}
+        {%- assign swatch_url = collection.url | default: '#' -%}
+        {%- assign swatch_title = block.settings.title | default: collection.title | default: 'Color' -%}
+
+        <li {{ block.shopify_attributes }}>
+          <a href="{{ swatch_url }}" class="color-swatch color-swatch--{{ block.id }}">
+            <span class="color-swatch__pill{% if block.settings.image != blank %} color-swatch__pill--has-image{% endif %}">
+              {%- if block.settings.image != blank -%}
+                {{ block.settings.image | image_url: width: 200 | image_tag: loading: 'lazy', widths: '100, 150, 200' }}
+              {%- elsif section.settings.show_label_inside -%}
+                <span class="color-swatch__inner-label">{{ swatch_title }}</span>
+              {%- endif -%}
+            </span>
+            {%- unless section.settings.show_label_inside -%}
+              <span class="color-swatch__label">{{ swatch_title }}</span>
+            {%- endunless -%}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Color Swatches",
+  "tag": "section",
+  "class": "section section-dromgooles-color-swatches",
+  "max_blocks": 30,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Shop By Color",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" },
+        { "value": "hxl", "label": "Extra large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Swatch settings"
+    },
+    {
+      "type": "range",
+      "id": "swatch_size",
+      "min": 60,
+      "max": 150,
+      "step": 10,
+      "default": 100,
+      "unit": "px",
+      "label": "Swatch size"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_label_inside",
+      "default": true,
+      "label": "Show label inside swatch",
+      "info": "When enabled, label appears inside the circle instead of below"
+    },
+    {
+      "type": "header",
+      "content": "Color scheme"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "color",
+      "name": "Color swatch",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Label",
+          "info": "Leave blank to use collection title"
+        },
+        {
+          "type": "header",
+          "content": "Swatch appearance"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color",
+          "default": "#000000"
+        },
+        {
+          "type": "text",
+          "id": "background_gradient",
+          "label": "Background gradient",
+          "info": "CSS gradient overrides solid color. E.g.: linear-gradient(135deg, red, orange, yellow, green, blue, purple)"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Label color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Optional: Use image instead of solid color (e.g., for 'Marbled' pattern)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Color Swatches",
+      "blocks": [
+        { "type": "color", "settings": { "title": "Black", "background_color": "#1a1a1a", "text_color": "#ffffff" } },
+        { "type": "color", "settings": { "title": "White", "background_color": "#f5f5f5", "text_color": "#1a1a1a" } },
+        { "type": "color", "settings": { "title": "Gold", "background_color": "#c4a747", "text_color": "#ffffff" } },
+        { "type": "color", "settings": { "title": "Silver", "background_color": "#c0c0c0", "text_color": "#1a1a1a" } },
+        { "type": "color", "settings": { "title": "Blue", "background_color": "#2563eb", "text_color": "#ffffff" } },
+        { "type": "color", "settings": { "title": "Red", "background_color": "#dc2626", "text_color": "#ffffff" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,439 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_slideshow": {
+      "type": "dromgooles-slideshow",
+      "blocks": {
+        "hero_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/notebooks-dromgooles.jpg",
+            "link": "shopify://collections/all-notebooks",
+            "image_overlay_opacity": 0,
+            "heading": "Notebooks & Accessories",
+            "heading_size": "h0",
+            "subheading": "Premium notebooks, journals, and accessories for fountain pen enthusiasts.",
+            "button_label": "Shop All Notebooks",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": ["hero_slide"],
+      "settings": {
+        "media_link": false,
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Notebooks and Accessories collection hero banner",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "shop_by_type": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "notebooks": {
+          "type": "collection",
+          "settings": {
+            "collection": "notebooks",
+            "custom_title": "Notebooks",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "journals": {
+          "type": "collection",
+          "settings": {
+            "collection": "journals",
+            "custom_title": "Journals",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "loose_leaf": {
+          "type": "collection",
+          "settings": {
+            "collection": "loose-leaf-paper",
+            "custom_title": "Loose Leaf Paper",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "notepads": {
+          "type": "collection",
+          "settings": {
+            "collection": "notepads",
+            "custom_title": "Notepads",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["notebooks", "journals", "loose_leaf", "notepads"],
+      "settings": {
+        "title": "Shop By Type",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 170,
+        "card_min_height_desktop": 270,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "popular_brands": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "leuchtturm": {
+          "type": "collection",
+          "settings": {
+            "collection": "leuchtturm1917-notebooks",
+            "custom_title": "Leuchtturm1917",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "rhodia": {
+          "type": "collection",
+          "settings": {
+            "collection": "rhodia-notebooks",
+            "custom_title": "Rhodia",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "clairefontaine": {
+          "type": "collection",
+          "settings": {
+            "collection": "clairefontaine-notebooks",
+            "custom_title": "Clairefontaine",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "tomoe_river": {
+          "type": "collection",
+          "settings": {
+            "collection": "tomoe-river-paper",
+            "custom_title": "Tomoe River",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "midori": {
+          "type": "collection",
+          "settings": {
+            "collection": "midori-notebooks",
+            "custom_title": "Midori",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "apica": {
+          "type": "collection",
+          "settings": {
+            "collection": "apica-notebooks",
+            "custom_title": "Apica",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["leuchtturm", "rhodia", "clairefontaine", "tomoe_river", "midori", "apica"],
+      "settings": {
+        "title": "Popular Brands",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 140,
+        "card_min_height_desktop": 180,
+        "columns_desktop": 6,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fp_friendly_paper": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "",
+        "image_position": "center center",
+        "overlay_opacity": 0,
+        "background_color": "#0b3c5d",
+        "background_gradient": "",
+        "heading": "Fountain Pen Friendly Paper",
+        "heading_size": "h0",
+        "heading_color": "#ffffff",
+        "subheading": "<p>All our notebooks feature paper specially selected for use with fountain pens—no bleeding, no feathering.</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop FP-Friendly Paper",
+        "button_link": "shopify://collections/fountain-pen-friendly-paper",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "notebook_accessories": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "pen_loops": {
+          "type": "collection",
+          "settings": {
+            "collection": "pen-loops",
+            "custom_title": "Pen Loops",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "bookmarks": {
+          "type": "collection",
+          "settings": {
+            "collection": "bookmarks",
+            "custom_title": "Bookmarks",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "notebook_covers": {
+          "type": "collection",
+          "settings": {
+            "collection": "notebook-covers",
+            "custom_title": "Notebook Covers",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "stickers": {
+          "type": "collection",
+          "settings": {
+            "collection": "stickers-washi-tape",
+            "custom_title": "Stickers & Washi Tape",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["pen_loops", "bookmarks", "notebook_covers", "stickers"],
+      "settings": {
+        "title": "Notebook Accessories",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 170,
+        "card_min_height_desktop": 270,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ink_cta": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/bottled-ink-dromgooles.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 40,
+        "background_color": "#1d2731",
+        "background_gradient": "",
+        "heading": "Looking for Ink?",
+        "heading_size": "h0",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Explore our extensive collection of bottled inks in every color imaginable.</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop Bottled Ink",
+        "button_link": "shopify://collections/bottled-ink",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "help_cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help Choosing a Notebook?",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our knowledgeable staff can help you find the perfect notebook for your writing needs. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact-us",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "hero_slideshow",
+    "shop_by_type",
+    "popular_brands",
+    "fp_friendly_paper",
+    "notebook_accessories",
+    "ink_cta",
+    "help_cta"
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_slideshow": {
+      "type": "dromgooles-slideshow",
+      "blocks": {
+        "hero_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/calendars-agendas-dromgooles.jpg",
+            "link": "shopify://collections/all-calendars-and-agendas",
+            "image_overlay_opacity": 0,
+            "heading": "Calendars & Agendas",
+            "heading_size": "h0",
+            "subheading": "Stay organized with our collection of premium planners, calendars, and agendas.",
+            "button_label": "Shop All Planners",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": ["hero_slide"],
+      "settings": {
+        "media_link": false,
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Calendars and Agendas collection hero banner",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "shop_by_type": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "weekly_planners": {
+          "type": "collection",
+          "settings": {
+            "collection": "weekly-planners",
+            "custom_title": "Weekly Planners",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "monthly_planners": {
+          "type": "collection",
+          "settings": {
+            "collection": "monthly-planners",
+            "custom_title": "Monthly Planners",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "desk_calendars": {
+          "type": "collection",
+          "settings": {
+            "collection": "desk-calendars",
+            "custom_title": "Desk Calendars",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "wall_calendars": {
+          "type": "collection",
+          "settings": {
+            "collection": "wall-calendars",
+            "custom_title": "Wall Calendars",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["weekly_planners", "monthly_planners", "desk_calendars", "wall_calendars"],
+      "settings": {
+        "title": "Shop By Type",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 170,
+        "card_min_height_desktop": 270,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "popular_brands": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "leuchtturm": {
+          "type": "collection",
+          "settings": {
+            "collection": "leuchtturm1917-calendars",
+            "custom_title": "Leuchtturm1917",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "hobonichi": {
+          "type": "collection",
+          "settings": {
+            "collection": "hobonichi-calendars",
+            "custom_title": "Hobonichi",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "rhodia": {
+          "type": "collection",
+          "settings": {
+            "collection": "rhodia-calendars",
+            "custom_title": "Rhodia",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "quo_vadis": {
+          "type": "collection",
+          "settings": {
+            "collection": "quo-vadis-calendars",
+            "custom_title": "Quo Vadis",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["leuchtturm", "hobonichi", "rhodia", "quo_vadis"],
+      "settings": {
+        "title": "Popular Brands",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 140,
+        "card_min_height_desktop": 180,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "desk_accessories_banner": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/desk-accessories-dromgooles.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 40,
+        "background_color": "#1d2731",
+        "background_gradient": "",
+        "heading": "Complete Your Desk",
+        "heading_size": "h0",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Browse our collection of premium desk accessories to complement your planner.</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop Desk Accessories",
+        "button_link": "shopify://collections/desk-accessories",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "notebooks_cta": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/notebooks-dromgooles.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 40,
+        "background_color": "#1d2731",
+        "background_gradient": "",
+        "heading": "Looking for Notebooks?",
+        "heading_size": "h0",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Explore our extensive collection of premium notebooks and journals.</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop Notebooks",
+        "button_link": "shopify://collections/notebook-accessories",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "help_cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help Choosing a Planner?",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our knowledgeable staff can help you find the perfect planner or calendar for your lifestyle. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact-us",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "hero_slideshow",
+    "shop_by_type",
+    "popular_brands",
+    "desk_accessories_banner",
+    "notebooks_cta",
+    "help_cta"
+  ]
+}

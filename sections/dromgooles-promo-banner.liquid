@@ -1,0 +1,397 @@
+{% comment %}
+  CUSTOM: Dromgoole's Promo Banner Section
+  Author: Dromgoole's
+  Created: 2025-01-XX
+
+  A flexible promotional banner for collection pages featuring:
+  - Background image with overlay
+  - Background color/gradient fallback
+  - Heading, subheading, and CTA button
+  - Flexible text alignment and positioning
+  - Responsive design
+
+  Usage: Collection landing pages (fountain-pens, bottled-ink, etc.)
+{% endcomment %}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} {
+    position: relative;
+    display: flex;
+    align-items: {{ section.settings.vertical_align }};
+    justify-content: {{ section.settings.horizontal_align }};
+    min-height: {{ section.settings.mobile_height }}px;
+    overflow: hidden;
+    {% if section.settings.background_gradient != blank %}
+      background: {{ section.settings.background_gradient }};
+    {% elsif section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)' %}
+      background-color: {{ section.settings.background_color }};
+    {% endif %}
+  }
+
+  @media screen and (min-width: 750px) {
+    .dromgooles-promo-banner-{{ section.id }} {
+      min-height: {{ section.settings.desktop_height }}px;
+    }
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} .banner__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} .banner__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: {{ section.settings.image_position }};
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} .banner__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, {{ section.settings.overlay_opacity | divided_by: 100.0 }});
+    z-index: 1;
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} .banner__content {
+    position: relative;
+    z-index: 2;
+    max-width: 60rem;
+    padding: 2rem;
+    text-align: {{ section.settings.text_alignment }};
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} .banner__heading {
+    {% if section.settings.heading_color != blank and section.settings.heading_color != 'rgba(0,0,0,0)' %}
+      color: {{ section.settings.heading_color }};
+    {% endif %}
+    margin: 0 0 0.5rem;
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} .banner__subheading {
+    {% if section.settings.subheading_color != blank and section.settings.subheading_color != 'rgba(0,0,0,0)' %}
+      color: {{ section.settings.subheading_color }};
+    {% endif %}
+    margin: 0 0 1.5rem;
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} .banner__button {
+    {% if section.settings.button_style == 'outline' %}
+      background-color: transparent;
+      border: 2px solid {{ section.settings.button_border_color | default: '#ffffff' }};
+      color: {{ section.settings.button_text_color | default: '#ffffff' }};
+    {% else %}
+      background-color: {{ section.settings.button_bg_color | default: '#0b3c5d' }};
+      border: 2px solid {{ section.settings.button_bg_color | default: '#0b3c5d' }};
+      color: {{ section.settings.button_text_color | default: '#ffffff' }};
+    {% endif %}
+    padding: 1rem 2rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+  }
+
+  .dromgooles-promo-banner-{{ section.id }} .banner__button:hover {
+    opacity: 0.85;
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="{% if section.settings.layout == 'boxed' %}page-width{% endif %} section-{{ section.id }}-padding">
+    <div class="dromgooles-promo-banner dromgooles-promo-banner-{{ section.id }}{% if section.settings.layout == 'boxed' %} banner--boxed{% endif %}">
+      {%- if section.settings.image != blank -%}
+        <div class="banner__media">
+          {{
+            section.settings.image
+            | image_url: width: 2000
+            | image_tag: loading: 'lazy', sizes: '100vw', widths: '375, 750, 1100, 1500, 2000', class: 'motion-reduce'
+          }}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.overlay_opacity > 0 -%}
+        <div class="banner__overlay"></div>
+      {%- endif -%}
+
+      <div class="banner__content">
+        {%- if section.settings.heading != blank -%}
+          <h2 class="banner__heading {{ section.settings.heading_size }}">
+            {{ section.settings.heading | escape }}
+          </h2>
+        {%- endif -%}
+
+        {%- if section.settings.subheading != blank -%}
+          <div class="banner__subheading rte">
+            {{ section.settings.subheading }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+          <a href="{{ section.settings.button_link }}" class="banner__button">
+            {{ section.settings.button_label | escape }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Promo Banner (Custom)",
+  "tag": "section",
+  "class": "section section-dromgooles-promo-banner",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        { "value": "full_width", "label": "Full width" },
+        { "value": "boxed", "label": "Boxed" }
+      ],
+      "default": "boxed",
+      "label": "Layout"
+    },
+    {
+      "type": "number",
+      "id": "desktop_height",
+      "label": "Desktop height (px)",
+      "default": 300
+    },
+    {
+      "type": "number",
+      "id": "mobile_height",
+      "label": "Mobile height (px)",
+      "default": 250
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "options": [
+        { "value": "center center", "label": "Center" },
+        { "value": "center top", "label": "Top" },
+        { "value": "center bottom", "label": "Bottom" },
+        { "value": "left center", "label": "Left" },
+        { "value": "right center", "label": "Right" }
+      ],
+      "default": "center center",
+      "label": "Image position"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "info": "Used when no image is set"
+    },
+    {
+      "type": "text",
+      "id": "background_gradient",
+      "label": "Background gradient",
+      "info": "CSS gradient (overrides background color)"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Promotional Banner"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h3", "label": "Small" },
+        { "value": "h2", "label": "Medium" },
+        { "value": "h1", "label": "Large" },
+        { "value": "h0", "label": "Extra large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "options": [
+        { "value": "solid", "label": "Solid" },
+        { "value": "outline", "label": "Outline" }
+      ],
+      "default": "outline",
+      "label": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background (solid)",
+      "default": "#0b3c5d"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Button border (outline)",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Positioning"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center",
+      "label": "Text alignment"
+    },
+    {
+      "type": "select",
+      "id": "vertical_align",
+      "options": [
+        { "value": "flex-start", "label": "Top" },
+        { "value": "center", "label": "Middle" },
+        { "value": "flex-end", "label": "Bottom" }
+      ],
+      "default": "center",
+      "label": "Vertical position"
+    },
+    {
+      "type": "select",
+      "id": "horizontal_align",
+      "options": [
+        { "value": "flex-start", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "Right" }
+      ],
+      "default": "center",
+      "label": "Horizontal position"
+    },
+    {
+      "type": "header",
+      "content": "Color scheme"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promo Banner (Custom)",
+      "settings": {
+        "heading": "Shop Our Collection",
+        "subheading": "<p>Discover our selection of quality products</p>",
+        "button_label": "Shop Now"
+      }
+    }
+  ]
+}
+{% endschema %}

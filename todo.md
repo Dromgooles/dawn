@@ -1,0 +1,3 @@
+- [x] Add user account access in top right
+- [ ] Make header static on scroll (don't hide)
+- [ ] Add filter tree view for search results, collection views, etc

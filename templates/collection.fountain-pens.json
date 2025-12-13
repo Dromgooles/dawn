@@ -1,0 +1,798 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_slideshow": {
+      "type": "dromgooles-slideshow",
+      "blocks": {
+        "hero_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
+            "link": "shopify://collections/all-fountain-pens",
+            "image_overlay_opacity": 0,
+            "heading": "2000+ Fountain Pens",
+            "heading_size": "h0",
+            "subheading": "We have thousands of fountain pens for sale from top brands. Shop vintage, collectibles, limited editions, and more!",
+            "button_label": "Shop All Fountain Pens",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": ["hero_slide"],
+      "settings": {
+        "media_link": false,
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Fountain Pens collection hero banner",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "special_selections": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "pre_owned": {
+          "type": "collection",
+          "settings": {
+            "collection": "pre-owned-fountain-pens",
+            "custom_title": "Pre-Owned",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "limited_edition": {
+          "type": "collection",
+          "settings": {
+            "collection": "limited-special-edition-fountain-pens",
+            "custom_title": "Limited & Special Edition",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "new_arrivals": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals-fountain-pens",
+            "custom_title": "New Arrivals",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["pre_owned", "limited_edition", "new_arrivals"],
+      "settings": {
+        "title": "Shop Special Selections",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 170,
+        "card_min_height_desktop": 270,
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "starter_pens_banner": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/New_to_Fountain_Pens.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 0,
+        "background_color": "#eabe81",
+        "background_gradient": "",
+        "heading": "New to Fountain Pens?",
+        "heading_size": "h1",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Our collection of starter pens offers affordable picks to start your collection.</p>",
+        "subheading_color": "#000000",
+        "button_label": "Shop Starter Pens",
+        "button_link": "shopify://collections/starter-fountain-pens",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "pilot_banner": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/Pilot_Fountain_Pens.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 0,
+        "background_color": "#1a679a",
+        "background_gradient": "",
+        "heading": "Pilot Fountain Pens",
+        "heading_size": "h0",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Shop the innovative and high-quality pens of Pilot, Japan's largest pen manufacturer.</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/pilot",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "popular_brands": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "kaweco": {
+          "type": "collection",
+          "settings": {
+            "collection": "kaweco-1",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "montblanc": {
+          "type": "collection",
+          "settings": {
+            "collection": "montblanc-1",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "montegrappa": {
+          "type": "collection",
+          "settings": {
+            "collection": "montegrappa",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "esterbrook": {
+          "type": "collection",
+          "settings": {
+            "collection": "esterbrook-1",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "retro51": {
+          "type": "collection",
+          "settings": {
+            "collection": "retro-51-collection",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "sailor": {
+          "type": "collection",
+          "settings": {
+            "collection": "sailor",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["kaweco", "montblanc", "montegrappa", "esterbrook", "retro51", "sailor"],
+      "settings": {
+        "title": "Popular Brands",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 140,
+        "card_min_height_desktop": 180,
+        "columns_desktop": 6,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "gold_nib_banner": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/Gold_Nib_Pens.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 0,
+        "background_color": "",
+        "background_gradient": "linear-gradient(113.27deg, rgba(222, 162, 44, 0.95) 6.42%, rgba(168, 122, 32, 0.95) 94.83%)",
+        "heading": "Gold Nib Pens",
+        "heading_size": "h0",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Add a sense of luxury to your writing with gold nibs.</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/gold-nib-pens",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "shop_by_color": {
+      "type": "dromgooles-color-swatches",
+      "blocks": {
+        "black": {
+          "type": "color",
+          "settings": {
+            "collection": "black-fountain-pens",
+            "title": "Black",
+            "background_color": "#393939",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "white": {
+          "type": "color",
+          "settings": {
+            "collection": "white-fountain-pens",
+            "title": "White",
+            "background_color": "#ebebeb",
+            "background_gradient": "",
+            "text_color": "#000000"
+          }
+        },
+        "gold": {
+          "type": "color",
+          "settings": {
+            "collection": "gold-colored-fountain-pens",
+            "title": "Gold",
+            "background_color": "",
+            "background_gradient": "linear-gradient(113.27deg, #DEA22C 6.42%, #A87A20 94.83%)",
+            "text_color": "#ffffff"
+          }
+        },
+        "silver": {
+          "type": "color",
+          "settings": {
+            "collection": "silver-grey-fountain-pens",
+            "title": "Silver",
+            "background_color": "#d1d1d1",
+            "background_gradient": "",
+            "text_color": "#000000"
+          }
+        },
+        "rainbow": {
+          "type": "color",
+          "settings": {
+            "collection": "rainbow-fountain-pens",
+            "title": "Rainbow",
+            "background_color": "",
+            "background_gradient": "linear-gradient(111.22deg, #E02526 8.36%, #EE9327 24.06%, #DECC2C 39.35%, #409E40 55.45%, #1A679A 71.14%, #591E7D 85.63%)",
+            "text_color": "#ffffff"
+          }
+        },
+        "marbled": {
+          "type": "color",
+          "settings": {
+            "collection": "marbled-fountain-pens",
+            "title": "Marbled",
+            "background_color": "",
+            "background_gradient": "radial-gradient(79.68% 190.31% at 15.78% 19.42%, #EBEBEB 0%, #818080 30.84%, #BDBDBD 67.19%, #D1D1D1 100%)",
+            "text_color": "#ffffff"
+          }
+        },
+        "clear": {
+          "type": "color",
+          "settings": {
+            "collection": "transparent-fountain-pens",
+            "title": "Clear",
+            "background_color": "#ebebeb",
+            "background_gradient": "",
+            "text_color": "#000000"
+          }
+        },
+        "brown": {
+          "type": "color",
+          "settings": {
+            "collection": "brown-fountain-pens",
+            "title": "Brown",
+            "background_color": "#56361d",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "red": {
+          "type": "color",
+          "settings": {
+            "collection": "red-fountain-pens",
+            "title": "Red",
+            "background_color": "#be1717",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "orange": {
+          "type": "color",
+          "settings": {
+            "collection": "orange-fountain-pens",
+            "title": "Orange",
+            "background_color": "#ed9327",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "yellow": {
+          "type": "color",
+          "settings": {
+            "collection": "yellow-fountain-pens",
+            "title": "Yellow",
+            "background_color": "#dee02c",
+            "background_gradient": "",
+            "text_color": "#000000"
+          }
+        },
+        "green": {
+          "type": "color",
+          "settings": {
+            "collection": "green-fountain-pens",
+            "title": "Green",
+            "background_color": "#267826",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "blue": {
+          "type": "color",
+          "settings": {
+            "collection": "blue-fountain-pens",
+            "title": "Blue",
+            "background_color": "#1c67fa",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "purple": {
+          "type": "color",
+          "settings": {
+            "collection": "purple-fountain-pens",
+            "title": "Purple",
+            "background_color": "#591e7d",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "pink": {
+          "type": "color",
+          "settings": {
+            "collection": "pink-fountain-pens",
+            "title": "Pink",
+            "background_color": "#ce3664",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": ["black", "white", "gold", "silver", "rainbow", "marbled", "clear", "brown", "red", "orange", "yellow", "green", "blue", "purple", "pink"],
+      "settings": {
+        "title": "Shop By Color",
+        "heading_size": "h1",
+        "description": "<p>Fountain pens of every color of the rainbow!</p>",
+        "swatch_size": 100,
+        "show_label_inside": true,
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "shop_by_fill_system": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "cartridge": {
+          "type": "collection",
+          "settings": {
+            "collection": "cartridge-fill-pens",
+            "custom_title": "Cartridge System",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "border_radius": 0
+          }
+        },
+        "converter": {
+          "type": "collection",
+          "settings": {
+            "collection": "converter-fill-pens",
+            "custom_title": "Converter System",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "border_radius": 0
+          }
+        },
+        "piston": {
+          "type": "collection",
+          "settings": {
+            "collection": "piston-fill-pens",
+            "custom_title": "Piston System",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["cartridge", "converter", "piston"],
+      "settings": {
+        "title": "Shop By Fill System",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 130,
+        "card_min_height_desktop": 130,
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_arrivals_banner": {
+      "type": "dromgooles-promo-banner",
+      "settings": {
+        "layout": "boxed",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "image": "shopify://shop_images/Latest_Additions.jpg",
+        "image_position": "center center",
+        "overlay_opacity": 0,
+        "background_color": "#1d2731",
+        "background_gradient": "",
+        "heading": "Latest Additions",
+        "heading_size": "h1",
+        "heading_color": "#ffffff",
+        "subheading": "<p>Shop the newest pens in our store</p>",
+        "subheading_color": "#ffffff",
+        "button_label": "Shop New Arrivals",
+        "button_link": "shopify://collections/new-arrivals-fountain-pens",
+        "button_style": "outline",
+        "button_bg_color": "#0b3c5d",
+        "button_border_color": "#ffffff",
+        "button_text_color": "#ffffff",
+        "text_alignment": "center",
+        "vertical_align": "center",
+        "horizontal_align": "center",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "pen_accessories": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "pen_cases": {
+          "type": "collection",
+          "settings": {
+            "collection": "pen-cases",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "pen_clips": {
+          "type": "collection",
+          "settings": {
+            "collection": "pen-clips",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "converters": {
+          "type": "collection",
+          "settings": {
+            "collection": "converters-1",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "nibs": {
+          "type": "collection",
+          "settings": {
+            "collection": "nibs",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["pen_cases", "pen_clips", "converters", "nibs"],
+      "settings": {
+        "title": "Pen Accessories",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 170,
+        "card_min_height_desktop": 270,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "other_instruments": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "ballpoints": {
+          "type": "collection",
+          "settings": {
+            "collection": "ballpoints",
+            "custom_title": "Ballpoint Pens",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "border_radius": 0
+          }
+        },
+        "rollerballs": {
+          "type": "collection",
+          "settings": {
+            "collection": "rollerballs",
+            "custom_title": "Rollerballs",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#121212",
+            "border_radius": 0
+          }
+        },
+        "pencils": {
+          "type": "collection",
+          "settings": {
+            "collection": "pencils",
+            "custom_title": "Pencils",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "border_radius": 0
+          }
+        },
+        "calligraphy": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy",
+            "custom_title": "Calligraphy",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": ["ballpoints", "rollerballs", "pencils", "calligraphy"],
+      "settings": {
+        "title": "Other Writing Instruments",
+        "heading_size": "h2",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 120,
+        "card_min_height_desktop": 160,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "help_cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help Finding the Perfect Pen?",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our knowledgeable staff is passionate about finding the right match for every writer and planner. Visit us at Dromgoole's in Houston, TX, and we'll ensure your fountain pen is as memorable and unique as the person receiving it.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact-us",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "hero_slideshow",
+    "special_selections",
+    "starter_pens_banner",
+    "pilot_banner",
+    "popular_brands",
+    "gold_nib_banner",
+    "shop_by_color",
+    "shop_by_fill_system",
+    "new_arrivals_banner",
+    "pen_accessories",
+    "other_instruments",
+    "help_cta"
+  ]
+}

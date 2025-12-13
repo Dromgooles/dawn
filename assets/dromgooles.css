@@ -81,6 +81,17 @@
   font-weight: 700 !important;
 }
 
+/* Title wrapper alignment utilities (for custom sections) */
+.title-wrapper--center {
+  text-align: center;
+}
+.title-wrapper--left {
+  text-align: left;
+}
+.title-wrapper--right {
+  text-align: right;
+}
+
 /* ============================================
    3. Color Background Utilities
    

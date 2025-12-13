@@ -1,0 +1,493 @@
+{% comment %}
+  CUSTOM: Dromgoole's Collection Grid Section
+  Author: Dromgoole's
+  Created: 2025-01-XX
+
+  A versatile collection grid section that supports:
+  - Custom images per collection
+  - Background colors and gradients
+  - Circular swatches (for "Shop by Color" grids)
+  - Text positioning and styling
+  - Flexible card sizes
+
+  Usage: Collection landing pages (fountain-pens, bottled-ink, etc.)
+{% endcomment %}
+
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* Header alignment */
+  .section-{{ section.id }}-padding .title-wrapper-with-link {
+    {% if section.settings.header_alignment == 'center' %}
+      text-align: center;
+      justify-content: center;
+    {% else %}
+      text-align: left;
+    {% endif %}
+  }
+
+  /* Card styling - ensure images fill the card */
+  .dromgooles-collection-grid-{{ section.id }} .card__inner {
+    background: transparent;
+  }
+
+  .dromgooles-collection-grid-{{ section.id }} .card__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .dromgooles-collection-grid-{{ section.id }} .card__media .media {
+    height: 100%;
+    width: 100%;
+  }
+
+  .dromgooles-collection-grid-{{ section.id }} .card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .dromgooles-collection-grid-{{ section.id }} {
+    --grid-columns-desktop: {{ section.settings.columns_desktop }};
+    --grid-columns-mobile: {{ section.settings.columns_mobile }};
+  }
+
+  .dromgooles-collection-grid-{{ section.id }} .grid-item {
+    {% if section.settings.card_min_height > 0 %}
+      min-height: {{ section.settings.card_min_height }}px;
+    {% endif %}
+  }
+
+  @media screen and (min-width: 750px) {
+    .dromgooles-collection-grid-{{ section.id }} .grid-item {
+      {% if section.settings.card_min_height_desktop > 0 %}
+        min-height: {{ section.settings.card_min_height_desktop }}px;
+      {% endif %}
+    }
+  }
+
+  {%- for block in section.blocks -%}
+    .dromgooles-collection-grid-{{ section.id }} .grid-item--{{ block.id }} {
+      {% if block.settings.background_gradient != blank %}
+        background: {{ block.settings.background_gradient }};
+      {% elsif block.settings.background_color != blank and block.settings.background_color != 'rgba(0,0,0,0)' %}
+        background-color: {{ block.settings.background_color }};
+      {% endif %}
+      {% if block.settings.border_radius > 0 %}
+        border-radius: {{ block.settings.border_radius }}px;
+        overflow: hidden;
+      {% endif %}
+    }
+
+    .dromgooles-collection-grid-{{ section.id }} .grid-item--{{ block.id }} .collection-title {
+      {% if block.settings.text_color != blank and block.settings.text_color != 'rgba(0,0,0,0)' %}
+        color: {{ block.settings.text_color }};
+      {% endif %}
+    }
+  {%- endfor -%}
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="collection-list-wrapper page-width isolate section-{{ section.id }}-padding">
+    {%- if section.settings.title != blank -%}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--{{ section.settings.header_alignment }}">
+        <h2 class="collection-list-title inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.title }}
+        </h2>
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.description != blank -%}
+      <div
+        class="collection-list-description rte center"
+        style="max-width: 80ch; margin-inline: auto; margin-bottom: 2rem;"
+      >
+        {{ section.settings.description }}
+      </div>
+    {%- endif -%}
+
+    <ul
+      class="dromgooles-collection-grid dromgooles-collection-grid-{{ section.id }} collection-list contains-card contains-card--collection grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %}"
+      role="list"
+      {% if section.settings.swipe_on_mobile %}
+        id="Slider-{{ section.id }}"
+      {% endif %}
+    >
+      {%- for block in section.blocks -%}
+        <li
+          class="collection-list__item grid__item grid-item grid-item--{{ block.id }}{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}"
+          {{ block.shopify_attributes }}
+        >
+          {%- assign collection = block.settings.collection -%}
+          {%- assign collection_url = collection.url | default: '#' -%}
+          {%- assign collection_title = block.settings.custom_title
+            | default: collection.title
+            | default: 'Collection'
+          -%}
+
+          {%- liquid
+            assign ratio_percent = 100
+            case section.settings.image_ratio
+              when 'portrait'
+                assign ratio_percent = 125
+              when 'square'
+                assign ratio_percent = 100
+              when 'landscape'
+                assign ratio_percent = 75
+              when 'wide'
+                assign ratio_percent = 56.25
+              when 'adapt'
+                if block.settings.image != blank and block.settings.image.aspect_ratio > 0
+                  assign ratio_percent = 1 | divided_by: block.settings.image.aspect_ratio | times: 100
+                elsif collection.featured_image != blank and collection.featured_image.aspect_ratio > 0
+                  assign ratio_percent = 1 | divided_by: collection.featured_image.aspect_ratio | times: 100
+                else
+                  assign ratio_percent = 100
+                endif
+            endcase
+          -%}
+
+          <a
+            href="{{ collection_url }}"
+            class="card-wrapper card--stretch animate-arrow{% if section.settings.card_style == 'circular' %} card--circular{% endif %}"
+          >
+            <div
+              class="card card--standard{% if block.settings.image != blank or collection.featured_image != blank %} card--media{% endif %}"
+              style="--ratio-percent: {{ ratio_percent }}%;"
+            >
+              <div
+                class="card__inner color-{{ settings.collection_card_color_scheme }} gradient ratio"
+                style="--ratio-percent: {{ ratio_percent }}%;"
+              >
+                {%- if block.settings.image != blank -%}
+                  <div class="card__media">
+                    <div class="media media--transparent media--hover-effect{% if block.settings.image_style == 'contain' %} media--contain{% endif %}">
+                      {{
+                        block.settings.image
+                        | image_url: width: 800
+                        | image_tag:
+                          loading: 'lazy',
+                          sizes: '(min-width: 1200px) 365px, (min-width: 750px) calc((100vw - 60px) / 3), calc((100vw - 35px) / 2)',
+                          widths: '165, 330, 535, 720, 800',
+                          class: 'motion-reduce'
+                      }}
+                    </div>
+                  </div>
+                {%- elsif collection.featured_image != blank -%}
+                  <div class="card__media">
+                    <div class="media media--transparent media--hover-effect{% if block.settings.image_style == 'contain' %} media--contain{% endif %}">
+                      {{
+                        collection.featured_image
+                        | image_url: width: 800
+                        | image_tag:
+                          loading: 'lazy',
+                          sizes: '(min-width: 1200px) 365px, (min-width: 750px) calc((100vw - 60px) / 3), calc((100vw - 35px) / 2)',
+                          widths: '165, 330, 535, 720, 800',
+                          class: 'motion-reduce'
+                      }}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+
+              {%- unless block.settings.hide_title -%}
+                <div class="card__content">
+                  <div class="card__information">
+                    <h3 class="card__heading collection-title h5">
+                      <span>{{ collection_title | escape }}</span>
+                    </h3>
+                  </div>
+                </div>
+              {%- endunless -%}
+            </div>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    {%- if section.settings.show_view_all and section.settings.view_all_link != blank -%}
+      <div class="center collection-list-view-all">
+        <a
+          href="{{ section.settings.view_all_link }}"
+          class="button button--secondary"
+        >
+          {{ section.settings.view_all_text | default: 'View all' }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Adv Collection Grid",
+  "tag": "section",
+  "class": "section section-dromgooles-collection-grid",
+  "max_blocks": 20,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Collections",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" },
+        { "value": "hxl", "label": "Extra large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center",
+      "label": "Header alignment"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Card settings"
+    },
+    {
+      "type": "select",
+      "id": "card_style",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "circular", "label": "Circular (for color swatches)" }
+      ],
+      "default": "standard",
+      "label": "Card style"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        { "value": "adapt", "label": "Adapt to image" },
+        { "value": "square", "label": "Square (1:1)" },
+        { "value": "portrait", "label": "Portrait (4:5)" },
+        { "value": "landscape", "label": "Landscape (4:3)" },
+        { "value": "wide", "label": "Wide (16:9)" }
+      ],
+      "default": "square",
+      "label": "Image ratio"
+    },
+    {
+      "type": "number",
+      "id": "card_min_height",
+      "label": "Card minimum height (mobile)",
+      "default": 0,
+      "info": "Set to 0 to use image ratio instead"
+    },
+    {
+      "type": "number",
+      "id": "card_min_height_desktop",
+      "label": "Card minimum height (desktop)",
+      "default": 0,
+      "info": "Set to 0 to use image ratio instead"
+    },
+    {
+      "type": "header",
+      "content": "Grid layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "default": 4,
+      "label": "Desktop columns"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        { "value": "1", "label": "1 column" },
+        { "value": "2", "label": "2 columns" },
+        { "value": "3", "label": "3 columns" }
+      ],
+      "default": "2",
+      "label": "Mobile columns"
+    },
+    {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "default": false,
+      "label": "Enable swipe on mobile"
+    },
+    {
+      "type": "header",
+      "content": "View all button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": false,
+      "label": "Show 'View all' button"
+    },
+    {
+      "type": "text",
+      "id": "view_all_text",
+      "label": "Button text",
+      "default": "View all"
+    },
+    {
+      "type": "url",
+      "id": "view_all_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Color scheme"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "text",
+          "id": "custom_title",
+          "label": "Custom title",
+          "info": "Leave blank to use collection's title"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_title",
+          "label": "Hide title",
+          "default": false,
+          "info": "Useful when image already contains text"
+        },
+        {
+          "type": "header",
+          "content": "Custom image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Overrides collection's featured image"
+        },
+        {
+          "type": "select",
+          "id": "image_style",
+          "options": [
+            { "value": "cover", "label": "Cover" },
+            { "value": "contain", "label": "Contain" }
+          ],
+          "default": "cover",
+          "label": "Image style"
+        },
+        {
+          "type": "header",
+          "content": "Custom styling"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color"
+        },
+        {
+          "type": "text",
+          "id": "background_gradient",
+          "label": "Background gradient",
+          "info": "CSS gradient (e.g., linear-gradient(113deg, #DEA22C 6%, #A87A20 95%))"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color"
+        },
+        {
+          "type": "range",
+          "id": "border_radius",
+          "min": 0,
+          "max": 200,
+          "step": 4,
+          "unit": "px",
+          "label": "Border radius",
+          "default": 0,
+          "info": "Use 100+ for circular shapes"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Grid (Advanced)",
+      "blocks": [{ "type": "collection" }, { "type": "collection" }, { "type": "collection" }, { "type": "collection" }]
+    }
+  ]
+}
+{% endschema %}
