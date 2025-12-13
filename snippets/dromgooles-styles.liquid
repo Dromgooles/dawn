@@ -31,39 +31,39 @@
   Waits for recipient-form custom element to initialize before checking.
 {%- endcomment -%}
 {%- if product.gift_card? -%}
-<script>
-  (function() {
-    'use strict';
-    
-    function autoCheckRecipient() {
-      const recipientForm = document.querySelector('recipient-form');
-      if (!recipientForm) return;
-      
-      const checkbox = recipientForm.querySelector('input[type="checkbox"]');
-      if (!checkbox) return;
-      
-      // Wait for the checkbox to be enabled (done by recipient-form.js)
-      if (checkbox.disabled) {
-        requestAnimationFrame(autoCheckRecipient);
-        return;
+  <script>
+    (function () {
+      'use strict';
+
+      function autoCheckRecipient() {
+        const recipientForm = document.querySelector('recipient-form');
+        if (!recipientForm) return;
+
+        const checkbox = recipientForm.querySelector('input[type="checkbox"]');
+        if (!checkbox) return;
+
+        // Wait for the checkbox to be enabled (done by recipient-form.js)
+        if (checkbox.disabled) {
+          requestAnimationFrame(autoCheckRecipient);
+          return;
+        }
+
+        // Only check if not already checked
+        if (!checkbox.checked) {
+          checkbox.checked = true;
+          // Dispatch change event to trigger recipient-form's showRecipientForm()
+          checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+        }
       }
-      
-      // Only check if not already checked
-      if (!checkbox.checked) {
-        checkbox.checked = true;
-        // Dispatch change event to trigger recipient-form's showRecipientForm()
-        checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+
+      // Start checking once DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', autoCheckRecipient);
+      } else {
+        autoCheckRecipient();
       }
-    }
-    
-    // Start checking once DOM is ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', autoCheckRecipient);
-    } else {
-      autoCheckRecipient();
-    }
-  })();
-</script>
+    })();
+  </script>
 {%- endif -%}
 
 {%- comment -%}
