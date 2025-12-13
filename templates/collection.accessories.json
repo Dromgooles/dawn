@@ -43,11 +43,11 @@
           "type": "slide",
           "settings": {
             "image": "",
-            "link": "shopify://collections/notebook-accessories",
+            "link": "shopify://collections/accessories",
             "image_overlay_opacity": 0,
-            "heading": "Notebook Accessories",
+            "heading": "Accessories",
             "heading_size": "h1",
-            "subheading": "Covers, refills, pen loops, and more to complement your notebooks and journals.",
+            "subheading": "Desk accessories, pocket knives, notebook covers, pen loops, and more.",
             "button_label": "Shop All Accessories",
             "button_style_secondary": false,
             "show_text_box": true,
@@ -74,7 +74,7 @@
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Notebook Accessories collection hero banner",
+        "accessibility_info": "Accessories collection hero banner",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -82,16 +82,18 @@
     "shop_by_type": {
       "type": "dromgooles-collection-grid",
       "blocks": {
+        "knives": {
+          "type": "collection",
+          "settings": {
+            "collection": "knives",
+            "custom_title": "Pocket Knives"
+          }
+        },
         "covers": {
           "type": "collection",
           "settings": {
-            "collection": "the-superior-labor-notebook-covers"
-          }
-        },
-        "refills": {
-          "type": "collection",
-          "settings": {
-            "collection": "notebook-refills-inserts"
+            "collection": "the-superior-labor-notebook-covers",
+            "custom_title": "Notebook Covers"
           }
         },
         "pen_loops": {
@@ -100,28 +102,36 @@
             "collection": "pen-loops"
           }
         },
-        "stickers": {
+        "desk_accessories": {
           "type": "collection",
           "settings": {
-            "collection": "stickers"
+            "collection": "desk-supplies-accessories",
+            "custom_title": "Desk Accessories"
           }
         },
-        "folios": {
+        "ink_accessories": {
           "type": "collection",
           "settings": {
-            "collection": "galen-leather-co-notebook-folios"
+            "collection": "ink-accessories"
+          }
+        },
+        "pen_accessories": {
+          "type": "collection",
+          "settings": {
+            "collection": "pen-accessories"
           }
         }
       },
       "block_order": [
+        "knives",
         "covers",
-        "refills",
         "pen_loops",
-        "stickers",
-        "folios"
+        "desk_accessories",
+        "ink_accessories",
+        "pen_accessories"
       ],
       "settings": {
-        "title": "Shop By Type",
+        "title": "Shop By Category",
         "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
@@ -131,7 +141,7 @@
         "title_spacing": 10,
         "card_min_height": 170,
         "card_min_height_desktop": 270,
-        "columns_desktop": 5,
+        "columns_desktop": 6,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
@@ -145,43 +155,48 @@
     "popular_brands": {
       "type": "dromgooles-collection-grid",
       "blocks": {
+        "galen": {
+          "type": "collection",
+          "settings": {
+            "collection": "galen-leather-co-notebook-folios",
+            "custom_title": "Galen Leather"
+          }
+        },
         "travelers": {
           "type": "collection",
           "settings": {
-            "collection": "travelers-company-notebook-accessories"
-          }
-        },
-        "hobonichi": {
-          "type": "collection",
-          "settings": {
-            "collection": "hobonichi-accessories"
-          }
-        },
-        "plotter": {
-          "type": "collection",
-          "settings": {
-            "collection": "plotter-accessories"
+            "collection": "travelers-company-notebook-accessories",
+            "custom_title": "Traveler's Company"
           }
         },
         "superior_labor": {
           "type": "collection",
           "settings": {
-            "collection": "the-superior-labor-notebook-covers"
+            "collection": "the-superior-labor-notebook-covers",
+            "custom_title": "Superior Labor"
           }
         },
-        "galen": {
+        "hobonichi": {
           "type": "collection",
           "settings": {
-            "collection": "galen-leather-co-notebook-folios"
+            "collection": "hobonichi-accessories",
+            "custom_title": "Hobonichi"
+          }
+        },
+        "benchmade": {
+          "type": "collection",
+          "settings": {
+            "collection": "benchmade",
+            "custom_title": "Benchmade"
           }
         }
       },
       "block_order": [
+        "galen",
         "travelers",
-        "hobonichi",
-        "plotter",
         "superior_labor",
-        "galen"
+        "hobonichi",
+        "benchmade"
       ],
       "settings": {
         "title": "Popular Brands",
@@ -259,7 +274,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our knowledgeable staff can help you find the perfect accessories for your notebooks. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+            "text": "<p>Our knowledgeable staff can help you find the perfect accessories for your writing setup. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
           }
         },
         "button": {
