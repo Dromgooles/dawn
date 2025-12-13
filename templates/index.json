@@ -239,7 +239,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "notebooks-journals",
-            "custom_title": "Notebooks"
+            "custom_title": "Notebooks & Journals"
           }
         },
         "featured_collection_qPAT4V": {
@@ -260,7 +260,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "stationery",
-            "custom_title": "Stationery"
+            "custom_title": "Stationery & Supplies"
           }
         }
       },

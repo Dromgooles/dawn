@@ -45,7 +45,6 @@
         "hero_slide": {
           "type": "slide",
           "settings": {
-            "image": "",
             "link": "shopify://collections/notebooks-journals",
             "image_overlay_opacity": 0,
             "heading": "Notebooks & Journals",
@@ -88,37 +87,80 @@
         "a4": {
           "type": "collection",
           "settings": {
-            "collection": "a4-notebooks"
+            "collection": "a4-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "a5": {
           "type": "collection",
           "settings": {
-            "collection": "a5-notebooks"
+            "collection": "a5-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "a6": {
           "type": "collection",
           "settings": {
-            "collection": "a6-notebooks"
+            "collection": "a6-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "a7": {
           "type": "collection",
           "settings": {
-            "collection": "a7-notebooks"
+            "collection": "a7-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "b5": {
           "type": "collection",
           "settings": {
-            "collection": "b5-notebooks"
+            "collection": "b5-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image": "shopify://shop_images/weekly-planner-notebook-composition-b5-2026-ink-english.jpg",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "b6": {
           "type": "collection",
           "settings": {
-            "collection": "b6-notebooks"
+            "collection": "b6-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
@@ -133,15 +175,61 @@
       "settings": {
         "title": "Shop By Size",
         "heading_size": "h1",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "adapt",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
-        "description": "",
-        "image_ratio": "adapt",
-        "card_style": "standard",
         "columns_desktop": 6,
         "columns_mobile": "2",
-        "color_scheme": "scheme-1",
+        "swipe_on_mobile": false,
         "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_LMgmQg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qDaWBR": {
+          "type": "heading",
+          "settings": {
+            "heading": "What's in a size?",
+            "heading_size": "h2"
+          }
+        },
+        "text_fMEapb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The ISO 216 standard defines the A‑ and B‑series paper sizes used throughout most of the world. Both series share the same aspect ratio, which allows each sheet to be halved while preserving its proportions. The A‑series is anchored by A0, a sheet with an area of exactly 1 square meter, with each subsequent size created by halving the previous one. A4 (210 x 297 mm) is the most common everyday format, similar to US letter paper. The B‑series fills the gaps between A‑sizes, with each B‑size being the geometric mean of the adjacent A‑sizes and B0 defined as 1 meter wide.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDaWBR",
+        "text_fMEapb"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/paper_sizes.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -152,37 +240,81 @@
         "dotted": {
           "type": "collection",
           "settings": {
-            "collection": "dotted-notebooks"
+            "collection": "dotted-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "lined": {
           "type": "collection",
           "settings": {
-            "collection": "ruled-lined-notebooks"
+            "collection": "ruled-lined-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "grid": {
           "type": "collection",
           "settings": {
-            "collection": "grid-squared-notebooks"
+            "collection": "grid-squared-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image": "shopify://shop_images/westport-bond-3.webp",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "blank": {
           "type": "collection",
           "settings": {
-            "collection": "plain-notebooks"
+            "collection": "plain-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image": "shopify://shop_images/midoria6blank.png",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "specialty": {
           "type": "collection",
           "settings": {
-            "collection": "specialty-ruling-notebooks"
+            "collection": "specialty-ruling-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "bullet": {
           "type": "collection",
           "settings": {
-            "collection": "bullet-journals"
+            "collection": "bullet-journals",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
@@ -197,15 +329,22 @@
       "settings": {
         "title": "Shop By Ruling",
         "heading_size": "h1",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "adapt",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
-        "description": "",
-        "image_ratio": "adapt",
-        "card_style": "standard",
         "columns_desktop": 6,
         "columns_mobile": "2",
-        "color_scheme": "scheme-1",
+        "swipe_on_mobile": false,
         "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -216,31 +355,66 @@
         "hardcover": {
           "type": "collection",
           "settings": {
-            "collection": "hardcover-notebooks"
+            "collection": "hardcover-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "softcover": {
           "type": "collection",
           "settings": {
-            "collection": "softcover-notebooks"
+            "collection": "softcover-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "wirebound": {
           "type": "collection",
           "settings": {
-            "collection": "wirebound-notebooks"
+            "collection": "wirebound-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "staplebound": {
           "type": "collection",
           "settings": {
-            "collection": "staplebound-notebooks"
+            "collection": "staplebound-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "refillable": {
           "type": "collection",
           "settings": {
-            "collection": "refillable-notebooks"
+            "collection": "refillable-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
@@ -254,15 +428,22 @@
       "settings": {
         "title": "Shop By Binding",
         "heading_size": "h1",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "adapt",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
-        "description": "",
-        "image_ratio": "adapt",
-        "card_style": "standard",
         "columns_desktop": 5,
         "columns_mobile": "2",
-        "color_scheme": "scheme-1",
+        "swipe_on_mobile": false,
         "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -273,31 +454,67 @@
         "leuchtturm1917": {
           "type": "collection",
           "settings": {
-            "collection": "all-leuchtturm1917"
+            "collection": "all-leuchtturm1917",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "rhodia": {
           "type": "collection",
           "settings": {
-            "collection": "all-rhodia"
+            "collection": "all-rhodia",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "clairefontaine": {
           "type": "collection",
           "settings": {
-            "collection": "all-clairefontaine"
+            "collection": "all-clairefontaine",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "travelers": {
           "type": "collection",
           "settings": {
-            "collection": "all-travelers-company"
+            "collection": "all-travelers-company",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "karst": {
           "type": "collection",
           "settings": {
-            "collection": "all-karst-stone-paper"
+            "collection": "all-karst-stone-paper",
+            "custom_title": "",
+            "hide_title": true,
+            "image": "shopify://shop_images/karst_logo.png",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
@@ -311,15 +528,22 @@
       "settings": {
         "title": "Popular Brands",
         "heading_size": "h1",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "circular",
+        "image_ratio": "adapt",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
-        "description": "",
-        "image_ratio": "adapt",
-        "card_style": "circular",
         "columns_desktop": 5,
         "columns_mobile": "2",
-        "color_scheme": "scheme-1",
+        "swipe_on_mobile": false,
         "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -330,6 +554,7 @@
     "product-grid",
     "hero_slideshow",
     "shop_by_size",
+    "image_with_text_LMgmQg",
     "shop_by_ruling",
     "shop_by_binding",
     "popular_brands"
