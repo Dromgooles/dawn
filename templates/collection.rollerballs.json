@@ -216,114 +216,183 @@
         "padding_bottom": 36
       }
     },
-    "shop_by_color": {
-      "type": "dromgooles-collection-grid",
+    "dromgooles_color_swatches_dQRj9m": {
+      "type": "dromgooles-color-swatches",
       "blocks": {
-        "black": {
-          "type": "collection",
+        "color_NgpKQi": {
+          "type": "color",
           "settings": {
-            "collection": "black-rollerballs",
-            "custom_title": "Black",
-            "hide_title": false,
-            "image_style": "contain",
+            "collection": "black-rollerball-pens",
+            "title": "Black",
             "background_color": "#393939",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
-        "silver": {
-          "type": "collection",
+        "color_tGVRLJ": {
+          "type": "color",
           "settings": {
-            "collection": "silver-grey-rollerballs",
-            "custom_title": "Silver",
-            "hide_title": false,
-            "image_style": "contain",
-            "background_color": "#d1d1d1",
+            "collection": "white-rollerball-pens",
+            "title": "White",
+            "background_color": "#ebebeb",
             "background_gradient": "",
-            "text_color": "#000000",
-            "border_radius": 100
+            "text_color": "#000000"
           }
         },
-        "gold": {
-          "type": "collection",
+        "color_PaUAx9": {
+          "type": "color",
           "settings": {
-            "collection": "gold-colored-rollerballs",
-            "custom_title": "Gold",
-            "hide_title": false,
-            "image_style": "contain",
+            "collection": "gold-colored-rollerball-pens",
+            "title": "Gold",
             "background_color": "",
             "background_gradient": "linear-gradient(113.27deg, #DEA22C 6.42%, #A87A20 94.83%)",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
-        "blue": {
-          "type": "collection",
+        "color_MrmGqh": {
+          "type": "color",
           "settings": {
-            "collection": "blue-rollerballs",
-            "custom_title": "Blue",
-            "hide_title": false,
-            "image_style": "contain",
-            "background_color": "#1c67fa",
+            "collection": "silver-grey-rollerball-pens",
+            "title": "Silver",
+            "background_color": "#d1d1d1",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#000000"
           }
         },
-        "red": {
-          "type": "collection",
+        "color_eckye8": {
+          "type": "color",
           "settings": {
-            "collection": "red-rollerballs",
-            "custom_title": "Red",
-            "hide_title": false,
-            "image_style": "contain",
+            "collection": "rainbow-rollerball-pens",
+            "title": "Rainbow",
+            "background_color": "",
+            "background_gradient": "linear-gradient(111.22deg, #E02526 8.36%, #EE9327 24.06%, #DECC2C 39.35%, #409E40 55.45%, #1A679A 71.14%, #591E7D 85.63%)",
+            "text_color": "#ffffff"
+          }
+        },
+        "color_aEfJJk": {
+          "type": "color",
+          "settings": {
+            "collection": "marbled-rollerball-pens",
+            "title": "Marbled",
+            "background_color": "",
+            "background_gradient": "radial-gradient(79.68% 190.31% at 15.78% 19.42%, #EBEBEB 0%, #818080 30.84%, #BDBDBD 67.19%, #D1D1D1 100%)",
+            "text_color": "#ffffff"
+          }
+        },
+        "color_Hm3bMR": {
+          "type": "color",
+          "settings": {
+            "collection": "transparent-rollerball-pens",
+            "title": "Clear",
+            "background_color": "#ebebeb",
+            "background_gradient": "",
+            "text_color": "#000000"
+          }
+        },
+        "color_MThXFh": {
+          "type": "color",
+          "settings": {
+            "collection": "brown-rollerball-pens",
+            "title": "Brown",
+            "background_color": "#56361d",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "color_VRkHWd": {
+          "type": "color",
+          "settings": {
+            "collection": "red-rollerball-pens",
+            "title": "Red",
             "background_color": "#be1717",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
-        "green": {
-          "type": "collection",
+        "color_fi6Q9w": {
+          "type": "color",
           "settings": {
-            "collection": "green-rollerballs",
-            "custom_title": "Green",
-            "hide_title": false,
-            "image_style": "contain",
+            "collection": "orange-rollerball-pens",
+            "title": "Orange",
+            "background_color": "#ed9327",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "color_yP3rxA": {
+          "type": "color",
+          "settings": {
+            "collection": "yellow-rollerball-pens",
+            "title": "Yellow",
+            "background_color": "#dee02c",
+            "background_gradient": "",
+            "text_color": "#000000"
+          }
+        },
+        "color_7qcPCE": {
+          "type": "color",
+          "settings": {
+            "collection": "green-rollerball-pens",
+            "title": "Green",
             "background_color": "#267826",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
+          }
+        },
+        "color_BLwUHG": {
+          "type": "color",
+          "settings": {
+            "collection": "blue-rollerball-pens",
+            "title": "Blue",
+            "background_color": "#1c67fa",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "color_DD3Yem": {
+          "type": "color",
+          "settings": {
+            "collection": "purple-rollerball-pens",
+            "title": "Purple",
+            "background_color": "#591e7d",
+            "background_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "color_RnciBH": {
+          "type": "color",
+          "settings": {
+            "collection": "pink-rollerball-pens",
+            "title": "Pink",
+            "background_color": "#ce3664",
+            "background_gradient": "",
+            "text_color": "#ffffff"
           }
         }
       },
       "block_order": [
-        "black",
-        "silver",
-        "gold",
-        "blue",
-        "red",
-        "green"
+        "color_NgpKQi",
+        "color_tGVRLJ",
+        "color_PaUAx9",
+        "color_MrmGqh",
+        "color_eckye8",
+        "color_aEfJJk",
+        "color_Hm3bMR",
+        "color_MThXFh",
+        "color_VRkHWd",
+        "color_fi6Q9w",
+        "color_yP3rxA",
+        "color_7qcPCE",
+        "color_BLwUHG",
+        "color_DD3Yem",
+        "color_RnciBH"
       ],
       "settings": {
         "title": "Shop By Color",
-        "heading_size": "h2",
-        "header_alignment": "center",
+        "heading_size": "h1",
         "description": "",
-        "card_style": "circular",
-        "image_ratio": "square",
-        "card_min_height": 0,
-        "card_min_height_desktop": 0,
-        "title_alignment": "center",
-        "title_size": "h5",
-        "title_spacing": 10,
-        "columns_desktop": 6,
-        "columns_mobile": "3",
-        "swipe_on_mobile": false,
-        "show_view_all": false,
-        "view_all_text": "",
-        "view_all_link": "",
+        "swatch_size": 150,
+        "show_label_inside": true,
         "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -484,7 +553,7 @@
     "hero_slideshow",
     "dromgooles_featured_collection_CcaDVn",
     "popular_brands",
-    "shop_by_color",
+    "dromgooles_color_swatches_dQRj9m",
     "rollerball_refills_slideshow",
     "other_instruments",
     "help_cta"
