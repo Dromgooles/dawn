@@ -130,20 +130,6 @@
             "border_radius": 0
           }
         },
-        "cross": {
-          "type": "collection",
-          "settings": {
-            "collection": "cross-ballpoint",
-            "custom_title": "",
-            "hide_title": true,
-            "image": "shopify://shop_images/cross_77e7d4b2-a9d1-4a23-a3e7-a42f43cb97c8.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
         "collection_4EgVLx": {
           "type": "collection",
           "settings": {
@@ -185,14 +171,28 @@
             "text_color": "",
             "border_radius": 0
           }
+        },
+        "cross": {
+          "type": "collection",
+          "settings": {
+            "collection": "caran-dache-ballpoint",
+            "custom_title": "",
+            "hide_title": true,
+            "image": "shopify://shop_images/caran_dache_logo.png",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
         }
       },
       "block_order": [
         "montblanc",
-        "cross",
         "collection_4EgVLx",
         "waterman",
-        "montegrappa"
+        "montegrappa",
+        "cross"
       ],
       "settings": {
         "title": "Popular Brands",
