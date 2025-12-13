@@ -259,11 +259,11 @@
     "popular_brands": {
       "type": "dromgooles-collection-grid",
       "blocks": {
-        "pilot_iroshizuku": {
+        "robert_oster": {
           "type": "collection",
           "settings": {
-            "collection": "pilot-iroshizuku-ink",
-            "custom_title": "Pilot Iroshizuku",
+            "collection": "colorverse",
+            "custom_title": "Colorverse",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -277,6 +277,32 @@
           "settings": {
             "collection": "diamine",
             "custom_title": "Diamine",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "noodlers": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-noodlers",
+            "custom_title": "Noodler's",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "pilot_iroshizuku": {
+          "type": "collection",
+          "settings": {
+            "collection": "pilot-iroshizuku-ink",
+            "custom_title": "Pilot Iroshizuku",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -310,41 +336,15 @@
             "text_color": "",
             "border_radius": 0
           }
-        },
-        "noodlers": {
-          "type": "collection",
-          "settings": {
-            "collection": "all-noodlers",
-            "custom_title": "Noodler's",
-            "hide_title": false,
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "robert_oster": {
-          "type": "collection",
-          "settings": {
-            "collection": "colorverse",
-            "custom_title": "Colorverse",
-            "hide_title": false,
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
         }
       },
       "block_order": [
-        "pilot_iroshizuku",
+        "robert_oster",
         "diamine",
-        "sailor",
-        "monteverde",
         "noodlers",
-        "robert_oster"
+        "pilot_iroshizuku",
+        "sailor",
+        "monteverde"
       ],
       "settings": {
         "title": "Popular Ink Brands",
