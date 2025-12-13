@@ -67,7 +67,7 @@
       "settings": {
         "media_link": false,
         "layout": "grid",
-        "slide_height": "small",
+        "slide_height": "custom_ratio",
         "aspect_ratio_width": 16,
         "aspect_ratio_height": 5,
         "mobile_aspect_ratio_width": 16,
