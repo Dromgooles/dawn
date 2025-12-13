@@ -39,12 +39,12 @@
     {% endif %}
   }
 
-  /* Card styling - ensure images fill the card */
+  /* Card styling */
   .dromgooles-collection-grid-{{ section.id }} .card__inner {
     background: transparent;
   }
 
-  .dromgooles-collection-grid-{{ section.id }} .card__media {
+  .dromgooles-collection-grid-{{ section.id }} .card--media .card__inner .card__media {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +62,43 @@
   .dromgooles-collection-grid-{{ section.id }} .card__media img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+  }
+
+  /* Ensure title shows below image for cards with media */
+  .dromgooles-collection-grid-{{ section.id }} .card--standard.card--media > .card__content {
+    display: block;
+    padding: 1rem 0 0 0;
+  }
+
+  .dromgooles-collection-grid-{{ section.id }} .card--standard.card--media > .card__content .card__heading {
+    display: block;
+    margin: 0;
+  }
+
+  /* Also ensure title shows for cards without images (text cards) */
+  .dromgooles-collection-grid-{{ section.id }} .card--standard > .card__content .card__heading {
+    display: block;
+  }
+
+  /* Title alignment, sizing, and spacing */
+  .dromgooles-collection-grid-{{ section.id }} .card__content {
+    text-align: {{ section.settings.title_alignment }};
+    padding-top: {{ section.settings.title_spacing }}px;
+  }
+
+  .dromgooles-collection-grid-{{ section.id }} .card__heading.collection-title {
+    {% case section.settings.title_size %}
+      {% when 'h6' %}
+        font-size: 1.2rem;
+      {% when 'h5' %}
+        font-size: 1.4rem;
+      {% when 'h4' %}
+        font-size: 1.6rem;
+      {% when 'h3' %}
+        font-size: 1.8rem;
+      {% when 'h2' %}
+        font-size: 2rem;
+    {% endcase %}
   }
 
   .dromgooles-collection-grid-{{ section.id }} {
@@ -97,11 +133,17 @@
       {% endif %}
     }
 
-    .dromgooles-collection-grid-{{ section.id }} .grid-item--{{ block.id }} .collection-title {
-      {% if block.settings.text_color != blank and block.settings.text_color != 'rgba(0,0,0,0)' %}
-        color: {{ block.settings.text_color }};
-      {% endif %}
-    }
+    {%- comment -%}
+      Only apply custom text color if there's a custom background.
+      Otherwise, titles below images would be white on white.
+    {%- endcomment -%}
+    {% if block.settings.background_gradient != blank or block.settings.background_color != blank and block.settings.background_color != 'rgba(0,0,0,0)' %}
+      .dromgooles-collection-grid-{{ section.id }} .grid-item--{{ block.id }} .collection-title {
+        {% if block.settings.text_color != blank and block.settings.text_color != 'rgba(0,0,0,0)' %}
+          color: {{ block.settings.text_color }};
+        {% endif %}
+      }
+    {% endif %}
   {%- endfor -%}
 {%- endstyle -%}
 
@@ -319,6 +361,44 @@
       "label": "Card minimum height (desktop)",
       "default": 0,
       "info": "Set to 0 to use image ratio instead"
+    },
+    {
+      "type": "header",
+      "content": "Title settings"
+    },
+    {
+      "type": "select",
+      "id": "title_alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center",
+      "label": "Title alignment"
+    },
+    {
+      "type": "select",
+      "id": "title_size",
+      "options": [
+        { "value": "h6", "label": "Extra small" },
+        { "value": "h5", "label": "Small" },
+        { "value": "h4", "label": "Medium" },
+        { "value": "h3", "label": "Large" },
+        { "value": "h2", "label": "Extra large" }
+      ],
+      "default": "h5",
+      "label": "Title size"
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Space above title",
+      "default": 10
     },
     {
       "type": "header",
