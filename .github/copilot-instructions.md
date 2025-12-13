@@ -330,6 +330,33 @@ This is especially important for:
 | `dromgooles-slideshow.liquid` | Homepage slideshow | `media_link` for clickable slides, custom aspect ratios (16:5 for banners) |
 | `dromgooles-featured-collection.liquid` | Collection grid | Header alignment options (left/center/right) |
 | `dromgooles-footer.liquid` | Site footer | Block-based columns (brand, menu, newsletter), dynamic grid |
+| `dromgooles-main-product.liquid` | Product page | Custom product template with placeholder image fallback |
+| `dromgooles-collection-list.liquid` | Collection listing | Custom collection list display |
+| `dromgooles-multicolumn.liquid` | Multi-column content | Flexible column layout section |
+| `dromgooles-spacer.liquid` | Vertical spacing | Configurable spacing between sections |
+
+## Custom Dromgoole's Snippets
+
+| Snippet | Purpose | Key Features |
+|---------|---------|--------------|
+| `dromgooles-styles.liquid` | CSS loader | Renders custom styles link in theme.liquid |
+| `dromgooles-card-collection.liquid` | Collection card | Custom collection card component |
+| `dromgooles-placeholder-image.liquid` | Image placeholder | Fallback for missing images |
+| `dromgooles-product-media-gallery.liquid` | Product gallery wrapper | Wraps Dawn gallery with placeholder fallback using `coming_soon.jpg` asset |
+
+## Custom Dromgoole's Assets
+
+| Asset | Purpose | Key Features |
+|-------|---------|--------------|
+| `dromgooles.css` | Main custom styles | Global style overrides loaded via `dromgooles-styles.liquid` |
+| `dromgooles-brands-index.css` | Brand index styles | Styles for alphabetical brand navigation in header drawer |
+| `dromgooles-brands-index.js` | Brand index functionality | Letter-based scroll navigation with sibling height calculation for accurate positioning |
+| `coming_soon.jpg` | Placeholder image | Product image fallback (use with `asset_url` filter) |
+
+## Custom Locale Keys
+
+Custom translation keys added to `locales/en.default.json`:
+- `products.product.media.image_coming_soon` - Alt text for placeholder images
 
 ## Common Gotchas
 
@@ -338,3 +365,18 @@ This is especially important for:
 3. **Schema validation** - Block `type` must match schema definition; header `content` max ~50 chars
 4. **CSS z-index** - Slideshow overlays need z-index management for clickable elements
 5. **Image aspect ratios** - Use `padding-bottom` percentage trick or `aspect-ratio` CSS property
+6. **Remote assets** - Always use `| asset_url` filter for local assets; never hardcode CDN URLs
+7. **Translation keys** - Add custom keys to `locales/en.default.json` before referencing with `| t`
+
+## Theme Check & Known False Positives
+
+Run `shopify theme check` regularly to catch issues. Some warnings are false positives in Dawn:
+
+| Warning | Location | Explanation |
+|---------|----------|-------------|
+| `UndefinedObject: 'scheme_classes'` | `layout/theme.liquid`, `layout/password.liquid` | Dawn pattern - variable is built up in a loop |
+| `UndefinedObject: 'continue'` | Product sections with complementary products | Valid Liquid keyword for paginated for-loops |
+| `UnusedAssign: 'seo_media'` | Dawn's `main-product.liquid`, `featured-product.liquid` | Dawn core issue - safe to ignore in core files |
+| `VariableName` warnings | Various Dawn core files | Dawn uses camelCase in some places |
+
+**Fix custom file issues**, ignore Dawn core file warnings to avoid merge conflicts.
