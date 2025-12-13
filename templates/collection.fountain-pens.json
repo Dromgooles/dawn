@@ -153,34 +153,41 @@
         "padding_bottom": 36
       }
     },
-    "starter_pens_banner": {
-      "type": "dromgooles-promo-banner",
+    "slideshow_9PHUYH": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_xnX33h": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/New_to_Fountain_Pens.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "New to fountain pens?",
+            "heading_size": "h2",
+            "subheading": "Our collection of starter pens offers affordable picks to start your collection.",
+            "button_label": "Shop starter pens",
+            "link": "shopify://collections/starter-fountain-pens",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_xnX33h"
+      ],
+      "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "shopify://shop_images/New_to_Fountain_Pens.jpg",
-        "image_position": "center center",
-        "overlay_opacity": 0,
-        "background_color": "#eabe81",
-        "background_gradient": "",
-        "heading": "New to Fountain Pens?",
-        "heading_size": "h1",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Our collection of starter pens offers affordable picks to start your collection.</p>",
-        "subheading_color": "#000000",
-        "button_label": "Shop Starter Pens",
-        "button_link": "shopify://collections/starter-fountain-pens",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 0
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Starter pen collection button"
       }
     },
     "popular_brands": {
@@ -765,7 +772,7 @@
     "product-grid",
     "hero_slideshow",
     "special_selections",
-    "starter_pens_banner",
+    "slideshow_9PHUYH",
     "popular_brands",
     "shop_by_color",
     "shop_by_fill_system",
