@@ -66,7 +66,7 @@
       ],
       "settings": {
         "media_link": false,
-        "layout": "full_bleed",
+        "layout": "grid",
         "slide_height": "custom_ratio",
         "aspect_ratio_width": 16,
         "aspect_ratio_height": 5,
@@ -320,7 +320,7 @@
         "desk_accessories_slide"
       ],
       "settings": {
-        "media_link": true,
+        "media_link": false,
         "layout": "grid",
         "slide_height": "custom_ratio",
         "aspect_ratio_width": 16,
@@ -355,7 +355,7 @@
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-4"
           }
         }
       },
@@ -363,7 +363,7 @@
         "notebooks_slide"
       ],
       "settings": {
-        "media_link": true,
+        "media_link": false,
         "layout": "grid",
         "slide_height": "custom_ratio",
         "aspect_ratio_width": 16,

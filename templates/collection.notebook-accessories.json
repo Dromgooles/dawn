@@ -127,10 +127,10 @@
         "description": "",
         "card_style": "standard",
         "image_ratio": "square",
-        "title_size": "h5",
-        "title_spacing": 10,
         "card_min_height": 170,
         "card_min_height_desktop": 270,
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
@@ -190,10 +190,10 @@
         "description": "",
         "card_style": "circular",
         "image_ratio": "square",
-        "title_size": "h5",
-        "title_spacing": 10,
         "card_min_height": 140,
         "card_min_height_desktop": 180,
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 5,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
@@ -231,13 +231,8 @@
         "notebooks_slide"
       ],
       "settings": {
-        "media_link": true,
         "layout": "grid",
         "slide_height": "custom_ratio",
-        "aspect_ratio_width": 16,
-        "aspect_ratio_height": 5,
-        "mobile_aspect_ratio_width": 16,
-        "mobile_aspect_ratio_height": 9,
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -246,7 +241,7 @@
         "accessibility_info": "Notebooks collection promotion"
       }
     },
-"help_cta": {
+    "help_cta": {
       "type": "rich-text",
       "blocks": {
         "heading": {
