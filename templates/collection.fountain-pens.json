@@ -49,14 +49,14 @@
             "link": "shopify://collections/all-fountain-pens",
             "image_overlay_opacity": 0,
             "heading": "2000+ Fountain Pens",
-            "heading_size": "h0",
+            "heading_size": "h1",
             "subheading": "We have thousands of fountain pens for sale from top brands. Shop vintage, collectibles, limited editions, and more!",
             "button_label": "Shop All Fountain Pens",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
             "text_alignment": "left",
-            "text_alignment_mobile": "center",
+            "text_alignment_mobile": "left",
             "color_scheme": "scheme-1"
           }
         }
