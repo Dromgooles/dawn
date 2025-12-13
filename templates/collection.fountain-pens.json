@@ -581,6 +581,7 @@
             "collection": "cartridge-fill-pens",
             "custom_title": "Cartridge System",
             "hide_title": false,
+            "image": "shopify://shop_images/Cartridge_System.jpg",
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
@@ -594,6 +595,7 @@
             "collection": "converter-fill-pens",
             "custom_title": "Converter System",
             "hide_title": false,
+            "image": "shopify://shop_images/Converter_System.png",
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
@@ -607,6 +609,7 @@
             "collection": "piston-fill-pens",
             "custom_title": "Piston System",
             "hide_title": false,
+            "image": "shopify://shop_images/Piston_System.jpg",
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
@@ -621,7 +624,7 @@
         "piston"
       ],
       "settings": {
-        "title": "Shop By Fill System",
+        "title": "Shop by Fill System",
         "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
