@@ -353,6 +353,43 @@
         "padding_bottom": 36
       }
     },
+    "slideshow_f9CDHA": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_LBcwKH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Gold_Nib_Pens.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Gold nib fountain pens",
+            "heading_size": "h2",
+            "subheading": "Add a dash of luxury to your writing with gold nibs.",
+            "button_label": "Shop now",
+            "link": "shopify://collections/gold-nib-pens",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        }
+      },
+      "block_order": [
+        "slide_LBcwKH"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Gold-nibbed pen collection button"
+      }
+    },
     "shop_by_color": {
       "type": "dromgooles-color-swatches",
       "blocks": {
@@ -823,6 +860,7 @@
     "dromgooles_spacer_eYxKTt",
     "slideshow_KqjFz9",
     "popular_brands",
+    "slideshow_f9CDHA",
     "shop_by_color",
     "shop_by_fill_system",
     "pen_accessories",
