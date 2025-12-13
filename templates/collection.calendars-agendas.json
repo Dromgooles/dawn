@@ -82,6 +82,19 @@
     "shop_by_type": {
       "type": "dromgooles-collection-grid",
       "blocks": {
+        "daily_planners": {
+          "type": "collection",
+          "settings": {
+            "collection": "daily-planners",
+            "custom_title": "Daily Planners",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
         "weekly_planners": {
           "type": "collection",
           "settings": {
@@ -108,11 +121,11 @@
             "border_radius": 0
           }
         },
-        "desk_calendars": {
+        "undated_planners": {
           "type": "collection",
           "settings": {
-            "collection": "desk-calendars",
-            "custom_title": "Desk Calendars",
+            "collection": "undated-calendars-planners",
+            "custom_title": "Undated Planners",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -121,11 +134,24 @@
             "border_radius": 0
           }
         },
-        "wall_calendars": {
+        "desk_calendars": {
           "type": "collection",
           "settings": {
-            "collection": "wall-calendars",
-            "custom_title": "Wall Calendars",
+            "collection": "calendars",
+            "custom_title": "Calendars",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "calendar_refills": {
+          "type": "collection",
+          "settings": {
+            "collection": "calendar-refills",
+            "custom_title": "Calendar Refills",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -136,21 +162,25 @@
         }
       },
       "block_order": [
+        "daily_planners",
         "weekly_planners",
         "monthly_planners",
+        "undated_planners",
         "desk_calendars",
-        "wall_calendars"
+        "calendar_refills"
       ],
       "settings": {
         "title": "Shop By Type",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
         "card_style": "standard",
         "image_ratio": "square",
+        "title_size": "h5",
+        "title_spacing": 10,
         "card_min_height": 170,
         "card_min_height_desktop": 270,
-        "columns_desktop": 4,
+        "columns_desktop": 6,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
@@ -167,9 +197,9 @@
         "leuchtturm": {
           "type": "collection",
           "settings": {
-            "collection": "leuchtturm1917-calendars",
+            "collection": "all-leuchtturm1917",
             "custom_title": "Leuchtturm1917",
-            "hide_title": true,
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -180,9 +210,22 @@
         "hobonichi": {
           "type": "collection",
           "settings": {
-            "collection": "hobonichi-calendars",
+            "collection": "all-hobonichi",
             "custom_title": "Hobonichi",
-            "hide_title": true,
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "quo_vadis": {
+          "type": "collection",
+          "settings": {
+            "collection": "quo-vadis-calendars-planners",
+            "custom_title": "Quo Vadis",
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -195,7 +238,7 @@
           "settings": {
             "collection": "rhodia-calendars",
             "custom_title": "Rhodia",
-            "hide_title": true,
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -203,12 +246,12 @@
             "border_radius": 0
           }
         },
-        "quo_vadis": {
+        "letts": {
           "type": "collection",
           "settings": {
-            "collection": "quo-vadis-calendars",
-            "custom_title": "Quo Vadis",
-            "hide_title": true,
+            "collection": "letts-of-london",
+            "custom_title": "Letts of London",
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -220,19 +263,22 @@
       "block_order": [
         "leuchtturm",
         "hobonichi",
+        "quo_vadis",
         "rhodia",
-        "quo_vadis"
+        "letts"
       ],
       "settings": {
         "title": "Popular Brands",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
-        "card_style": "standard",
+        "card_style": "circular",
         "image_ratio": "square",
+        "title_size": "h5",
+        "title_spacing": 10,
         "card_min_height": 140,
         "card_min_height_desktop": 180,
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
@@ -244,24 +290,24 @@
       }
     },
     "desk_accessories_slideshow": {
-      "type": "slideshow",
+      "type": "dromgooles-slideshow",
       "blocks": {
         "desk_accessories_slide": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/desk-accessories-dromgooles.jpg",
-            "image_overlay_opacity": 40,
+            "link": "shopify://collections/desk-accessories",
+            "image_overlay_opacity": 0,
             "heading": "Complete Your Desk",
             "heading_size": "h2",
             "subheading": "Browse our collection of premium desk accessories to complement your planner.",
             "button_label": "Shop Desk Accessories",
-            "link": "shopify://collections/desk-accessories",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
+            "color_scheme": "scheme-1"
           }
         }
       },
@@ -269,35 +315,42 @@
         "desk_accessories_slide"
       ],
       "settings": {
+        "media_link": true,
         "layout": "grid",
-        "slide_height": "adapt_image",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Desk accessories collection promotion"
+        "accessibility_info": "Desk accessories collection promotion",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "notebooks_slideshow": {
-      "type": "slideshow",
+      "type": "dromgooles-slideshow",
       "blocks": {
         "notebooks_slide": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/notebooks-dromgooles.jpg",
-            "image_overlay_opacity": 40,
+            "link": "shopify://collections/notebooks-journals",
+            "image_overlay_opacity": 0,
             "heading": "Looking for Notebooks?",
             "heading_size": "h2",
             "subheading": "Explore our extensive collection of premium notebooks and journals.",
             "button_label": "Shop Notebooks",
-            "link": "shopify://collections/notebook-accessories",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
+            "color_scheme": "scheme-1"
           }
         }
       },
@@ -305,14 +358,21 @@
         "notebooks_slide"
       ],
       "settings": {
+        "media_link": true,
         "layout": "grid",
-        "slide_height": "adapt_image",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Notebooks collection promotion"
+        "accessibility_info": "Notebooks collection promotion",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "help_cta": {

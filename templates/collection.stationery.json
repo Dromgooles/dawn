@@ -82,11 +82,37 @@
     "shop_by_category": {
       "type": "dromgooles-collection-grid",
       "blocks": {
-        "note_cards": {
+        "boxed_stationery": {
           "type": "collection",
           "settings": {
-            "collection": "note-cards",
-            "custom_title": "Note Cards",
+            "collection": "boxed-stationery",
+            "custom_title": "Boxed Stationery",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "correspondence_cards": {
+          "type": "collection",
+          "settings": {
+            "collection": "crane-correspondence-cards",
+            "custom_title": "Correspondence Cards",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "thank_you_cards": {
+          "type": "collection",
+          "settings": {
+            "collection": "thank-you-cards",
+            "custom_title": "Thank You Cards",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -108,19 +134,6 @@
             "border_radius": 0
           }
         },
-        "letterhead": {
-          "type": "collection",
-          "settings": {
-            "collection": "letterhead",
-            "custom_title": "Letterhead",
-            "hide_title": false,
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
         "envelopes": {
           "type": "collection",
           "settings": {
@@ -133,24 +146,41 @@
             "text_color": "",
             "border_radius": 0
           }
+        },
+        "sealing_wax": {
+          "type": "collection",
+          "settings": {
+            "collection": "sealing-wax",
+            "custom_title": "Sealing Wax",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
         }
       },
       "block_order": [
-        "note_cards",
+        "boxed_stationery",
+        "correspondence_cards",
+        "thank_you_cards",
         "greeting_cards",
-        "letterhead",
-        "envelopes"
+        "envelopes",
+        "sealing_wax"
       ],
       "settings": {
         "title": "Shop By Category",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
         "card_style": "standard",
         "image_ratio": "square",
+        "title_size": "h5",
+        "title_spacing": 10,
         "card_min_height": 170,
         "card_min_height_desktop": 270,
-        "columns_desktop": 4,
+        "columns_desktop": 6,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
@@ -167,9 +197,9 @@
         "crane": {
           "type": "collection",
           "settings": {
-            "collection": "crane-stationery",
+            "collection": "all-crane",
             "custom_title": "Crane",
-            "hide_title": true,
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -180,9 +210,9 @@
         "g_lalo": {
           "type": "collection",
           "settings": {
-            "collection": "g-lalo-stationery",
+            "collection": "g-lalo",
             "custom_title": "G. Lalo",
-            "hide_title": true,
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -193,22 +223,9 @@
         "clairefontaine": {
           "type": "collection",
           "settings": {
-            "collection": "clairefontaine-stationery",
+            "collection": "all-clairefontaine",
             "custom_title": "Clairefontaine",
-            "hide_title": true,
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "original_crown_mill": {
-          "type": "collection",
-          "settings": {
-            "collection": "original-crown-mill-stationery",
-            "custom_title": "Original Crown Mill",
-            "hide_title": true,
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -220,19 +237,20 @@
       "block_order": [
         "crane",
         "g_lalo",
-        "clairefontaine",
-        "original_crown_mill"
+        "clairefontaine"
       ],
       "settings": {
         "title": "Popular Brands",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
-        "card_style": "standard",
+        "card_style": "circular",
         "image_ratio": "square",
+        "title_size": "h5",
+        "title_spacing": 10,
         "card_min_height": 140,
         "card_min_height_desktop": 180,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
@@ -243,40 +261,47 @@
         "padding_bottom": 36
       }
     },
-    "sealing_wax_slideshow": {
-      "type": "slideshow",
+    "notebooks_slideshow": {
+      "type": "dromgooles-slideshow",
       "blocks": {
-        "sealing_wax_slide": {
+        "notebooks_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/sealing-wax-dromgooles.jpg",
-            "image_overlay_opacity": 40,
-            "heading": "Sealing Wax & Stamps",
+            "image": "shopify://shop_images/notebooks-dromgooles.jpg",
+            "link": "shopify://collections/notebooks-journals",
+            "image_overlay_opacity": 0,
+            "heading": "Looking for Notebooks?",
             "heading_size": "h2",
-            "subheading": "Add an elegant finishing touch to your correspondence with traditional sealing wax and custom stamps.",
-            "button_label": "Shop Sealing Wax",
-            "link": "shopify://collections/sealing-wax",
+            "subheading": "Explore our extensive collection of premium notebooks and journals.",
+            "button_label": "Shop Notebooks",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-5"
+            "color_scheme": "scheme-1"
           }
         }
       },
       "block_order": [
-        "sealing_wax_slide"
+        "notebooks_slide"
       ],
       "settings": {
+        "media_link": true,
         "layout": "grid",
-        "slide_height": "adapt_image",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Sealing wax and stamps promotion"
+        "accessibility_info": "Notebooks collection promotion",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "desk_accessories": {
@@ -343,11 +368,13 @@
       ],
       "settings": {
         "title": "Desk Accessories",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
         "card_style": "standard",
         "image_ratio": "square",
+        "title_size": "h5",
+        "title_spacing": 10,
         "card_min_height": 170,
         "card_min_height_desktop": 270,
         "columns_desktop": 4,
@@ -362,24 +389,24 @@
       }
     },
     "pens_slideshow": {
-      "type": "slideshow",
+      "type": "dromgooles-slideshow",
       "blocks": {
         "pens_slide": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
-            "image_overlay_opacity": 40,
+            "link": "shopify://collections/fountain-pens",
+            "image_overlay_opacity": 0,
             "heading": "Looking for a Pen?",
             "heading_size": "h2",
             "subheading": "Browse our collection of fine writing instruments to pair with your stationery.",
             "button_label": "Shop Fountain Pens",
-            "link": "shopify://collections/fountain-pens",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-2"
+            "color_scheme": "scheme-1"
           }
         }
       },
@@ -387,14 +414,21 @@
         "pens_slide"
       ],
       "settings": {
+        "media_link": true,
         "layout": "grid",
-        "slide_height": "adapt_image",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
-        "accessibility_info": "Fountain pens collection promotion"
+        "accessibility_info": "Fountain pens collection promotion",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "help_cta": {
@@ -446,8 +480,7 @@
     "hero_slideshow",
     "shop_by_category",
     "popular_brands",
-    "sealing_wax_slideshow",
-    "desk_accessories",
+    "notebooks_slideshow",
     "pens_slideshow",
     "help_cta"
   ]

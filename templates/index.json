@@ -235,31 +235,39 @@
     "collection_list_jg4aXn": {
       "type": "dromgooles-collection-list",
       "blocks": {
-        "featured_collection_Dxbnbm": {
+        "featured_collection_notebooks": {
           "type": "featured_collection",
           "settings": {
-            "collection": "calendars-agendas",
-            "custom_title": ""
+            "collection": "notebooks-journals",
+            "custom_title": "Notebooks"
           }
         },
         "featured_collection_qPAT4V": {
           "type": "featured_collection",
           "settings": {
             "collection": "notebook-accessories",
-            "custom_title": ""
+            "custom_title": "Notebook Accessories"
+          }
+        },
+        "featured_collection_Dxbnbm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "calendars-agendas",
+            "custom_title": "Calendars & Agendas"
           }
         },
         "featured_collection_RefGcm": {
           "type": "featured_collection",
           "settings": {
             "collection": "stationery",
-            "custom_title": ""
+            "custom_title": "Stationery"
           }
         }
       },
       "block_order": [
-        "featured_collection_Dxbnbm",
+        "featured_collection_notebooks",
         "featured_collection_qPAT4V",
+        "featured_collection_Dxbnbm",
         "featured_collection_RefGcm"
       ],
       "name": "Collection list",
