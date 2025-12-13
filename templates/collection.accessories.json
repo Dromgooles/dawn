@@ -25,10 +25,13 @@
         "products_per_page": 16,
         "columns_desktop": 4,
         "columns_mobile": "2",
+        "color_scheme": "",
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "none",
         "enable_filtering": true,
         "filter_type": "vertical",
         "enable_sorting": true,
@@ -42,7 +45,7 @@
         "hero_slide": {
           "type": "slide",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/EsterbrookTravelJournalWorkshopPresentation-stock-3_1500x_45b54480-cfb9-45f7-b273-2716e3d01ce4.webp",
             "link": "shopify://collections/accessories",
             "image_overlay_opacity": 0,
             "heading": "Accessories",
@@ -86,39 +89,66 @@
           "type": "collection",
           "settings": {
             "collection": "knives",
-            "custom_title": "Pocket Knives"
+            "custom_title": "Pocket Knives",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "covers": {
           "type": "collection",
           "settings": {
             "collection": "the-superior-labor-notebook-covers",
-            "custom_title": "Notebook Covers"
+            "custom_title": "Notebook Covers",
+            "hide_title": false,
+            "image": "shopify://shop_images/TheSuperiorLaborA5OriginalLeatherNotebookCover-Black.jpg",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "pen_loops": {
           "type": "collection",
           "settings": {
-            "collection": "pen-loops"
+            "collection": "pen-loops",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "desk_accessories": {
           "type": "collection",
           "settings": {
             "collection": "desk-supplies-accessories",
-            "custom_title": "Desk Accessories"
-          }
-        },
-        "ink_accessories": {
-          "type": "collection",
-          "settings": {
-            "collection": "ink-accessories"
+            "custom_title": "Desk Accessories",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "pen_accessories": {
           "type": "collection",
           "settings": {
-            "collection": "pen-accessories"
+            "collection": "pen-accessories",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
@@ -127,7 +157,6 @@
         "covers",
         "pen_loops",
         "desk_accessories",
-        "ink_accessories",
         "pen_accessories"
       ],
       "settings": {
@@ -139,6 +168,7 @@
         "image_ratio": "square",
         "card_min_height": 170,
         "card_min_height_desktop": 270,
+        "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
         "columns_desktop": 5,
@@ -159,35 +189,67 @@
           "type": "collection",
           "settings": {
             "collection": "galen-leather-co-notebook-folios",
-            "custom_title": "Galen Leather"
+            "custom_title": "Galen Leather",
+            "hide_title": false,
+            "image": "shopify://shop_images/GalenLeatherCo.LeatherMagnumOpus12SlotsHardPenCasewithRemovablePenTray-CrazyHorseNavyBlue.png",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "travelers": {
           "type": "collection",
           "settings": {
             "collection": "travelers-company-notebook-accessories",
-            "custom_title": "Traveler's Company"
+            "custom_title": "Traveler's Company",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "superior_labor": {
           "type": "collection",
           "settings": {
             "collection": "the-superior-labor-notebook-covers",
-            "custom_title": "Superior Labor"
+            "custom_title": "Superior Labor",
+            "hide_title": false,
+            "image": "shopify://shop_images/IMG_4779.jpg",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "hobonichi": {
           "type": "collection",
           "settings": {
             "collection": "hobonichi-accessories",
-            "custom_title": "Hobonichi"
+            "custom_title": "Hobonichi",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
         "benchmade": {
           "type": "collection",
           "settings": {
             "collection": "benchmade",
-            "custom_title": "Benchmade"
+            "custom_title": "Benchmade",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
@@ -207,6 +269,7 @@
         "image_ratio": "square",
         "card_min_height": 140,
         "card_min_height_desktop": 180,
+        "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
         "columns_desktop": 5,
@@ -226,7 +289,7 @@
         "notebooks_slide": {
           "type": "slide",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/61dvOuhAk7L._AC_SL1000.jpg",
             "image_overlay_opacity": 0,
             "heading": "Looking for Notebooks?",
             "heading_size": "h2",
