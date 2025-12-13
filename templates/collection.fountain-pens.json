@@ -531,7 +531,7 @@
       ],
       "settings": {
         "title": "Shop By Fill System",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
         "card_style": "standard",
@@ -549,36 +549,6 @@
         "padding_bottom": 36
       }
     },
-    "new_arrivals_banner": {
-      "type": "dromgooles-promo-banner",
-      "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "shopify://shop_images/Latest_Additions.jpg",
-        "image_position": "center center",
-        "overlay_opacity": 0,
-        "background_color": "#1d2731",
-        "background_gradient": "",
-        "heading": "Latest Additions",
-        "heading_size": "h1",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Shop the newest pens in our store</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop New Arrivals",
-        "button_link": "shopify://collections/new-arrivals-fountain-pens",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
     "pen_accessories": {
       "type": "dromgooles-collection-grid",
       "blocks": {
@@ -588,6 +558,7 @@
             "collection": "pen-cases",
             "custom_title": "",
             "hide_title": true,
+            "image": "shopify://shop_images/Pen_Cases.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -601,6 +572,7 @@
             "collection": "pen-clips",
             "custom_title": "",
             "hide_title": true,
+            "image": "shopify://shop_images/Clips_4fa39abe-5323-44ac-a00e-08679e951c00.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -614,6 +586,7 @@
             "collection": "converters-1",
             "custom_title": "",
             "hide_title": true,
+            "image": "shopify://shop_images/Converters_c0ad2d7f-5692-48cb-aca9-2658c3f61119.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -627,6 +600,7 @@
             "collection": "nibs",
             "custom_title": "",
             "hide_title": true,
+            "image": "shopify://shop_images/Nibs_637ae7dc-467f-4cf4-9995-554b5f18a0f0.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -643,11 +617,11 @@
       ],
       "settings": {
         "title": "Pen Accessories",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
         "card_style": "standard",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "card_min_height": 170,
         "card_min_height_desktop": 270,
         "columns_desktop": 4,
@@ -725,7 +699,7 @@
       ],
       "settings": {
         "title": "Other Writing Instruments",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
         "card_style": "standard",
@@ -795,7 +769,6 @@
     "popular_brands",
     "shop_by_color",
     "shop_by_fill_system",
-    "new_arrivals_banner",
     "pen_accessories",
     "other_instruments",
     "help_cta"
