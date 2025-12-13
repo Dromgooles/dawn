@@ -456,23 +456,10 @@
             "border_radius": 0
           }
         },
-        "ink_samples": {
-          "type": "collection",
-          "settings": {
-            "collection": "ink-samples",
-            "custom_title": "Ink Samples",
-            "hide_title": false,
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
         "blotter_paper": {
           "type": "collection",
           "settings": {
-            "collection": "blotter-paper",
+            "collection": "blotter-papers",
             "custom_title": "Blotter Paper",
             "hide_title": false,
             "image_style": "contain",
@@ -486,7 +473,6 @@
       "block_order": [
         "ink_cartridges",
         "converters",
-        "ink_samples",
         "blotter_paper"
       ],
       "settings": {
@@ -501,7 +487,7 @@
         "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
@@ -539,7 +525,7 @@
       ],
       "settings": {
         "layout": "grid",
-        "slide_height": "adapt_image",
+        "slide_height": "small",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
