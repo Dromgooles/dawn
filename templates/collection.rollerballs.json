@@ -435,23 +435,10 @@
         "accessibility_info": "Rollerball refills collection promotion"
       }
     },
-    "other_instruments": {
+    "dromgooles_collection_grid_zT6RBe": {
       "type": "dromgooles-collection-grid",
       "blocks": {
-        "fountain_pens": {
-          "type": "collection",
-          "settings": {
-            "collection": "fountain-pens",
-            "custom_title": "Fountain Pens",
-            "hide_title": false,
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 0
-          }
-        },
-        "ballpoints": {
+        "collection_d8tc6W": {
           "type": "collection",
           "settings": {
             "collection": "ballpoints",
@@ -460,11 +447,24 @@
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "border_radius": 0
           }
         },
-        "pencils": {
+        "collection_nwHBzz": {
+          "type": "collection",
+          "settings": {
+            "collection": "fountain-pens",
+            "custom_title": "Fountain Pens",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#121212",
+            "border_radius": 0
+          }
+        },
+        "collection_XeWtH3": {
           "type": "collection",
           "settings": {
             "collection": "pencils",
@@ -473,19 +473,34 @@
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
+            "border_radius": 0
+          }
+        },
+        "collection_LyCHY8": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy",
+            "custom_title": "Calligraphy Pens",
+            "hide_title": false,
+            "image": "shopify://shop_images/toms-studio-bloom-straight-calligraphy-pen-bluebell-hero.webp",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#121212",
             "border_radius": 0
           }
         }
       },
       "block_order": [
-        "fountain_pens",
-        "ballpoints",
-        "pencils"
+        "collection_d8tc6W",
+        "collection_nwHBzz",
+        "collection_XeWtH3",
+        "collection_LyCHY8"
       ],
       "settings": {
         "title": "Other Writing Instruments",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
         "card_style": "standard",
@@ -493,10 +508,10 @@
         "card_min_height": 120,
         "card_min_height_desktop": 160,
         "title_alignment": "center",
-        "title_size": "h5",
-        "title_spacing": 10,
-        "columns_desktop": 3,
-        "columns_mobile": "1",
+        "title_size": "h3",
+        "title_spacing": 6,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
         "view_all_text": "",
@@ -557,7 +572,7 @@
     "popular_brands",
     "dromgooles_color_swatches_dQRj9m",
     "rollerball_refills_slideshow",
-    "other_instruments",
+    "dromgooles_collection_grid_zT6RBe",
     "help_cta"
   ]
 }
