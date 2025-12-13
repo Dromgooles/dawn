@@ -1,11 +1,13 @@
 /**
  * Dromgoole's Brands Alphabetical Index
  *
- * Adds iOS Contacts-style alphabetical grouping and quick
- * letter navigation to the Brands menu in the header drawer.
+ * Adds iOS Contacts-style alphabetical grouping and quick letter
+ * navigation to the Brands menu in the header drawer.
  *
- * This is a pure overlay - it detects and transforms the existing
- * Brands submenu without modifying core Dawn files.
+ * Pure overlay - detects and transforms the existing Brands submenu
+ * without modifying core Dawn files.
+ *
+ * @see dromgooles-brands-index.css
  */
 
 (function () {

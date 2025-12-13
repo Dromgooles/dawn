@@ -1,23 +1,23 @@
 {% comment %}
-  CUSTOMIZED: Collection card with custom title support
-  Author: Dromgoole's
-  Created: 2024
-  Based on: Dawn v15.4.1 card-collection snippet
+  Dromgoole's Card Collection
 
-  Changes:
-  - Added custom_title parameter to override collection.title
+  Collection card with custom title support.
+
+  Based on: Dawn card-collection
+  Customizations:
+    - custom_title parameter to override collection.title
 
   Accepts:
-  - card_collection: {Object} Collection Liquid object
-  - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
-  - columns: {Number}
-  - extend_height: {Boolean} Card height extends to available container space. Default: false (optional)
-  - wrapper_class: {String} Wrapper class for card (optional)
-  - placeholder_image: {String} Placeholder image when collection is empty (optional)
-  - custom_title: {String} Custom title to override collection.title (optional)
+    - card_collection: {Object} Collection Liquid object
+    - media_aspect_ratio: {String} "square" or "portrait" (default: "square")
+    - columns: {Number}
+    - extend_height: {Boolean} (default: false)
+    - wrapper_class: {String} (optional)
+    - placeholder_image: {String} (optional)
+    - custom_title: {String} Override collection.title (optional)
 
   Usage:
-  {% render 'dromgooles-card-collection', card_collection: collection, custom_title: 'My Custom Name' %}
+    {% render 'dromgooles-card-collection', card_collection: collection, custom_title: 'My Title' %}
 {% endcomment %}
 
 {%- liquid

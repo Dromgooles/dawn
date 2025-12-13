@@ -1,18 +1,16 @@
 {% comment %}
-  CUSTOM: Dromgoole's Product Media Gallery with Placeholder Fallback
-  Author: Dromgoole's
-  Created: 2024
+  Dromgoole's Product Media Gallery
 
-  This snippet wraps the standard product-media-gallery and provides
-  a fallback placeholder image when the product has no media.
+  Wraps Dawn's product-media-gallery with placeholder fallback when
+  the product has no media.
 
   Accepts:
-  - product: {Object} Product liquid object (defaults to current product)
-  - variant_images: {Array} Product images associated with a variant
-  - placeholder_image: {String} URL to placeholder image
+    - product: {Object} Product liquid object (defaults to current product)
+    - variant_images: {Array} Product images associated with a variant
+    - placeholder_image: {String} URL to placeholder image
 
   Usage:
-  {% render 'dromgooles-product-media-gallery', variant_images: variant_images %}
+    {% render 'dromgooles-product-media-gallery', variant_images: variant_images %}
 {% endcomment %}
 
 {%- liquid

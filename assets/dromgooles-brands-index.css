@@ -1,11 +1,13 @@
 /**
- * Dromgoole's Brands Alphabetical Index Styles
- * 
- * Adds iOS Contacts-style alphabetical grouping and quick
- * letter navigation to the Brands menu in the header drawer.
- * 
- * This is a pure CSS overlay - targets existing Dawn classes
- * plus classes added dynamically by dromgooles-brands-index.js
+ * Dromgoole's Brands Alphabetical Index (Styles)
+ *
+ * Adds iOS Contacts-style alphabetical grouping and quick letter
+ * navigation to the Brands menu in the header drawer.
+ *
+ * Pure overlay - targets existing Dawn classes plus classes added
+ * dynamically by dromgooles-brands-index.js.
+ *
+ * @see dromgooles-brands-index.js
  */
 
 /* Container for brands submenu with index (class added by JS) */

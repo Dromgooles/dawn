@@ -1,20 +1,15 @@
 {% comment %}
-  Dromgoole's Custom Styles Loader
+  Dromgoole's Styles Loader
 
-  This snippet loads Dromgoole's custom CSS overrides after Dawn's base styles.
+  Loads all Dromgoole's custom CSS and JS assets after Dawn's base styles.
 
-  INSTALLATION:
-  Add ONE line to layout/theme.liquid after the base.css stylesheet tag (around line 259):
+  Installation:
+    Add to layout/theme.liquid after base.css:
+    {% render 'dromgooles-styles' %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    {% render 'dromgooles-styles' %}  <!-- ADD THIS LINE -->
-
-  This is the ONLY modification needed to theme.liquid.
-  All custom styles are contained in assets/dromgooles.css
-
-  Author: Dromgoole's
-  Created: 2024
-  Dawn Version: 15.4.1
+  Assets loaded:
+    - dromgooles.css: Main custom styles
+    - dromgooles-brands-index.css/js: Alphabetical brand navigation
 {% endcomment %}
 
 {%- comment -%}
