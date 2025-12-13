@@ -216,6 +216,7 @@
         "collection_ballpoints",
         "collection_stationery"
       ],
+      "name": "Collection list",
       "settings": {
         "title": "Pens & Ink",
         "heading_size": "h2",
@@ -261,6 +262,7 @@
         "featured_collection_qPAT4V",
         "featured_collection_RefGcm"
       ],
+      "name": "Collection list",
       "settings": {
         "title": "Stationery & Paper",
         "heading_size": "h2",
@@ -376,6 +378,7 @@
         "brand_3",
         "brand_4"
       ],
+      "name": "Multicolumn",
       "settings": {
         "title": "Trusted Quality",
         "heading_size": "h2",
