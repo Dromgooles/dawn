@@ -45,6 +45,7 @@
         "hero_slide": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Journal_Your_Summer_Days_1.jpg",
             "link": "shopify://collections/notebooks-journals",
             "image_overlay_opacity": 0,
             "heading": "Notebooks & Journals",
