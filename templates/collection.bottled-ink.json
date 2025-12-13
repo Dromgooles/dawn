@@ -83,162 +83,126 @@
       }
     },
     "shop_by_color": {
-      "type": "dromgooles-collection-grid",
+      "type": "dromgooles-color-swatches",
       "blocks": {
         "black": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "black-ink",
-            "custom_title": "Black",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Black",
             "background_color": "#1a1a1a",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "blue": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "blue-ink",
-            "custom_title": "Blue",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Blue",
             "background_color": "#1c67fa",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "red": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "red-ink",
-            "custom_title": "Red",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Red",
             "background_color": "#be1717",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "green": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "green-ink",
-            "custom_title": "Green",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Green",
             "background_color": "#267826",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "purple": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "purple-ink",
-            "custom_title": "Purple",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Purple",
             "background_color": "#591e7d",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "orange": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "orange-ink",
-            "custom_title": "Orange",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Orange",
             "background_color": "#ed9327",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "brown": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "brown-ink",
-            "custom_title": "Brown",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Brown",
             "background_color": "#56361d",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "grey": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "grey-ink",
-            "custom_title": "Grey",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Grey",
             "background_color": "#808080",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "pink": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "pink-ink",
-            "custom_title": "Pink",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Pink",
             "background_color": "#ce3664",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "yellow": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "yellow-ink",
-            "custom_title": "Yellow",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Yellow",
             "background_color": "#dee02c",
             "background_gradient": "",
-            "text_color": "#000000",
-            "border_radius": 100
+            "text_color": "#000000"
           }
         },
         "turquoise": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "turquoise-ink",
-            "custom_title": "Turquoise",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Turquoise",
             "background_color": "#30b7c9",
             "background_gradient": "",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         },
         "shimmer": {
-          "type": "collection",
+          "type": "color",
           "settings": {
             "collection": "shimmer-ink",
-            "custom_title": "Shimmer",
-            "hide_title": false,
-            "image_style": "contain",
+            "title": "Shimmer",
             "background_color": "",
             "background_gradient": "linear-gradient(113.27deg, #DEA22C 6.42%, #A87A20 94.83%)",
-            "text_color": "#ffffff",
-            "border_radius": 100
+            "text_color": "#ffffff"
           }
         }
       },
@@ -258,22 +222,10 @@
       ],
       "settings": {
         "title": "Shop By Color",
-        "heading_size": "h2",
-        "header_alignment": "center",
+        "heading_size": "h1",
         "description": "<p>Find the perfect shade for your fountain pen</p>",
-        "card_style": "circular",
-        "image_ratio": "square",
-        "card_min_height": 0,
-        "card_min_height_desktop": 0,
-        "title_alignment": "center",
-        "title_size": "h5",
-        "title_spacing": 10,
-        "columns_desktop": 6,
-        "columns_mobile": "3",
-        "swipe_on_mobile": false,
-        "show_view_all": false,
-        "view_all_text": "",
-        "view_all_link": "",
+        "swatch_size": 150,
+        "show_label_inside": true,
         "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
