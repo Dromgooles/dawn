@@ -271,34 +271,40 @@
         "padding_bottom": 36
       }
     },
-    "fp_friendly_paper": {
-      "type": "dromgooles-promo-banner",
+    "fp_friendly_paper_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "fp_friendly_paper_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/fp-friendly-paper-promo.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Fountain Pen Friendly Paper",
+            "heading_size": "h2",
+            "subheading": "All our notebooks feature paper specially selected for use with fountain pens—no bleeding, no feathering.",
+            "button_label": "Shop FP-Friendly Paper",
+            "link": "shopify://collections/fountain-pen-friendly-paper",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        }
+      },
+      "block_order": [
+        "fp_friendly_paper_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "",
-        "image_position": "center center",
-        "overlay_opacity": 0,
-        "background_color": "#0b3c5d",
-        "background_gradient": "",
-        "heading": "Fountain Pen Friendly Paper",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>All our notebooks feature paper specially selected for use with fountain pens—no bleeding, no feathering.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop FP-Friendly Paper",
-        "button_link": "shopify://collections/fountain-pen-friendly-paper",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Fountain pen friendly paper promotion"
       }
     },
     "notebook_accessories": {
@@ -383,34 +389,40 @@
         "padding_bottom": 36
       }
     },
-    "ink_cta": {
-      "type": "dromgooles-promo-banner",
+    "ink_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "ink_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/bottled-ink-dromgooles.jpg",
+            "image_overlay_opacity": 40,
+            "heading": "Looking for Ink?",
+            "heading_size": "h2",
+            "subheading": "Explore our extensive collection of bottled inks in every color imaginable.",
+            "button_label": "Shop Bottled Ink",
+            "link": "shopify://collections/bottled-ink",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "ink_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "shopify://shop_images/bottled-ink-dromgooles.jpg",
-        "image_position": "center center",
-        "overlay_opacity": 40,
-        "background_color": "#1d2731",
-        "background_gradient": "",
-        "heading": "Looking for Ink?",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Explore our extensive collection of bottled inks in every color imaginable.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop Bottled Ink",
-        "button_link": "shopify://collections/bottled-ink",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Bottled ink collection promotion"
       }
     },
     "help_cta": {
@@ -462,9 +474,9 @@
     "hero_slideshow",
     "shop_by_type",
     "popular_brands",
-    "fp_friendly_paper",
+    "fp_friendly_paper_slideshow",
     "notebook_accessories",
-    "ink_cta",
+    "ink_slideshow",
     "help_cta"
   ]
 }

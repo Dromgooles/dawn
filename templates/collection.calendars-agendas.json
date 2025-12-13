@@ -243,64 +243,76 @@
         "padding_bottom": 36
       }
     },
-    "desk_accessories_banner": {
-      "type": "dromgooles-promo-banner",
+    "desk_accessories_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "desk_accessories_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/desk-accessories-dromgooles.jpg",
+            "image_overlay_opacity": 40,
+            "heading": "Complete Your Desk",
+            "heading_size": "h2",
+            "subheading": "Browse our collection of premium desk accessories to complement your planner.",
+            "button_label": "Shop Desk Accessories",
+            "link": "shopify://collections/desk-accessories",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "desk_accessories_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "shopify://shop_images/desk-accessories-dromgooles.jpg",
-        "image_position": "center center",
-        "overlay_opacity": 40,
-        "background_color": "#1d2731",
-        "background_gradient": "",
-        "heading": "Complete Your Desk",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Browse our collection of premium desk accessories to complement your planner.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop Desk Accessories",
-        "button_link": "shopify://collections/desk-accessories",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Desk accessories collection promotion"
       }
     },
-    "notebooks_cta": {
-      "type": "dromgooles-promo-banner",
+    "notebooks_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "notebooks_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/notebooks-dromgooles.jpg",
+            "image_overlay_opacity": 40,
+            "heading": "Looking for Notebooks?",
+            "heading_size": "h2",
+            "subheading": "Explore our extensive collection of premium notebooks and journals.",
+            "button_label": "Shop Notebooks",
+            "link": "shopify://collections/notebook-accessories",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "notebooks_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "shopify://shop_images/notebooks-dromgooles.jpg",
-        "image_position": "center center",
-        "overlay_opacity": 40,
-        "background_color": "#1d2731",
-        "background_gradient": "",
-        "heading": "Looking for Notebooks?",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Explore our extensive collection of premium notebooks and journals.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop Notebooks",
-        "button_link": "shopify://collections/notebook-accessories",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Notebooks collection promotion"
       }
     },
     "help_cta": {
@@ -352,8 +364,8 @@
     "hero_slideshow",
     "shop_by_type",
     "popular_brands",
-    "desk_accessories_banner",
-    "notebooks_cta",
+    "desk_accessories_slideshow",
+    "notebooks_slideshow",
     "help_cta"
   ]
 }

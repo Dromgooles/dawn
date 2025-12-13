@@ -383,34 +383,40 @@
         "padding_bottom": 36
       }
     },
-    "special_inks_banner": {
-      "type": "dromgooles-promo-banner",
+    "special_inks_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "special_inks_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/shimmer-ink-promo.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Shimmer & Sheen Inks",
+            "heading_size": "h2",
+            "subheading": "Add sparkle and character to your writing with our collection of special effect inks.",
+            "button_label": "Shop Special Inks",
+            "link": "shopify://collections/shimmer-ink",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        }
+      },
+      "block_order": [
+        "special_inks_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "",
-        "image_position": "center center",
-        "overlay_opacity": 0,
-        "background_color": "",
-        "background_gradient": "linear-gradient(113.27deg, #DEA22C 6.42%, #A87A20 94.83%)",
-        "heading": "Shimmer & Sheen Inks",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Add sparkle and character to your writing with our collection of special effect inks.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop Special Inks",
-        "button_link": "shopify://collections/shimmer-ink",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Shimmer and sheen inks promotion"
       }
     },
     "ink_accessories": {
@@ -495,34 +501,40 @@
         "padding_bottom": 36
       }
     },
-    "fountain_pens_cta": {
-      "type": "dromgooles-promo-banner",
+    "fountain_pens_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "fountain_pens_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
+            "image_overlay_opacity": 40,
+            "heading": "Need a Fountain Pen?",
+            "heading_size": "h2",
+            "subheading": "Browse our collection of 2000+ fountain pens to pair with your new ink.",
+            "button_label": "Shop Fountain Pens",
+            "link": "shopify://collections/fountain-pens",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "fountain_pens_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
-        "image_position": "center center",
-        "overlay_opacity": 40,
-        "background_color": "#1d2731",
-        "background_gradient": "",
-        "heading": "Need a Fountain Pen?",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Browse our collection of 2000+ fountain pens to pair with your new ink.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop Fountain Pens",
-        "button_link": "shopify://collections/fountain-pens",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Fountain pens collection promotion"
       }
     },
     "help_cta": {
@@ -574,9 +586,9 @@
     "hero_slideshow",
     "shop_by_color",
     "popular_brands",
-    "special_inks_banner",
+    "special_inks_slideshow",
     "ink_accessories",
-    "fountain_pens_cta",
+    "fountain_pens_slideshow",
     "help_cta"
   ]
 }

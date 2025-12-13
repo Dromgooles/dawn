@@ -367,34 +367,40 @@
         "padding_bottom": 36
       }
     },
-    "rollerball_refills_banner": {
-      "type": "dromgooles-promo-banner",
+    "rollerball_refills_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "rollerball_refills_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/rollerball-refills-promo.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Rollerball Refills",
+            "heading_size": "h2",
+            "subheading": "Keep your rollerball pens writing smoothly with our selection of quality refills.",
+            "button_label": "Shop Refills",
+            "link": "shopify://collections/rollerball-refills",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        }
+      },
+      "block_order": [
+        "rollerball_refills_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "",
-        "image_position": "center center",
-        "overlay_opacity": 0,
-        "background_color": "#1a679a",
-        "background_gradient": "",
-        "heading": "Rollerball Refills",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Keep your rollerball pens writing smoothly with our selection of quality refills.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop Refills",
-        "button_link": "shopify://collections/rollerball-refills",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Rollerball refills collection promotion"
       }
     },
     "other_instruments": {
@@ -515,7 +521,7 @@
     "special_selections",
     "popular_brands",
     "shop_by_color",
-    "rollerball_refills_banner",
+    "rollerball_refills_slideshow",
     "other_instruments",
     "help_cta"
   ]

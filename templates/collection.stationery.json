@@ -243,34 +243,40 @@
         "padding_bottom": 36
       }
     },
-    "sealing_wax_banner": {
-      "type": "dromgooles-promo-banner",
+    "sealing_wax_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "sealing_wax_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/sealing-wax-dromgooles.jpg",
+            "image_overlay_opacity": 40,
+            "heading": "Sealing Wax & Stamps",
+            "heading_size": "h2",
+            "subheading": "Add an elegant finishing touch to your correspondence with traditional sealing wax and custom stamps.",
+            "button_label": "Shop Sealing Wax",
+            "link": "shopify://collections/sealing-wax",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-5"
+          }
+        }
+      },
+      "block_order": [
+        "sealing_wax_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "shopify://shop_images/sealing-wax-dromgooles.jpg",
-        "image_position": "center center",
-        "overlay_opacity": 40,
-        "background_color": "#8B0000",
-        "background_gradient": "",
-        "heading": "Sealing Wax & Stamps",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Add an elegant finishing touch to your correspondence with traditional sealing wax and custom stamps.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop Sealing Wax",
-        "button_link": "shopify://collections/sealing-wax",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Sealing wax and stamps promotion"
       }
     },
     "desk_accessories": {
@@ -355,34 +361,40 @@
         "padding_bottom": 36
       }
     },
-    "pens_cta": {
-      "type": "dromgooles-promo-banner",
+    "pens_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "pens_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
+            "image_overlay_opacity": 40,
+            "heading": "Looking for a Pen?",
+            "heading_size": "h2",
+            "subheading": "Browse our collection of fine writing instruments to pair with your stationery.",
+            "button_label": "Shop Fountain Pens",
+            "link": "shopify://collections/fountain-pens",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        }
+      },
+      "block_order": [
+        "pens_slide"
+      ],
       "settings": {
-        "layout": "boxed",
-        "desktop_height": 300,
-        "mobile_height": 250,
-        "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
-        "image_position": "center center",
-        "overlay_opacity": 40,
-        "background_color": "#1d2731",
-        "background_gradient": "",
-        "heading": "Looking for a Pen?",
-        "heading_size": "h0",
-        "heading_color": "#ffffff",
-        "subheading": "<p>Browse our collection of fine writing instruments to pair with your stationery.</p>",
-        "subheading_color": "#ffffff",
-        "button_label": "Shop Fountain Pens",
-        "button_link": "shopify://collections/fountain-pens",
-        "button_style": "outline",
-        "button_bg_color": "#0b3c5d",
-        "button_border_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_alignment": "center",
-        "vertical_align": "center",
-        "horizontal_align": "center",
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Fountain pens collection promotion"
       }
     },
     "help_cta": {
@@ -434,9 +446,9 @@
     "hero_slideshow",
     "shop_by_category",
     "popular_brands",
-    "sealing_wax_banner",
+    "sealing_wax_slideshow",
     "desk_accessories",
-    "pens_cta",
+    "pens_slideshow",
     "help_cta"
   ]
 }
