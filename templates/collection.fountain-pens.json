@@ -142,6 +142,9 @@
         "image_ratio": "adapt",
         "card_min_height": 170,
         "card_min_height_desktop": 270,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 3,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -342,6 +345,9 @@
         "image_ratio": "adapt",
         "card_min_height": 140,
         "card_min_height_desktop": 180,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 6,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
@@ -585,7 +591,7 @@
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "border_radius": 0
           }
         },
@@ -599,7 +605,7 @@
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "border_radius": 0
           }
         },
@@ -613,7 +619,7 @@
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "border_radius": 0
           }
         }
@@ -632,6 +638,9 @@
         "image_ratio": "adapt",
         "card_min_height": 130,
         "card_min_height_desktop": 130,
+        "title_alignment": "center",
+        "title_size": "h3",
+        "title_spacing": 10,
         "columns_desktop": 3,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -718,6 +727,9 @@
         "image_ratio": "adapt",
         "card_min_height": 170,
         "card_min_height_desktop": 270,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 4,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
@@ -741,7 +753,7 @@
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "border_radius": 0
           }
         },
@@ -749,7 +761,7 @@
           "type": "collection",
           "settings": {
             "collection": "rollerballs",
-            "custom_title": "Rollerballs",
+            "custom_title": "Rollerball Pens",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -767,7 +779,7 @@
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "border_radius": 0
           }
         },
@@ -775,12 +787,13 @@
           "type": "collection",
           "settings": {
             "collection": "calligraphy",
-            "custom_title": "Calligraphy",
+            "custom_title": "Calligraphy Pens",
             "hide_title": false,
+            "image": "shopify://shop_images/toms-studio-bloom-straight-calligraphy-pen-bluebell-hero.webp",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
-            "text_color": "#000000",
+            "text_color": "#121212",
             "border_radius": 0
           }
         }
@@ -800,6 +813,9 @@
         "image_ratio": "square",
         "card_min_height": 120,
         "card_min_height_desktop": 160,
+        "title_alignment": "center",
+        "title_size": "h3",
+        "title_spacing": 6,
         "columns_desktop": 4,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
