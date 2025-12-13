@@ -7,15 +7,10 @@
   Accepts:
     - product: {Object} Product liquid object (defaults to current product)
     - variant_images: {Array} Product images associated with a variant
-    - placeholder_image: {String} URL to placeholder image
 
   Usage:
     {% render 'dromgooles-product-media-gallery', variant_images: variant_images %}
 {% endcomment %}
-
-{%- liquid
-  assign placeholder_url = placeholder_image | default: 'https://cdn.shopify.com/s/files/1/0652/2424/5488/files/coming_soon.jpg?v=1765574442'
--%}
 
 {%- if product.media.size > 0 -%}
   {%- comment -%} Product has media - render normal gallery {%- endcomment -%}
@@ -30,8 +25,8 @@
   >
     <div class="dromgooles-placeholder-media global-media-settings">
       <img
-        src="{{ placeholder_url }}"
-        alt="{{ 'products.product.media.image_coming_soon' | t | default: 'Image coming soon' }}"
+        src="{{ 'coming_soon.jpg' | asset_url }}"
+        alt="{{ 'products.product.media.image_coming_soon' | t }}"
         width="1000"
         height="1000"
         loading="eager"
