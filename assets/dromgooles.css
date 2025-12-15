@@ -379,6 +379,14 @@
   transition: color 0.2s ease;
 }
 
+/* Hide country/language selector in mobile menu drawer
+   This overrides Dawn's default behavior which shows the selector
+   regardless of the header section settings. To show the selector,
+   remove or comment out this rule. */
+.menu-drawer__localization {
+  display: none;
+}
+
 /* ============================================
    8. Slider & Carousel Fixes
    ============================================ */
