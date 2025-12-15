@@ -447,7 +447,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
-            "image_overlay_opacity": 40,
+            "image_overlay_opacity": 0,
             "heading": "Need a Fountain Pen?",
             "heading_size": "h2",
             "subheading": "Browse our collection of 2000+ fountain pens to pair with your new ink.",
