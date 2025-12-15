@@ -115,8 +115,8 @@
         "envelopes": {
           "type": "collection",
           "settings": {
-            "collection": "envelopes",
-            "custom_title": "Envelopes",
+            "collection": "",
+            "custom_title": "Pads & Envelopes",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -160,8 +160,8 @@
         "crane": {
           "type": "collection",
           "settings": {
-            "collection": "all-crane",
-            "custom_title": "Crane",
+            "collection": "",
+            "custom_title": "Midori",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -279,25 +279,11 @@
     "desk_accessories": {
       "type": "dromgooles-collection-grid",
       "blocks": {
-        "letter_openers": {
-          "type": "collection",
-          "settings": {
-            "collection": "letter-openers",
-            "custom_title": "Letter Openers",
-            "hide_title": false,
-            "image": "shopify://shop_images/brass-ruler-letter-opener-3_1200x_f5b2a64b-7542-466c-8884-2bba80a5063f.jpg",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
         "paper_weights": {
           "type": "collection",
           "settings": {
-            "collection": "paper-weights",
-            "custom_title": "Paper Weights",
+            "collection": "",
+            "custom_title": "Journaling Accessories",
             "hide_title": false,
             "image": "shopify://shop_images/brass-paper-weight-2.jpg",
             "image_style": "contain",
@@ -337,13 +323,12 @@
         }
       },
       "block_order": [
-        "letter_openers",
         "paper_weights",
         "desk_sets",
         "stamp_pads"
       ],
       "settings": {
-        "title": "Desk Accessories",
+        "title": "Accessories",
         "heading_size": "h2",
         "header_alignment": "center",
         "description": "",
@@ -354,7 +339,7 @@
         "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
