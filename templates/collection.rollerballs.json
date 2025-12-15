@@ -116,13 +116,13 @@
     "popular_brands": {
       "type": "dromgooles-collection-grid",
       "blocks": {
-        "collection_4EgVLx": {
+        "montegrappa": {
           "type": "collection",
           "settings": {
-            "collection": "retro-51-tornado-popper-rollerballs",
+            "collection": "lamy-rollerball",
             "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/Retro51_Logo.png",
+            "image": "shopify://shop_images/Lamy_Logo.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -144,13 +144,13 @@
             "border_radius": 0
           }
         },
-        "montegrappa": {
+        "collection_4EgVLx": {
           "type": "collection",
           "settings": {
-            "collection": "lamy-rollerball",
+            "collection": "retro-51-tornado-popper-rollerballs",
             "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/Lamy_Logo.png",
+            "image": "shopify://shop_images/Retro51_Logo.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -171,28 +171,13 @@
             "text_color": "",
             "border_radius": 0
           }
-        },
-        "cross": {
-          "type": "collection",
-          "settings": {
-            "collection": "esterbrook-rollerball",
-            "custom_title": "",
-            "hide_title": true,
-            "image": "shopify://shop_images/Esterbrook_Logo.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
         }
       },
       "block_order": [
-        "collection_4EgVLx",
-        "montblanc",
         "montegrappa",
-        "waterman",
-        "cross"
+        "montblanc",
+        "collection_4EgVLx",
+        "waterman"
       ],
       "settings": {
         "title": "Popular Brands",
@@ -206,7 +191,7 @@
         "title_alignment": "center",
         "title_size": "h4",
         "title_spacing": 10,
-        "columns_desktop": 5,
+        "columns_desktop": 4,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
