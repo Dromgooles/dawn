@@ -185,6 +185,32 @@
     "popular_brands": {
       "type": "dromgooles-collection-grid",
       "blocks": {
+        "collection_Q7txmH": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "custom_title": "Montblanc",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "collection_qfHqYY": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "custom_title": "Girologio",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
         "galen": {
           "type": "collection",
           "settings": {
@@ -192,6 +218,20 @@
             "custom_title": "Galen Leather",
             "hide_title": false,
             "image": "shopify://shop_images/GalenLeatherCo.LeatherMagnumOpus12SlotsHardPenCasewithRemovablePenTray-CrazyHorseNavyBlue.png",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "superior_labor": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-superior-labor-notebook-covers",
+            "custom_title": "The Superior Labor",
+            "hide_title": false,
+            "image": "shopify://shop_images/IMG_4779.jpg",
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
@@ -211,54 +251,14 @@
             "text_color": "",
             "border_radius": 0
           }
-        },
-        "superior_labor": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-superior-labor-notebook-covers",
-            "custom_title": "Superior Labor",
-            "hide_title": false,
-            "image": "shopify://shop_images/IMG_4779.jpg",
-            "image_style": "cover",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "hobonichi": {
-          "type": "collection",
-          "settings": {
-            "collection": "hobonichi-accessories",
-            "custom_title": "Hobonichi",
-            "hide_title": false,
-            "image_style": "cover",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "benchmade": {
-          "type": "collection",
-          "settings": {
-            "collection": "benchmade",
-            "custom_title": "Benchmade",
-            "hide_title": false,
-            "image_style": "cover",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
         }
       },
       "block_order": [
+        "collection_Q7txmH",
+        "collection_qfHqYY",
         "galen",
-        "travelers",
         "superior_labor",
-        "hobonichi",
-        "benchmade"
+        "travelers"
       ],
       "settings": {
         "title": "Popular Brands",
