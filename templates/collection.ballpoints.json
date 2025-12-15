@@ -116,41 +116,13 @@
     "popular_brands": {
       "type": "dromgooles-collection-grid",
       "blocks": {
-        "montblanc": {
+        "cross": {
           "type": "collection",
           "settings": {
-            "collection": "montblanc-ballpoints",
-            "custom_title": "Montblanc",
-            "hide_title": true,
-            "image": "shopify://shop_images/Mont_Blanc_Logo.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "collection_4EgVLx": {
-          "type": "collection",
-          "settings": {
-            "collection": "retro-51-ballpoint",
+            "collection": "caran-dache-ballpoint",
             "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/Retro51_Logo.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "waterman": {
-          "type": "collection",
-          "settings": {
-            "collection": "monteverde-ballpoint",
-            "custom_title": "",
-            "hide_title": true,
-            "image": "shopify://shop_images/monteverde_logo.png",
+            "image": "shopify://shop_images/caran_dache_logo.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -172,13 +144,41 @@
             "border_radius": 0
           }
         },
-        "cross": {
+        "montblanc": {
           "type": "collection",
           "settings": {
-            "collection": "caran-dache-ballpoint",
+            "collection": "montblanc-ballpoints",
+            "custom_title": "Montblanc",
+            "hide_title": true,
+            "image": "shopify://shop_images/Mont_Blanc_Logo.png",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "waterman": {
+          "type": "collection",
+          "settings": {
+            "collection": "monteverde-ballpoint",
             "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/caran_dache_logo.png",
+            "image": "shopify://shop_images/monteverde_logo.png",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "collection_4EgVLx": {
+          "type": "collection",
+          "settings": {
+            "collection": "retro-51-ballpoint",
+            "custom_title": "",
+            "hide_title": true,
+            "image": "shopify://shop_images/Retro51_Logo.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -188,11 +188,11 @@
         }
       },
       "block_order": [
-        "montblanc",
-        "collection_4EgVLx",
-        "waterman",
+        "cross",
         "montegrappa",
-        "cross"
+        "montblanc",
+        "waterman",
+        "collection_4EgVLx"
       ],
       "settings": {
         "title": "Popular Brands",
