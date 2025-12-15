@@ -82,33 +82,76 @@
         "padding_bottom": 0
       }
     },
-    "dromgooles_featured_collection_CcaDVn": {
-      "type": "dromgooles-featured-collection",
-      "name": "Featured collection (Dromgoole's)",
+    "dromgooles_collection_grid_RybGCq": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "collection_nkM7QD": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals-rollerballs-copy",
+            "custom_title": "New Arrivals",
+            "hide_title": true,
+            "image": "shopify://shop_images/New_Arrivals_69f7ecfd-e632-4847-8730-58bec7490fb2.png",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "collection_Uq9Lfx": {
+          "type": "collection",
+          "settings": {
+            "collection": "limited-special-edition-ballpoints",
+            "custom_title": "Limited & Special Edition",
+            "hide_title": true,
+            "image": "shopify://shop_images/Limited_Special.png",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "collection_gTX6Xw": {
+          "type": "collection",
+          "settings": {
+            "collection": "pre-owned-ballpoints",
+            "custom_title": "Pre-Owned",
+            "hide_title": true,
+            "image": "shopify://shop_images/Pre_Owned.png",
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_nkM7QD",
+        "collection_Uq9Lfx",
+        "collection_gTX6Xw"
+      ],
       "settings": {
-        "collection": "new-arrivals-rollerballs-copy",
-        "products_to_show": 4,
-        "title": "New Arrivals",
+        "title": "Shop Special Selections",
         "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 3,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "quick_add": "none",
+        "card_style": "standard",
         "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_view_all": true,
-        "view_all_text": "",
-        "view_all_style": "solid",
-        "columns_mobile": "2",
+        "card_min_height": 170,
+        "card_min_height_desktop": 270,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
+        "columns_desktop": 3,
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "color_scheme": "",
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -568,7 +611,7 @@
     "banner",
     "product-grid",
     "hero_slideshow",
-    "dromgooles_featured_collection_CcaDVn",
+    "dromgooles_collection_grid_RybGCq",
     "popular_brands",
     "dromgooles_color_swatches_dQRj9m",
     "ballpoint_refills_slideshow",
