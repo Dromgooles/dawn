@@ -85,13 +85,13 @@
     "special_selections": {
       "type": "dromgooles-collection-grid",
       "blocks": {
-        "pre_owned": {
+        "new_arrivals": {
           "type": "collection",
           "settings": {
-            "collection": "pre-owned-fountain-pens",
-            "custom_title": "Pre-Owned",
+            "collection": "new-arrivals-fountain-pens",
+            "custom_title": "New Arrivals",
             "hide_title": true,
-            "image": "shopify://shop_images/Pre_Owned.png",
+            "image": "shopify://shop_images/New_Arrivals_69f7ecfd-e632-4847-8730-58bec7490fb2.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -113,13 +113,13 @@
             "border_radius": 0
           }
         },
-        "new_arrivals": {
+        "pre_owned": {
           "type": "collection",
           "settings": {
-            "collection": "new-arrivals-fountain-pens",
-            "custom_title": "New Arrivals",
+            "collection": "pre-owned-fountain-pens",
+            "custom_title": "Pre-Owned",
             "hide_title": true,
-            "image": "shopify://shop_images/New_Arrivals_69f7ecfd-e632-4847-8730-58bec7490fb2.png",
+            "image": "shopify://shop_images/Pre_Owned.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -129,9 +129,9 @@
         }
       },
       "block_order": [
-        "pre_owned",
+        "new_arrivals",
         "limited_edition",
-        "new_arrivals"
+        "pre_owned"
       ],
       "settings": {
         "title": "Shop Special Selections",
