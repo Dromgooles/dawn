@@ -378,7 +378,7 @@
         "image_ratio": "contain",
         "max_image_height": 80,
         "button_label": "...and many more!",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://collections/all-products",
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "none",
