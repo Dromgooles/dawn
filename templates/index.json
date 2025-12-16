@@ -27,7 +27,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
         "slide_mTiPj7": {
@@ -45,7 +48,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
         "slide_2": {
@@ -63,7 +69,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
         "slide_TPKhRt": {
@@ -81,7 +90,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
         "slide_r6hEyn": {
@@ -99,7 +111,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         }
       },
@@ -160,10 +175,13 @@
         "show_rating": false,
         "show_view_all": true,
         "view_all_text": "",
-        "view_all_style": "outline",
+        "view_all_style": "solid",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
+        "button_background": "#0b3c5d",
+        "button_text_color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 36
       }
@@ -225,6 +243,7 @@
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
@@ -279,6 +298,7 @@
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
@@ -318,10 +338,13 @@
         "show_rating": false,
         "show_view_all": true,
         "view_all_text": "",
-        "view_all_style": "outline",
+        "view_all_style": "solid",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
+        "button_background": "#0b3c5d",
+        "button_text_color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 36
       }
@@ -400,6 +423,9 @@
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
+        "button_background": "#0b3c5d",
+        "button_text_color": "#ffffff",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
