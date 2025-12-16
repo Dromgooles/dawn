@@ -1,10 +1,10 @@
 /**
- * Dromgoole's Brands Alphabetical Index
+ * Dromgoole's All Brands Alphabetical Index
  *
  * Adds iOS Contacts-style alphabetical grouping and quick letter
- * navigation to the Brands menu in the header drawer.
+ * navigation to the All Brands menu in the header drawer.
  *
- * Pure overlay - detects and transforms the existing Brands submenu
+ * Pure overlay - detects and transforms the existing All Brands submenu
  * without modifying core Dawn files.
  *
  * @see dromgooles-brands-index.css
@@ -13,9 +13,9 @@
 (function () {
   'use strict';
 
-  // Configuration - the ID of the Brands submenu container
-  // This is a first-level submenu, so it uses "link-brands" pattern
-  const BRANDS_SUBMENU_ID = 'link-brands';
+  // Configuration - the ID of the All Brands submenu container
+  // This is a first-level submenu, so it uses "link-all-brands" pattern
+  const BRANDS_SUBMENU_ID = 'link-all-brands';
 
   let initialized = false;
   let brandsSubmenu = null;
@@ -26,6 +26,7 @@
   let availableLetters = new Set();
   let isDragging = false;
   let indicatorTimeout = null;
+  let searchInput = null;
 
   /**
    * Check if our elements are still in the DOM
@@ -46,6 +47,7 @@
     letterHeaders = new Map();
     availableLetters = new Set();
     isDragging = false;
+    searchInput = null;
     if (indicatorTimeout) {
       clearTimeout(indicatorTimeout);
       indicatorTimeout = null;
@@ -84,6 +86,9 @@
     // Create the indexed list structure
     createIndexedList(menuList, groupedBrands);
 
+    // Create the search bar
+    createSearchBar();
+
     // Create the letter navigation bar
     createLetterBar();
 
@@ -92,6 +97,77 @@
 
     // Set up scroll tracking
     setupScrollTracking();
+  }
+
+  /**
+   * Create the search bar
+   */
+  function createSearchBar() {
+    const searchContainer = document.createElement('div');
+    searchContainer.className = 'brands-search-container';
+
+    searchInput = document.createElement('input');
+    searchInput.type = 'text';
+    searchInput.className = 'brands-search-input';
+    searchInput.placeholder = 'Search brands...';
+    searchInput.setAttribute('aria-label', 'Search brands');
+
+    searchContainer.appendChild(searchInput);
+
+    // Insert search bar at the top of the submenu inner content
+    const innerSubmenu = brandsSubmenu.querySelector('.menu-drawer__inner-submenu');
+    if (innerSubmenu) {
+      innerSubmenu.insertBefore(searchContainer, innerSubmenu.firstChild);
+    } else {
+      brandsSubmenu.insertBefore(searchContainer, brandsSubmenu.firstChild);
+    }
+
+    // Add search event listener
+    searchInput.addEventListener('input', handleSearch);
+  }
+
+  /**
+   * Handle search input
+   */
+  function handleSearch(event) {
+    const query = event.target.value.toLowerCase().trim();
+
+    if (!listContainer) return;
+
+    const allGroups = listContainer.querySelectorAll('.brands-letter-group');
+    const allHeaders = listContainer.querySelectorAll('.brands-letter-header');
+
+    if (query.length === 0) {
+      // Show all items
+      allGroups.forEach((group) => {
+        group.style.display = '';
+      });
+      allHeaders.forEach((header) => {
+        header.style.display = '';
+      });
+    } else {
+      // Filter items
+      allGroups.forEach((group) => {
+        const items = group.querySelectorAll('.menu-drawer__menu-item');
+        let visibleCount = 0;
+
+        items.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          const isMatch = text.includes(query);
+          item.style.display = isMatch ? '' : 'none';
+          if (isMatch) visibleCount++;
+        });
+
+        // Show group if it has matching items
+        group.style.display = visibleCount > 0 ? '' : 'none';
+      });
+
+      // Show/hide headers based on adjacent group visibility
+      allHeaders.forEach((header) => {
+        const nextGroup = header.nextElementSibling;
+        header.style.display = nextGroup && nextGroup.style.display !== 'none' ? '' : 'none';
+      });
+    }
   }
 
   /**

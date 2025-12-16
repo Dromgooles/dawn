@@ -30,7 +30,22 @@ Add **ONE line** to `layout/theme.liquid` after the base.css stylesheet tag (aro
 
 This is the **only** modification needed to any Dawn base file.
 
-## Custom Files
+## Assets
+
+### assets/dromgooles-brands-index.js & assets/dromgooles-brands-index.css
+
+iOS Contacts-style alphabetical grouping and quick letter navigation for the "All Brands" menu in the header drawer.
+
+**Features:**
+- Alphabetical letter navigation sidebar with smooth scrolling
+- Real-time brand search input field (corner radius: 8px)
+- Letter headers that stick to the top while scrolling
+- Disabled letter buttons for unavailable sections
+- Visual indicator showing current letter position
+- Touch-friendly letter navigation with drag support
+- Responsive design that hides letter bar on very small screens
+
+**Note:** This script targets the menu link with ID `link-all-brands`, which corresponds to a menu item named "All Brands" in Shopify admin navigation.
 
 ### assets/dromgooles.css
 
