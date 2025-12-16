@@ -1,14 +1,43 @@
 /**
- * Dromgoole's Brands Alphabetical Index (Styles)
+ * Dromgoole's All Brands Alphabetical Index (Styles)
  *
  * Adds iOS Contacts-style alphabetical grouping and quick letter
- * navigation to the Brands menu in the header drawer.
+ * navigation to the All Brands menu in the header drawer.
  *
  * Pure overlay - targets existing Dawn classes plus classes added
  * dynamically by dromgooles-brands-index.js.
  *
  * @see dromgooles-brands-index.js
  */
+
+/* Search container */
+.brands-search-container {
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem; /* Leave space for the letter bar */
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+}
+
+.brands-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.4rem;
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  border-radius: 0.8rem;
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.brands-search-input:focus {
+  outline: none;
+  border-color: rgba(var(--color-foreground), 0.4);
+}
+
+.brands-search-input::placeholder {
+  color: rgba(var(--color-foreground), 0.5);
+}
 
 /* Container for brands submenu with index (class added by JS) */
 .menu-drawer__submenu--brands-indexed {
