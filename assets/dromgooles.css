@@ -21,6 +21,8 @@
  * 11. Responsive Adjustments
  */
 
+/* MARK: - CSS Custom Property Extensions */
+
 /* ============================================
    1. CSS Custom Property Extensions
    
@@ -39,6 +41,8 @@
   --dromgooles-blue-hex: #0b3c5d;
   --dromgooles-gray-hex: #d1d1d1;
 }
+
+/* MARK: - Typography Utilities */
 
 /* ============================================
    2. Typography Utilities
@@ -91,6 +95,8 @@
 .title-wrapper--right {
   text-align: right;
 }
+
+/* MARK: - Color Background Utilities */
 
 /* ============================================
    3. Color Background Utilities
@@ -201,6 +207,8 @@
   background-color: inherit !important;
 }
 
+/* MARK: - Border Radius Utilities */
+
 /* ============================================
    4. Border Radius Utilities
    ============================================ */
@@ -237,6 +245,8 @@
 .border-radius-30 {
   border-radius: 30px !important;
 }
+
+/* MARK: - Layout & Spacing Utilities */
 
 /* ============================================
    5. Layout & Spacing Utilities
@@ -315,6 +325,8 @@
   Do NOT redefine these - it breaks Dawn's responsive image system.
 */
 
+/* MARK: - Card & Product Grid Customizations */
+
 /* ============================================
    6. Card & Product Grid Customizations
    ============================================ */
@@ -348,6 +360,8 @@
 .featured-product-grid .grid__item {
   padding: var(--grid-desktop-vertical-spacing);
 }
+
+/* MARK: - Header Enhancements */
 
 /* ============================================
    7. Header Enhancements
@@ -387,6 +401,8 @@
   display: none;
 }
 
+/* MARK: - Slider & Carousel Fixes */
+
 /* ============================================
    8. Slider & Carousel Fixes
    ============================================ */
@@ -418,6 +434,8 @@
   }
 }
 
+/* MARK: - Footer Customizations */
+
 /* ============================================
    9. Footer Customizations
    ============================================ */
@@ -428,6 +446,8 @@
   max-width: 100%;
   height: auto;
 }
+
+/* MARK: - Component-Specific Overrides */
 
 /* ============================================
    10. Component-Specific Overrides
@@ -463,6 +483,8 @@
 .card__badge {
   z-index: 1;
 }
+
+/* MARK: - Responsive Adjustments */
 
 /* ============================================
    11. Responsive Adjustments
@@ -524,6 +546,8 @@
     color: black !important;
   }
 }
+
+/* MARK: - Custom Product Page Placeholder Gallery */
 
 /* ============================================
    12. Custom Product Page Placeholder Gallery

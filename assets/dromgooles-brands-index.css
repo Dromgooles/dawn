@@ -10,6 +10,8 @@
  * @see dromgooles-brands-index.js
  */
 
+/* MARK: - Search Bar */
+
 /* Search container */
 .brands-search-container {
   padding: 1rem;
@@ -38,6 +40,8 @@
 .brands-search-input::placeholder {
   color: rgba(var(--color-foreground), 0.5);
 }
+
+/* MARK: - List Styling */
 
 /* Container for brands submenu with index (class added by JS) */
 .menu-drawer__submenu--brands-indexed {
@@ -87,6 +91,8 @@
 .brands-letter-group .menu-drawer__menu-item {
   padding-left: 3rem;
 }
+
+/* MARK: - Letter Navigation Bar */
 
 /* Quick letter navigation bar */
 .brands-letter-bar {
@@ -141,6 +147,8 @@
   pointer-events: none;
 }
 
+/* MARK: - Letter Indicator */
+
 /* Touch feedback indicator */
 .brands-letter-indicator {
   position: absolute;
@@ -170,6 +178,8 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* MARK: - Layout Adjustments & Responsive */
 
 /* Adjust close button to not overlap */
 .menu-drawer__submenu--brands-indexed .menu-drawer__close-button {
