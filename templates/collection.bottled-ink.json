@@ -58,9 +58,9 @@
             "text_alignment": "left",
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1",
-            "heading_color": "",
-            "button_background": "",
-            "button_text_color": ""
+            "heading_color": "#0b3c5d",
+            "button_background": "#0b3c5d",
+            "button_text_color": "#ffffff"
           }
         }
       },
