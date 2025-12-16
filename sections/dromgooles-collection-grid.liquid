@@ -41,7 +41,7 @@
 
   /* Dromgoole's: Custom color overrides */
   {%- if section.settings.heading_color != blank and section.settings.heading_color != 'rgba(0,0,0,0)' -%}
-    .section-{{ section.id }}-padding .title {
+    .section-{{ section.id }}-padding .collection-list-title {
       color: {{ section.settings.heading_color }};
     }
   {%- endif -%}
