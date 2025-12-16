@@ -117,7 +117,7 @@
     // Insert search bar after the back button (close-button)
     const innerSubmenu = brandsSubmenu.querySelector('.menu-drawer__inner-submenu');
     const closeButton = innerSubmenu?.querySelector('.menu-drawer__close-button');
-    
+
     if (closeButton && closeButton.nextSibling) {
       closeButton.parentNode.insertBefore(searchContainer, closeButton.nextSibling);
     } else if (innerSubmenu) {
