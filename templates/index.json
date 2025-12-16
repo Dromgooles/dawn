@@ -176,113 +176,177 @@
         "padding_bottom": 36
       }
     },
-    "collection_list": {
-      "type": "dromgooles-collection-list",
+    "dromgooles_collection_grid_FREYMP": {
+      "type": "dromgooles-collection-grid",
       "blocks": {
-        "collection_fountain_pens": {
-          "type": "featured_collection",
+        "collection_Y7JwmM": {
+          "type": "collection",
           "settings": {
             "collection": "fountain-pens",
-            "custom_title": "Fountain Pens"
+            "custom_title": "Fountain Pens",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "collection_rollerballs": {
-          "type": "featured_collection",
+        "collection_nT8h3q": {
+          "type": "collection",
           "settings": {
             "collection": "rollerballs",
-            "custom_title": "Rollerballs & Fineliners"
+            "custom_title": "Rollerballs & Fineliners",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "collection_ballpoints": {
-          "type": "featured_collection",
+        "collection_WNi9Cw": {
+          "type": "collection",
           "settings": {
             "collection": "ballpoints",
-            "custom_title": "Ballpoints"
+            "custom_title": "Ballpoints",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "collection_stationery": {
-          "type": "featured_collection",
+        "collection_h9MiJQ": {
+          "type": "collection",
           "settings": {
             "collection": "bottled-ink",
-            "custom_title": ""
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
       "block_order": [
-        "collection_fountain_pens",
-        "collection_rollerballs",
-        "collection_ballpoints",
-        "collection_stationery"
+        "collection_Y7JwmM",
+        "collection_nT8h3q",
+        "collection_WNi9Cw",
+        "collection_h9MiJQ"
       ],
-      "name": "Collection list",
+      "name": "Collection Grid (Advanced)",
       "settings": {
         "title": "Pens & Ink",
         "heading_size": "h1",
         "header_alignment": "center",
-        "grid_alignment": "left",
+        "description": "",
+        "card_style": "standard",
         "image_ratio": "square",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "heading_color": "#0b3c5d",
-        "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "",
+        "heading_color": "#0b3c5d",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "collection_list_jg4aXn": {
-      "type": "dromgooles-collection-list",
+    "dromgooles_collection_grid_znefBT": {
+      "type": "dromgooles-collection-grid",
       "blocks": {
-        "featured_collection_notebooks": {
-          "type": "featured_collection",
+        "collection_ccKygV": {
+          "type": "collection",
           "settings": {
-            "collection": "notebooks-journals",
-            "custom_title": "Notebooks & Journals"
+            "collection": "journals-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "featured_collection_qPAT4V": {
-          "type": "featured_collection",
+        "collection_KXYrKh": {
+          "type": "collection",
           "settings": {
             "collection": "accessories",
-            "custom_title": "Accessories"
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "featured_collection_Dxbnbm": {
-          "type": "featured_collection",
+        "collection_fNqChL": {
+          "type": "collection",
           "settings": {
             "collection": "calendars-agendas",
-            "custom_title": "Calendars & Agendas"
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "featured_collection_RefGcm": {
-          "type": "featured_collection",
+        "collection_jA7qkD": {
+          "type": "collection",
           "settings": {
             "collection": "stationery",
-            "custom_title": "Stationery & Supplies"
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
       "block_order": [
-        "featured_collection_notebooks",
-        "featured_collection_qPAT4V",
-        "featured_collection_Dxbnbm",
-        "featured_collection_RefGcm"
+        "collection_ccKygV",
+        "collection_KXYrKh",
+        "collection_fNqChL",
+        "collection_jA7qkD"
       ],
-      "name": "Collection list",
+      "name": "Collection Grid (Advanced)",
       "settings": {
         "title": "Stationery & Paper",
         "heading_size": "h1",
         "header_alignment": "center",
-        "grid_alignment": "center",
+        "description": "",
+        "card_style": "standard",
         "image_ratio": "square",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "heading_color": "#0b3c5d",
-        "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "",
+        "heading_color": "#0b3c5d",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -440,8 +504,8 @@
   "order": [
     "dromgooles_slideshow",
     "featured_collection",
-    "collection_list",
-    "collection_list_jg4aXn",
+    "dromgooles_collection_grid_FREYMP",
+    "dromgooles_collection_grid_znefBT",
     "featured_collection_last_chance",
     "dromgooles_collection_grid_Wjy4ma",
     "1765569591b6aabb90"
