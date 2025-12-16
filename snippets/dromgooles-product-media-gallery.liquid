@@ -2,7 +2,11 @@
   Dromgoole's Product Media Gallery
 
   Wraps Dawn's product-media-gallery with placeholder fallback when
-  the product has no media.
+  product has no media.
+
+  Based on: snippets/product-media-gallery.liquid (wrapper)
+  Customizations:
+    - Renders coming_soon.jpg when product.media.size == 0
 
   Accepts:
     - product: {Object} Product liquid object (defaults to current product)

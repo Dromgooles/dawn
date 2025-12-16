@@ -1,13 +1,16 @@
 {% comment %}
-  Dromgoole's Footer
+  Dromgoole's Footer (DRO Footer)
 
   Fully block-based footer with reorderable columns.
 
-  Based on: Dawn footer
+  Based on: sections/footer.liquid
   Block types:
     - Brand: Logo, tagline, contact info, store hours
     - Menu: Navigation menu column
     - Newsletter: Email signup with first/last name fields
+
+  Usage:
+    Assigned to footer section group in theme settings
 {% endcomment %}
 
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
