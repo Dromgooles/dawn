@@ -197,16 +197,6 @@
         "accessibility_info": "Starter pen collection button"
       }
     },
-    "dromgooles_spacer_eYxKTt": {
-      "type": "dromgooles-spacer",
-      "name": "Spacer",
-      "settings": {
-        "height_desktop": 40,
-        "height_mobile": 20,
-        "show_background": false,
-        "color_scheme": ""
-      }
-    },
     "slideshow_KqjFz9": {
       "type": "slideshow",
       "blocks": {

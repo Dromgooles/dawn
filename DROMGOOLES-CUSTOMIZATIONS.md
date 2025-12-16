@@ -181,10 +181,6 @@ Promotional banner section with:
 
 Custom footer with block-based columns for menus, brand info, and newsletter signup.
 
-### dromgooles-spacer.liquid
-
-Simple vertical spacing section with configurable height.
-
 ### dromgooles-multicolumn.liquid
 
 Multi-column content layout section.

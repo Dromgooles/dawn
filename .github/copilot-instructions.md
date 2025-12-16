@@ -333,7 +333,6 @@ This is especially important for:
 | `dromgooles-main-product.liquid` | Product page | Custom product template with placeholder image fallback |
 | `dromgooles-collection-list.liquid` | Collection listing | Custom collection list display |
 | `dromgooles-multicolumn.liquid` | Multi-column content | Flexible column layout section |
-| `dromgooles-spacer.liquid` | Vertical spacing | Configurable spacing between sections |
 
 ## Custom Dromgoole's Snippets
 
