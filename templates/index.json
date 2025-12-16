@@ -126,6 +126,7 @@
         "slide_r6hEyn"
       ],
       "settings": {
+        "name": "DRO Slideshow",
         "media_link": true,
         "layout": "full_bleed",
         "slide_height": "custom_ratio",
@@ -238,7 +239,7 @@
         "collection_WNi9Cw",
         "collection_h9MiJQ"
       ],
-      "name": "Collection Grid (Advanced)",
+      "name": "DRO Collection Grid",
       "settings": {
         "title": "Pens & Ink",
         "heading_size": "h1",
@@ -325,7 +326,7 @@
         "collection_fNqChL",
         "collection_jA7qkD"
       ],
-      "name": "Collection Grid (Advanced)",
+      "name": "DRO Collection Grid",
       "settings": {
         "title": "Stationery & Paper",
         "heading_size": "h1",
@@ -446,7 +447,7 @@
         "collection_ENejwP",
         "collection_ULgeKe"
       ],
-      "name": "Collection Grid (Advanced)",
+      "name": "DRO Collection Grid",
       "settings": {
         "title": "Trusted Quality",
         "heading_size": "h1",
