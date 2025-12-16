@@ -49,7 +49,7 @@
             "link": "shopify://collections/all-rollerballs",
             "image_overlay_opacity": 0,
             "heading": "Rollerball Pens",
-            "heading_size": "h0",
+            "heading_size": "h1",
             "subheading": "Discover our curated collection of premium rollerball pens from top brands worldwide.",
             "button_label": "Shop All Rollerballs",
             "button_style_secondary": false,
@@ -152,6 +152,7 @@
         "view_all_text": "",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -241,6 +242,7 @@
         "view_all_text": "",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
