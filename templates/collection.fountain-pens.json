@@ -57,7 +57,10 @@
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "color_scheme": "scheme-6"
+            "color_scheme": "scheme-6",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         }
       },
@@ -356,6 +359,7 @@
         "view_all_text": "",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -575,6 +579,7 @@
         "swatch_size": 150,
         "show_label_inside": true,
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -649,6 +654,7 @@
         "view_all_text": "",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -769,6 +775,7 @@
         "view_all_text": "",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -855,6 +862,7 @@
         "view_all_text": "",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }

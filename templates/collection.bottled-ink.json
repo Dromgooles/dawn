@@ -57,7 +57,10 @@
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         }
       },
@@ -216,6 +219,7 @@
         "swatch_size": 150,
         "show_label_inside": true,
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -437,6 +441,7 @@
         "view_all_text": "",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
