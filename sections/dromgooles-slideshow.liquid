@@ -208,21 +208,21 @@
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
-        
+
         /* Dromgoole's: Custom color overrides */
         {%- if block.settings.heading_color != blank and block.settings.heading_color != 'rgba(0,0,0,0)' -%}
           #Slide-{{ section.id }}-{{ forloop.index }} .banner__heading {
             color: {{ block.settings.heading_color }};
           }
         {%- endif -%}
-        
+
         {%- if block.settings.button_background != blank and block.settings.button_background != 'rgba(0,0,0,0)' -%}
           #Slide-{{ section.id }}-{{ forloop.index }} .button:not(.button--secondary) {
             background-color: {{ block.settings.button_background }};
             border-color: {{ block.settings.button_background }};
           }
         {%- endif -%}
-        
+
         {%- if block.settings.button_text_color != blank and block.settings.button_text_color != 'rgba(0,0,0,0)' -%}
           #Slide-{{ section.id }}-{{ forloop.index }} .button:not(.button--secondary) {
             color: {{ block.settings.button_text_color }};
