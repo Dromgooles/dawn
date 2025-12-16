@@ -319,76 +319,91 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_brands": {
-      "type": "dromgooles-multicolumn",
+    "dromgooles_collection_grid_Wjy4ma": {
+      "type": "dromgooles-collection-grid",
       "blocks": {
-        "brand_1": {
-          "type": "column",
+        "collection_mwQJqC": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/colorverse_logo.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify://collections/all-colorverse"
+            "collection": "all-diamine",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "brand_2": {
-          "type": "column",
+        "collection_QtapVJ": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/tc_logo.webp",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify://collections/all-travelers-company"
+            "collection": "all-montblanc",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "brand_3": {
-          "type": "column",
+        "collection_ENejwP": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/montblanc_logo_1.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify://collections/all-montblanc"
+            "collection": "all-plotter",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "brand_4": {
-          "type": "column",
+        "collection_ULgeKe": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Leuchtturm1917_LOGO.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "collection": "sailor-all",
+            "custom_title": "",
+            "hide_title": true,
+            "image": "shopify://shop_images/sailor_logo.webp",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
       "block_order": [
-        "brand_1",
-        "brand_2",
-        "brand_3",
-        "brand_4"
+        "collection_mwQJqC",
+        "collection_QtapVJ",
+        "collection_ENejwP",
+        "collection_ULgeKe"
       ],
-      "name": "Multicolumn",
+      "name": "Collection Grid (Advanced)",
       "settings": {
         "title": "Trusted Quality",
         "heading_size": "h1",
         "header_alignment": "center",
-        "image_width": "full",
-        "image_ratio": "contain",
-        "max_image_height": 80,
-        "button_label": "",
-        "button_link": "shopify://collections/all-products",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "adapt",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "heading_color": "#0b3c5d",
-        "button_background": "#0b3c5d",
-        "button_text_color": "#ffffff",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "",
+        "heading_color": "#0b3c5d",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -428,7 +443,7 @@
     "collection_list",
     "collection_list_jg4aXn",
     "featured_collection_last_chance",
-    "multicolumn_brands",
+    "dromgooles_collection_grid_Wjy4ma",
     "1765569591b6aabb90"
   ]
 }
