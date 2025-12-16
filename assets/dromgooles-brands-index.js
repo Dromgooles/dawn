@@ -114,9 +114,13 @@
 
     searchContainer.appendChild(searchInput);
 
-    // Insert search bar at the top of the submenu inner content
+    // Insert search bar after the back button (close-button)
     const innerSubmenu = brandsSubmenu.querySelector('.menu-drawer__inner-submenu');
-    if (innerSubmenu) {
+    const closeButton = innerSubmenu?.querySelector('.menu-drawer__close-button');
+    
+    if (closeButton && closeButton.nextSibling) {
+      closeButton.parentNode.insertBefore(searchContainer, closeButton.nextSibling);
+    } else if (innerSubmenu) {
       innerSubmenu.insertBefore(searchContainer, innerSubmenu.firstChild);
     } else {
       brandsSubmenu.insertBefore(searchContainer, brandsSubmenu.firstChild);
@@ -138,9 +142,14 @@
     const allHeaders = listContainer.querySelectorAll('.brands-letter-header');
 
     if (query.length === 0) {
-      // Show all items
+      // Show all items, groups, and headers
       allGroups.forEach((group) => {
         group.style.display = '';
+        // Reset all items within the group
+        const items = group.querySelectorAll('.menu-drawer__menu-item');
+        items.forEach((item) => {
+          item.style.display = '';
+        });
       });
       allHeaders.forEach((header) => {
         header.style.display = '';
