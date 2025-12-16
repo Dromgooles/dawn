@@ -26,6 +26,27 @@
     }
   }
 
+  /* Dromgoole's: Custom color overrides */
+  {%- if section.settings.heading_color != blank and section.settings.heading_color != 'rgba(0,0,0,0)' -%}
+    .section-{{ section.id }} .multicolumn__title,
+    .section-{{ section.id }} .title {
+      color: {{ section.settings.heading_color }};
+    }
+  {%- endif -%}
+
+  {%- if section.settings.button_background != blank and section.settings.button_background != 'rgba(0,0,0,0)' -%}
+    .section-{{ section.id }} .button:not(.button--secondary) {
+      background-color: {{ section.settings.button_background }};
+      border-color: {{ section.settings.button_background }};
+    }
+  {%- endif -%}
+
+  {%- if section.settings.button_text_color != blank and section.settings.button_text_color != 'rgba(0,0,0,0)' -%}
+    .section-{{ section.id }} .button:not(.button--secondary) {
+      color: {{ section.settings.button_text_color }};
+    }
+  {%- endif -%}
+
   {%- if section.settings.header_alignment == 'center' -%}
     .section-{{ section.id }} .title-wrapper-with-link {
       justify-content: center;
@@ -435,6 +456,29 @@
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Custom color overrides"
+    },
+    {
+      "type": "paragraph",
+      "content": "Override specific colors without changing the entire color scheme. Leave blank to use scheme colors."
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color"
     },
     {
       "type": "header",
