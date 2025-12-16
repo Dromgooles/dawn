@@ -331,7 +331,6 @@ This is especially important for:
 | `dromgooles-featured-collection.liquid` | Collection grid | Header alignment options (left/center/right) |
 | `dromgooles-footer.liquid` | Site footer | Block-based columns (brand, menu, newsletter), dynamic grid |
 | `dromgooles-main-product.liquid` | Product page | Custom product template with placeholder image fallback |
-| `dromgooles-collection-list.liquid` | Collection listing | Custom collection list display |
 | `dromgooles-multicolumn.liquid` | Multi-column content | Flexible column layout section |
 
 ## Custom Dromgoole's Snippets
