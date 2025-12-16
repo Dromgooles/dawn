@@ -27,7 +27,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
         "slide_mTiPj7": {
@@ -45,7 +48,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
         "slide_2": {
@@ -63,7 +69,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
         "slide_TPKhRt": {
@@ -81,7 +90,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         },
         "slide_r6hEyn": {
@@ -99,7 +111,10 @@
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         }
       },
@@ -128,16 +143,6 @@
         "padding_bottom": 0
       }
     },
-    "dromgooles_spacer_hihXbe": {
-      "type": "dromgooles-spacer",
-      "name": "Spacer",
-      "settings": {
-        "height_desktop": 40,
-        "height_mobile": 20,
-        "show_background": false,
-        "color_scheme": ""
-      }
-    },
     "featured_collection": {
       "type": "dromgooles-featured-collection",
       "settings": {
@@ -159,141 +164,190 @@
         "show_vendor": false,
         "show_rating": false,
         "show_view_all": true,
-        "view_all_text": "",
-        "view_all_style": "outline",
+        "view_all_text": "View collection",
+        "view_all_style": "solid",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
+        "button_background": "#0b3c5d",
+        "button_text_color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 36
       }
     },
-    "dromgooles_spacer_qab9Cp": {
-      "type": "dromgooles-spacer",
-      "name": "Spacer",
-      "settings": {
-        "height_desktop": 40,
-        "height_mobile": 20,
-        "show_background": false,
-        "color_scheme": ""
-      }
-    },
-    "collection_list": {
-      "type": "dromgooles-collection-list",
+    "dromgooles_collection_grid_FREYMP": {
+      "type": "dromgooles-collection-grid",
       "blocks": {
-        "collection_fountain_pens": {
-          "type": "featured_collection",
+        "collection_Y7JwmM": {
+          "type": "collection",
           "settings": {
             "collection": "fountain-pens",
-            "custom_title": "Fountain Pens"
+            "custom_title": "Fountain Pens",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "collection_rollerballs": {
-          "type": "featured_collection",
+        "collection_nT8h3q": {
+          "type": "collection",
           "settings": {
             "collection": "rollerballs",
-            "custom_title": "Rollerballs & Fineliners"
+            "custom_title": "Rollerballs & Fineliners",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "collection_ballpoints": {
-          "type": "featured_collection",
+        "collection_WNi9Cw": {
+          "type": "collection",
           "settings": {
             "collection": "ballpoints",
-            "custom_title": "Ballpoints"
+            "custom_title": "Ballpoints",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "collection_stationery": {
-          "type": "featured_collection",
+        "collection_h9MiJQ": {
+          "type": "collection",
           "settings": {
             "collection": "bottled-ink",
-            "custom_title": ""
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
       "block_order": [
-        "collection_fountain_pens",
-        "collection_rollerballs",
-        "collection_ballpoints",
-        "collection_stationery"
+        "collection_Y7JwmM",
+        "collection_nT8h3q",
+        "collection_WNi9Cw",
+        "collection_h9MiJQ"
       ],
-      "name": "Collection list",
+      "name": "Collection Grid (Advanced)",
       "settings": {
         "title": "Pens & Ink",
         "heading_size": "h1",
         "header_alignment": "center",
-        "grid_alignment": "left",
+        "description": "",
+        "card_style": "standard",
         "image_ratio": "square",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "",
+        "heading_color": "#0b3c5d",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "collection_list_jg4aXn": {
-      "type": "dromgooles-collection-list",
+    "dromgooles_collection_grid_znefBT": {
+      "type": "dromgooles-collection-grid",
       "blocks": {
-        "featured_collection_notebooks": {
-          "type": "featured_collection",
+        "collection_ccKygV": {
+          "type": "collection",
           "settings": {
-            "collection": "notebooks-journals",
-            "custom_title": "Notebooks & Journals"
+            "collection": "journals-notebooks",
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "featured_collection_qPAT4V": {
-          "type": "featured_collection",
+        "collection_KXYrKh": {
+          "type": "collection",
           "settings": {
             "collection": "accessories",
-            "custom_title": "Accessories"
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "featured_collection_Dxbnbm": {
-          "type": "featured_collection",
+        "collection_fNqChL": {
+          "type": "collection",
           "settings": {
             "collection": "calendars-agendas",
-            "custom_title": "Calendars & Agendas"
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "featured_collection_RefGcm": {
-          "type": "featured_collection",
+        "collection_jA7qkD": {
+          "type": "collection",
           "settings": {
             "collection": "stationery",
-            "custom_title": "Stationery & Supplies"
+            "custom_title": "",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
       "block_order": [
-        "featured_collection_notebooks",
-        "featured_collection_qPAT4V",
-        "featured_collection_Dxbnbm",
-        "featured_collection_RefGcm"
+        "collection_ccKygV",
+        "collection_KXYrKh",
+        "collection_fNqChL",
+        "collection_jA7qkD"
       ],
-      "name": "Collection list",
+      "name": "Collection Grid (Advanced)",
       "settings": {
         "title": "Stationery & Paper",
         "heading_size": "h1",
         "header_alignment": "center",
-        "grid_alignment": "center",
+        "description": "",
+        "card_style": "standard",
         "image_ratio": "square",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "",
+        "heading_color": "#0b3c5d",
+        "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "dromgooles_spacer_8iWU9d": {
-      "type": "dromgooles-spacer",
-      "name": "Spacer",
-      "settings": {
-        "height_desktop": 40,
-        "height_mobile": 20,
-        "show_background": false,
-        "color_scheme": ""
       }
     },
     "featured_collection_last_chance": {
@@ -317,103 +371,104 @@
         "show_vendor": false,
         "show_rating": false,
         "show_view_all": true,
-        "view_all_text": "",
-        "view_all_style": "outline",
+        "view_all_text": "View collection",
+        "view_all_style": "solid",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
+        "button_background": "#0b3c5d",
+        "button_text_color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 36
       }
     },
-    "dromgooles_spacer_TfTUj3": {
-      "type": "dromgooles-spacer",
-      "name": "Spacer",
-      "settings": {
-        "height_desktop": 40,
-        "height_mobile": 20,
-        "show_background": false,
-        "color_scheme": ""
-      }
-    },
-    "multicolumn_brands": {
-      "type": "dromgooles-multicolumn",
+    "dromgooles_collection_grid_Wjy4ma": {
+      "type": "dromgooles-collection-grid",
       "blocks": {
-        "brand_1": {
-          "type": "column",
+        "collection_mwQJqC": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/colorverse_logo.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify://collections/all-colorverse"
+            "collection": "all-diamine",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "brand_2": {
-          "type": "column",
+        "collection_QtapVJ": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/tc_logo.webp",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify://collections/all-travelers-company"
+            "collection": "all-montblanc",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "brand_3": {
-          "type": "column",
+        "collection_ENejwP": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/montblanc_logo_1.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify://collections/all-montblanc"
+            "collection": "all-plotter",
+            "custom_title": "",
+            "hide_title": true,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         },
-        "brand_4": {
-          "type": "column",
+        "collection_ULgeKe": {
+          "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/Leuchtturm1917_LOGO.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "collection": "sailor-all",
+            "custom_title": "",
+            "hide_title": true,
+            "image": "shopify://shop_images/sailor_logo.webp",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
           }
         }
       },
       "block_order": [
-        "brand_1",
-        "brand_2",
-        "brand_3",
-        "brand_4"
+        "collection_mwQJqC",
+        "collection_QtapVJ",
+        "collection_ENejwP",
+        "collection_ULgeKe"
       ],
-      "name": "Multicolumn",
+      "name": "Collection Grid (Advanced)",
       "settings": {
         "title": "Trusted Quality",
         "heading_size": "h1",
         "header_alignment": "center",
-        "image_width": "full",
-        "image_ratio": "contain",
-        "max_image_height": 80,
-        "button_label": "...and many more!",
-        "button_link": "shopify://collections/all",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "adapt",
+        "card_min_height": 0,
+        "card_min_height_desktop": 0,
+        "title_alignment": "center",
+        "title_size": "h5",
+        "title_spacing": 10,
         "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "show_view_all": false,
+        "view_all_text": "View all",
+        "view_all_link": "",
+        "color_scheme": "",
+        "heading_color": "#0b3c5d",
+        "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "dromgooles_spacer_kEEaDD": {
-      "type": "dromgooles-spacer",
-      "name": "Spacer",
-      "settings": {
-        "height_desktop": 40,
-        "height_mobile": 20,
-        "show_background": false,
-        "color_scheme": ""
       }
     },
     "1765569591b6aabb90": {
@@ -448,16 +503,11 @@
   },
   "order": [
     "dromgooles_slideshow",
-    "dromgooles_spacer_hihXbe",
     "featured_collection",
-    "dromgooles_spacer_qab9Cp",
-    "collection_list",
-    "collection_list_jg4aXn",
-    "dromgooles_spacer_8iWU9d",
+    "dromgooles_collection_grid_FREYMP",
+    "dromgooles_collection_grid_znefBT",
     "featured_collection_last_chance",
-    "dromgooles_spacer_TfTUj3",
-    "multicolumn_brands",
-    "dromgooles_spacer_kEEaDD",
+    "dromgooles_collection_grid_Wjy4ma",
     "1765569591b6aabb90"
   ]
 }

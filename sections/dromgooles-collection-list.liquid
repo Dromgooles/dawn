@@ -27,6 +27,14 @@
     }
   }
 
+  /* Dromgoole's: Custom color overrides */
+  {%- if section.settings.heading_color != blank and section.settings.heading_color != 'rgba(0,0,0,0)' -%}
+    .section-{{ section.id }} .collection-list-title,
+    .section-{{ section.id }} .title {
+      color: {{ section.settings.heading_color }};
+    }
+  {%- endif -%}
+
   {%- if section.settings.header_alignment == 'center' -%}
     .section-{{ section.id }} .title-wrapper-with-link {
       justify-content: center;
@@ -283,6 +291,19 @@
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Custom color overrides"
+    },
+    {
+      "type": "paragraph",
+      "content": "Override specific colors without changing the entire color scheme. Leave blank to use scheme colors."
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
     },
     {
       "type": "checkbox",

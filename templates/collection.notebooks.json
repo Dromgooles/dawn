@@ -57,7 +57,10 @@
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "#0b3c5d",
+            "button_background": "#0b3c5d",
+            "button_text_color": "#ffffff"
           }
         }
       },
@@ -192,6 +195,7 @@
         "view_all_text": "View all",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -346,6 +350,7 @@
         "view_all_text": "View all",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -445,6 +450,7 @@
         "view_all_text": "View all",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -545,6 +551,7 @@
         "view_all_text": "View all",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
         "padding_top": 36,
         "padding_bottom": 36
       }

@@ -39,6 +39,13 @@
     {% endif %}
   }
 
+  /* Dromgoole's: Custom color overrides */
+  {%- if section.settings.heading_color != blank and section.settings.heading_color != 'rgba(0,0,0,0)' -%}
+    .section-{{ section.id }}-padding .collection-list-title {
+      color: {{ section.settings.heading_color }};
+    }
+  {%- endif -%}
+
   /* Card styling */
   .dromgooles-collection-grid-{{ section.id }} .card__inner {
     background: transparent;
@@ -460,6 +467,19 @@
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Custom color overrides"
+    },
+    {
+      "type": "paragraph",
+      "content": "Override specific colors without changing the entire color scheme. Leave blank to use scheme colors."
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Section heading color"
     },
     {
       "type": "header",

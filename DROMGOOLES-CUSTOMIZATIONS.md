@@ -127,7 +127,7 @@ var(--dromgooles-gray-hex)    /* #d1d1d1 */
 
 When upgrading the base Dawn theme:
 
-1. Backup `config/settings_data.json`
+1. Back up `config/settings_data.json`
 2. Pull latest Dawn changes
 3. Re-apply the single line in `theme.liquid`:
    ```liquid
@@ -180,10 +180,6 @@ Promotional banner section with:
 ### dromgooles-footer.liquid
 
 Custom footer with block-based columns for menus, brand info, and newsletter signup.
-
-### dromgooles-spacer.liquid
-
-Simple vertical spacing section with configurable height.
 
 ### dromgooles-multicolumn.liquid
 
