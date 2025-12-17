@@ -60,6 +60,11 @@
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
+  {%- comment -%} CUSTOMIZED: Load slideshow enhancement script for slideshow layout {%- endcomment -%}
+  {%- if section.settings.gallery_layout == 'slideshow' -%}
+    <script src="{{ 'dromgooles-product-slideshow.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
   {% if section.settings.image_zoom == 'hover' %}
     <script id="EnableZoomOnHover-main" src="{{ 'magnify.js' | asset_url }}" defer="defer"></script>
   {% endif %}
