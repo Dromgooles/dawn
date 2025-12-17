@@ -908,3 +908,8 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
 .product-form--sold-out .shopify-payment-button {
   display: none !important;
 }
+
+/* Hide quantity selector when product is sold out (uses :has() for sibling awareness) */
+.product__info-container:has(.product-form--sold-out) .product-form__quantity {
+  display: none !important;
+}
