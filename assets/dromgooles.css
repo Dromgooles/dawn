@@ -903,13 +903,14 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
    own "Notify Me" button to replace these.
    ============================================ */
 
-/* Hide the sold out button and dynamic checkout when BIS takes over */
-.product-form--sold-out .product-form__submit,
-.product-form--sold-out .shopify-payment-button {
+/* Hide native buttons ONLY when BIS button is present */
+/* The :has() selector ensures we only hide if BIS actually injected its button */
+.product-form__buttons:has(#BIS_trigger) .product-form__submit,
+.product-form__buttons:has(#BIS_trigger) .shopify-payment-button {
   display: none !important;
 }
 
-/* Hide quantity selector when product is sold out (uses :has() for sibling awareness) */
-.product__info-container:has(.product-form--sold-out) .product-form__quantity {
+/* Hide quantity selector when BIS button is present */
+.product__info-container:has(#BIS_trigger) .product-form__quantity {
   display: none !important;
 }
