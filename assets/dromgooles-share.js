@@ -4,7 +4,7 @@
  * Handles:
  * 1. Custom dromgooles-share component with native share + copy fallback
  * 2. Legacy share-button enhancement with error handling
- * 
+ *
  * This script supports both the new custom share component and Dawn's share-button.
  */
 
@@ -55,30 +55,33 @@
         copyButton.addEventListener('click', () => {
           const targetId = copyButton.dataset.copyTarget;
           const input = document.getElementById(targetId);
-          
+
           if (input) {
             input.select();
             input.setSelectionRange(0, 99999); // For mobile
 
-            navigator.clipboard.writeText(input.value).then(() => {
-              // Show success message
-              if (message) {
-                message.classList.remove('hidden');
-                setTimeout(() => {
-                  message.classList.add('hidden');
-                }, 2000);
-              }
-            }).catch((err) => {
-              console.warn('Copy failed:', err);
-              // Fallback: execCommand (deprecated but works)
-              document.execCommand('copy');
-              if (message) {
-                message.classList.remove('hidden');
-                setTimeout(() => {
-                  message.classList.add('hidden');
-                }, 2000);
-              }
-            });
+            navigator.clipboard
+              .writeText(input.value)
+              .then(() => {
+                // Show success message
+                if (message) {
+                  message.classList.remove('hidden');
+                  setTimeout(() => {
+                    message.classList.add('hidden');
+                  }, 2000);
+                }
+              })
+              .catch((err) => {
+                console.warn('Copy failed:', err);
+                // Fallback: execCommand (deprecated but works)
+                document.execCommand('copy');
+                if (message) {
+                  message.classList.remove('hidden');
+                  setTimeout(() => {
+                    message.classList.add('hidden');
+                  }, 2000);
+                }
+              });
           }
         });
       }

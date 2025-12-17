@@ -575,7 +575,7 @@
   padding: 0.8rem;
   background: rgb(var(--color-background));
   border-radius: var(--inputs-radius);
-  box-shadow: 
+  box-shadow:
     0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity)),
     0 4px 12px rgba(var(--color-shadow), 0.15);
   animation: dromgoolesShareFadeIn 0.2s ease;
@@ -804,7 +804,9 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
     border: none;
     border-radius: 50%;
     color: rgba(var(--color-foreground), 0.75);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.25),
+      0 1px 3px rgba(0, 0, 0, 0.15);
     transition:
       background-color 0.2s,
       color 0.2s;

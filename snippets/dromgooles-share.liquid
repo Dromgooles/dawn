@@ -1,9 +1,9 @@
 {% comment %}
   Dromgoole's Custom Share Button
-  
+
   A fully customizable share button with control over styling and icon.
   Uses native navigator.share() when available, with copy-to-clipboard fallback.
-  
+
   Accepts:
   - block: {Object} Block with settings for label, icon, text_size, text_color, etc.
   - share_link: {String} URL to share
@@ -35,10 +35,15 @@
   {%- endif -%}
 {%- endcapture -%}
 
-<div class="dromgooles-share" id="DromgoolesShare-{{ unique_id }}" style="{{ custom_styles | strip_newlines }}" {{ block.shopify_attributes }}>
+<div
+  class="dromgooles-share"
+  id="DromgoolesShare-{{ unique_id }}"
+  style="{{ custom_styles | strip_newlines }}"
+  {{ block.shopify_attributes }}
+>
   {%- comment -%} Native share button (shown when navigator.share is available) {%- endcomment -%}
-  <button 
-    type="button" 
+  <button
+    type="button"
     class="dromgooles-share__button dromgooles-share__native hidden"
     aria-label="{{ share_label }}"
     data-share-url="{{ share_link }}"
@@ -47,10 +52,10 @@
     {%- unless hide_icon -%}
       <span class="dromgooles-share__icon">
         {%- if block.settings.custom_icon != blank -%}
-          <img 
-            src="{{ block.settings.custom_icon | image_url: width: 64 }}" 
-            alt="" 
-            width="{{ icon_size }}" 
+          <img
+            src="{{ block.settings.custom_icon | image_url: width: 64 }}"
+            alt=""
+            width="{{ icon_size }}"
             height="{{ icon_size }}"
             loading="lazy"
           >
@@ -72,10 +77,10 @@
       {%- unless hide_icon -%}
         <span class="dromgooles-share__icon">
           {%- if block.settings.custom_icon != blank -%}
-            <img 
-              src="{{ block.settings.custom_icon | image_url: width: 64 }}" 
-              alt="" 
-              width="{{ icon_size }}" 
+            <img
+              src="{{ block.settings.custom_icon | image_url: width: 64 }}"
+              alt=""
+              width="{{ icon_size }}"
               height="{{ icon_size }}"
               loading="lazy"
             >
@@ -95,16 +100,16 @@
         <label class="dromgooles-share__field-label visually-hidden" for="ShareUrl-{{ unique_id }}">
           {{ 'general.share.share_url' | t }}
         </label>
-        <input 
-          type="text" 
+        <input
+          type="text"
           class="dromgooles-share__input"
           id="ShareUrl-{{ unique_id }}"
           value="{{ share_link }}"
           readonly
           onclick="this.select();"
         >
-        <button 
-          type="button" 
+        <button
+          type="button"
           class="dromgooles-share__copy"
           aria-label="{{ 'general.share.copy_to_clipboard' | t }}"
           data-copy-target="ShareUrl-{{ unique_id }}"
