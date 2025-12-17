@@ -640,7 +640,9 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
     border: none;
     border-radius: 50%;
     color: rgba(var(--color-foreground), 0.75);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.25),
+      0 1px 3px rgba(0, 0, 0, 0.15);
     transition:
       background-color 0.2s,
       color 0.2s;
