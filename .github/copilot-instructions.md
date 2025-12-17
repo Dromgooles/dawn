@@ -341,6 +341,7 @@ This is especially important for:
 | `dromgooles-card-collection.liquid` | Collection card | Custom collection card component |
 | `dromgooles-placeholder-image.liquid` | Image placeholder | Fallback for missing images |
 | `dromgooles-product-media-gallery.liquid` | Product gallery wrapper | Wraps Dawn gallery with placeholder fallback using `coming_soon.jpg` asset |
+| `dromgooles-share-button.liquid` | Share button wrapper | Loads enhanced share JS and renders Dawn share-button |
 
 ## Custom Dromgoole's Assets
 
@@ -349,6 +350,8 @@ This is especially important for:
 | `dromgooles.css` | Main custom styles | Global style overrides loaded via `dromgooles-styles.liquid` |
 | `dromgooles-brands-index.css` | Brand index styles | Styles for alphabetical brand navigation in header drawer |
 | `dromgooles-brands-index.js` | Brand index functionality | Letter-based scroll navigation with sibling height calculation for accurate positioning |
+| `dromgooles-product-slideshow.js` | Product media slider fixes | Button disabled states, positioning for constrained height |
+| `dromgooles-share.js` | Share button enhancement | Error handling for navigator.share() with fallback to copy UI |
 | `coming_soon.jpg` | Placeholder image | Product image fallback (use with `asset_url` filter) |
 
 ## Custom Locale Keys

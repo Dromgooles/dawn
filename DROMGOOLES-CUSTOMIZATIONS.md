@@ -63,9 +63,21 @@ Contains all CSS customizations organized into sections:
 10. **Component-Specific Overrides** - Modal, quick-add, price styling
 11. **Responsive Adjustments** - Mobile/tablet specific styles
 
+### assets/dromgooles-share.js
+
+Enhanced share button functionality that adds error handling for the native `navigator.share()` API. When native sharing fails (e.g., permission denied, unsupported context), it gracefully falls back to showing the copy-to-clipboard UI.
+
+### assets/dromgooles-product-slideshow.js
+
+Fixes product media gallery slider button states (prev/next disabled when at boundaries) and handles button positioning when the "Constrain to screen height" option is enabled.
+
 ### snippets/dromgooles-styles.liquid
 
 Loader snippet that includes the custom CSS with proper deferred loading.
+
+### snippets/dromgooles-share-button.liquid
+
+Wrapper snippet that renders the standard Dawn share button while loading the enhanced share functionality script. Use this instead of `share-button` to get error handling on native share failures.
 
 ### config/settings_data.json
 

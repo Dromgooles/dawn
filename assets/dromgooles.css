@@ -484,6 +484,170 @@
   z-index: 1;
 }
 
+/* Share button - inherit theme fonts */
+.share-button__button {
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+}
+
+.share-button__fallback .field__input {
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+}
+
+.share-button__fallback .field__label {
+  font-family: var(--font-body-family);
+}
+
+/* Custom Dromgoole's Share Component */
+.dromgooles-share {
+  display: block;
+  position: relative;
+}
+
+.dromgooles-share__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  font-size: var(--dromgooles-share-text-size, 1.4rem);
+  color: var(--dromgooles-share-text-color, rgb(var(--color-foreground)));
+  text-decoration: none;
+  text-transform: var(--dromgooles-share-text-transform, none);
+  letter-spacing: var(--dromgooles-share-letter-spacing, normal);
+  min-height: 4.4rem;
+  list-style: none; /* Remove marker from summary */
+}
+
+.dromgooles-share__button:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.dromgooles-share__button::-webkit-details-marker {
+  display: none;
+}
+
+.dromgooles-share__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--dromgooles-share-icon-size, 1.6rem);
+  height: var(--dromgooles-share-icon-size, 1.6rem);
+  flex-shrink: 0;
+}
+
+.dromgooles-share__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.dromgooles-share__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dromgooles-share__label {
+  white-space: nowrap;
+}
+
+.dromgooles-share__details {
+  width: fit-content;
+}
+
+.dromgooles-share__dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background: rgb(var(--color-background));
+  border-radius: var(--inputs-radius);
+  box-shadow: 
+    0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity)),
+    0 4px 12px rgba(var(--color-shadow), 0.15);
+  animation: dromgoolesShareFadeIn 0.2s ease;
+}
+
+@keyframes dromgoolesShareFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dromgooles-share__field {
+  display: flex;
+  align-items: center;
+}
+
+.dromgooles-share__input {
+  width: 20rem;
+  max-width: 50vw;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-body-family);
+  font-size: 1.3rem;
+  color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  border-radius: var(--inputs-radius) 0 0 var(--inputs-radius);
+  outline: none;
+}
+
+.dromgooles-share__input:focus {
+  border-color: rgb(var(--color-foreground));
+}
+
+.dromgooles-share__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 3.6rem;
+  padding: 0;
+  background: rgba(var(--color-foreground), 0.05);
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  border-left: none;
+  border-radius: 0 var(--inputs-radius) var(--inputs-radius) 0;
+  cursor: pointer;
+  color: rgb(var(--color-foreground));
+  transition: background-color 0.15s ease;
+}
+
+.dromgooles-share__copy:hover {
+  background: rgba(var(--color-foreground), 0.1);
+}
+
+.dromgooles-share__copy svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.dromgooles-share__message {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  font-size: 1.2rem;
+  color: rgb(var(--color-foreground));
+  white-space: nowrap;
+}
+
 /* MARK: - Responsive Adjustments */
 
 /* ============================================
