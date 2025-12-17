@@ -750,6 +750,9 @@
     <script type="application/ld+json">
       {{ product | structured_data }}
     </script>
+
+    {% comment %} Back in Stock integration - exposes inventory data to BIS app {% endcomment %}
+    {%- render 'dromgooles-back-in-stock-helper' -%}
   </div>
 </product-info>
 
