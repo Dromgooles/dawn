@@ -609,15 +609,74 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
 
 /* Show slider buttons on all screens for slideshow layout */
 @media screen and (min-width: 750px) {
-  /* Override Dawn's base CSS that hides slider buttons on desktop
-     Dawn's component-slider.css: .slider--mobile + .slider-buttons { display: none }
-     Uses !important to override the adjacent sibling selector */
+  /* Make slider-component a positioning context for the arrow buttons */
+  .product--slideshow slider-component {
+    position: relative;
+  }
+
+  /* Override Dawn's base CSS that hides slider buttons on desktop */
   .product--slideshow .slider-buttons {
     display: flex !important;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
     gap: 1rem;
+  }
+
+  /* Position arrow buttons on top of the image, vertically centered */
+  .product--slideshow .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex !important;
+    visibility: visible !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background: rgba(var(--color-background), 0.9);
+    border: none;
+    border-radius: 50%;
+    color: rgba(var(--color-foreground), 0.75);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+  }
+
+  .product--slideshow .slider-button--prev {
+    left: 1rem;
+  }
+
+  .product--slideshow .slider-button--next {
+    right: 1rem;
+  }
+
+  .product--slideshow .slider-button:hover {
+    background: rgba(var(--color-background), 1);
+    color: rgb(var(--color-foreground));
+  }
+
+  .product--slideshow .slider-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  /* Icon sizing inside buttons */
+  .product--slideshow .slider-button .icon {
+    width: 1rem;
+    height: 0.6rem;
+  }
+
+  /* Keep counter centered below the image */
+  .product--slideshow .slider-counter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 4rem;
+    justify-content: center;
   }
 
   /* Force horizontal scroll layout like mobile - each slide takes full width */
@@ -658,43 +717,5 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
 
   .product--slideshow .is-active .deferred-media {
     pointer-events: auto;
-  }
-
-  /* Style the slider controls for slideshow layout */
-  .product--slideshow .slider-counter {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    min-width: 4rem;
-    justify-content: center;
-  }
-
-  /* Ensure arrow buttons are visible with proper size */
-  .product--slideshow .slider-button {
-    display: flex !important;
-    visibility: visible !important;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    background: transparent;
-    border: none;
-    color: rgba(var(--color-foreground), 0.75);
-  }
-
-  .product--slideshow .slider-button:hover {
-    color: rgb(var(--color-foreground));
-  }
-
-  .product--slideshow .slider-button:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  /* Icon sizing inside buttons (targets the SVG's .icon class) */
-  .product--slideshow .slider-button .icon {
-    width: 1rem;
-    height: 0.6rem;
   }
 }
