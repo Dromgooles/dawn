@@ -56,7 +56,12 @@
         "share": {
           "type": "share",
           "settings": {
-            "share_label": "Share"
+            "share_label": "Share",
+            "text_size": 16,
+            "text_color": "#0b3c5d",
+            "text_uppercase": true,
+            "icon_size": 16,
+            "hide_icon": false
           }
         }
       },
