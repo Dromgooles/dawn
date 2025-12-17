@@ -587,10 +587,11 @@
 /* Hide Easify Product Options on collection/grid pages
    - Easify injects product option selectors (color swatches, buttons, etc.)
    - These should only appear on product pages, not in collection listings
-   - Classes prefixed with tpo_ are from Easify's "Third Party Options" */
-.grid__item .tpo_option-set-wrapper,
-.collection .tpo_option-set-wrapper,
-.product-grid .tpo_option-set-wrapper,
-.card-wrapper .tpo_option-set-wrapper {
+   - Classes prefixed with tpo_ are from Easify's "Third Party Options"
+   - Use body template class to ensure we only target collection pages */
+body.template-collection .tpo_option-set-wrapper.tpo_in-card,
+body.template-search .tpo_option-set-wrapper.tpo_in-card,
+.collection-product-list .tpo_option-set-wrapper.tpo_in-card,
+#product-grid .tpo_option-set-wrapper.tpo_in-card {
   display: none !important;
 }
