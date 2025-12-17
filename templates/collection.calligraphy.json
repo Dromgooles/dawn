@@ -50,7 +50,7 @@
             "image_overlay_opacity": 0,
             "heading": "Calligraphy Supplies",
             "heading_size": "h1",
-            "subheading": "Discover our curated collection of premium calligraphy pens, inks, and more",
+            "subheading": "Discover our collection of premium dip pens, nib holders, calligraphy pens, inks, and more",
             "button_label": "Shop Calligraphy Supplies",
             "button_style_secondary": false,
             "show_text_box": true,
@@ -83,81 +83,6 @@
         "accessibility_info": "Rollerball Pens collection banner",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "dromgooles_collection_grid_zVKapH": {
-      "type": "dromgooles-collection-grid",
-      "blocks": {
-        "collection_xnTRff": {
-          "type": "collection",
-          "settings": {
-            "collection": "new-arrivals-pens-pencils-copy",
-            "custom_title": "New Arrivals",
-            "hide_title": true,
-            "image": "shopify://shop_images/New_Arrivals_69f7ecfd-e632-4847-8730-58bec7490fb2.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "collection_iC9Eaj": {
-          "type": "collection",
-          "settings": {
-            "collection": "limited-special-edition-rollerballs",
-            "custom_title": "Limited & Special Edition",
-            "hide_title": true,
-            "image": "shopify://shop_images/Limited_Special.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        },
-        "collection_QCi4Dz": {
-          "type": "collection",
-          "settings": {
-            "collection": "pre-owned-rollerballs",
-            "custom_title": "Pre-Owned",
-            "hide_title": true,
-            "image": "shopify://shop_images/Pre_Owned.png",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "",
-            "border_radius": 0
-          }
-        }
-      },
-      "block_order": [
-        "collection_xnTRff",
-        "collection_iC9Eaj",
-        "collection_QCi4Dz"
-      ],
-      "settings": {
-        "title": "Shop Special Selections",
-        "heading_size": "h1",
-        "header_alignment": "center",
-        "description": "",
-        "card_style": "standard",
-        "image_ratio": "adapt",
-        "card_min_height": 170,
-        "card_min_height_desktop": 270,
-        "title_alignment": "center",
-        "title_size": "h5",
-        "title_spacing": 10,
-        "columns_desktop": 3,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "show_view_all": false,
-        "view_all_text": "",
-        "view_all_link": "",
-        "color_scheme": "scheme-1",
-        "heading_color": "#0b3c5d",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "popular_brands": {
@@ -244,189 +169,6 @@
         "show_view_all": false,
         "view_all_text": "",
         "view_all_link": "",
-        "color_scheme": "scheme-1",
-        "heading_color": "#0b3c5d",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "dromgooles_color_swatches_dQRj9m": {
-      "type": "dromgooles-color-swatches",
-      "blocks": {
-        "color_NgpKQi": {
-          "type": "color",
-          "settings": {
-            "collection": "black-rollerball-pens",
-            "title": "Black",
-            "background_color": "#393939",
-            "background_gradient": "",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_tGVRLJ": {
-          "type": "color",
-          "settings": {
-            "collection": "white-rollerball-pens",
-            "title": "White",
-            "background_color": "#ebebeb",
-            "background_gradient": "",
-            "text_color": "#000000"
-          }
-        },
-        "color_PaUAx9": {
-          "type": "color",
-          "settings": {
-            "collection": "gold-colored-rollerball-pens",
-            "title": "Gold",
-            "background_color": "",
-            "background_gradient": "linear-gradient(113.27deg, #DEA22C 6.42%, #A87A20 94.83%)",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_MrmGqh": {
-          "type": "color",
-          "settings": {
-            "collection": "silver-grey-rollerball-pens",
-            "title": "Silver",
-            "background_color": "#d1d1d1",
-            "background_gradient": "",
-            "text_color": "#000000"
-          }
-        },
-        "color_eckye8": {
-          "type": "color",
-          "settings": {
-            "collection": "rainbow-rollerball-pens",
-            "title": "Rainbow",
-            "background_color": "",
-            "background_gradient": "linear-gradient(111.22deg, #E02526 8.36%, #EE9327 24.06%, #DECC2C 39.35%, #409E40 55.45%, #1A679A 71.14%, #591E7D 85.63%)",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_aEfJJk": {
-          "type": "color",
-          "settings": {
-            "collection": "marbled-rollerball-pens",
-            "title": "Marbled",
-            "background_color": "",
-            "background_gradient": "radial-gradient(79.68% 190.31% at 15.78% 19.42%, #EBEBEB 0%, #818080 30.84%, #BDBDBD 67.19%, #D1D1D1 100%)",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_Hm3bMR": {
-          "type": "color",
-          "settings": {
-            "collection": "transparent-rollerball-pens",
-            "title": "Clear",
-            "background_color": "#ebebeb",
-            "background_gradient": "",
-            "text_color": "#000000"
-          }
-        },
-        "color_MThXFh": {
-          "type": "color",
-          "settings": {
-            "collection": "brown-rollerball-pens",
-            "title": "Brown",
-            "background_color": "#56361d",
-            "background_gradient": "",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_VRkHWd": {
-          "type": "color",
-          "settings": {
-            "collection": "red-rollerball-pens",
-            "title": "Red",
-            "background_color": "#be1717",
-            "background_gradient": "",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_fi6Q9w": {
-          "type": "color",
-          "settings": {
-            "collection": "orange-rollerball-pens",
-            "title": "Orange",
-            "background_color": "#ed9327",
-            "background_gradient": "",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_yP3rxA": {
-          "type": "color",
-          "settings": {
-            "collection": "yellow-rollerball-pens",
-            "title": "Yellow",
-            "background_color": "#dee02c",
-            "background_gradient": "",
-            "text_color": "#000000"
-          }
-        },
-        "color_7qcPCE": {
-          "type": "color",
-          "settings": {
-            "collection": "green-rollerball-pens",
-            "title": "Green",
-            "background_color": "#267826",
-            "background_gradient": "",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_BLwUHG": {
-          "type": "color",
-          "settings": {
-            "collection": "blue-rollerball-pens",
-            "title": "Blue",
-            "background_color": "#1c67fa",
-            "background_gradient": "",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_DD3Yem": {
-          "type": "color",
-          "settings": {
-            "collection": "purple-rollerball-pens",
-            "title": "Purple",
-            "background_color": "#591e7d",
-            "background_gradient": "",
-            "text_color": "#ffffff"
-          }
-        },
-        "color_RnciBH": {
-          "type": "color",
-          "settings": {
-            "collection": "pink-rollerball-pens",
-            "title": "Pink",
-            "background_color": "#ce3664",
-            "background_gradient": "",
-            "text_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "color_NgpKQi",
-        "color_tGVRLJ",
-        "color_PaUAx9",
-        "color_MrmGqh",
-        "color_eckye8",
-        "color_aEfJJk",
-        "color_Hm3bMR",
-        "color_MThXFh",
-        "color_VRkHWd",
-        "color_fi6Q9w",
-        "color_yP3rxA",
-        "color_7qcPCE",
-        "color_BLwUHG",
-        "color_DD3Yem",
-        "color_RnciBH"
-      ],
-      "settings": {
-        "title": "Shop By Color",
-        "heading_size": "h1",
-        "description": "",
-        "swatch_size": 150,
-        "show_label_inside": true,
         "color_scheme": "scheme-1",
         "heading_color": "#0b3c5d",
         "padding_top": 36,
@@ -603,9 +345,7 @@
     "banner",
     "product-grid",
     "hero_slideshow",
-    "dromgooles_collection_grid_zVKapH",
     "popular_brands",
-    "dromgooles_color_swatches_dQRj9m",
     "rollerball_refills_slideshow",
     "dromgooles_collection_grid_zT6RBe",
     "help_cta"

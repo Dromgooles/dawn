@@ -209,7 +209,7 @@
             "heading_size": "h2",
             "subheading": "Shop the innovative and high-quality pens of <strong>Pilot</strong>, Japan’s largest pen manufacturer.",
             "button_label": "Shop Pilot pens",
-            "link": "shopify://collections/starter-fountain-pens",
+            "link": "shopify://collections/pilot-fountain-pens",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
