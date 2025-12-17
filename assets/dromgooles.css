@@ -768,29 +768,30 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
    Slideshow-style gallery for product pages.
    Shows one image at a time with prev/next controls
    and a counter (like mobile view, but on all screens).
-   Uses horizontal scroll with snap points like mobile.
+   Desktop only - mobile uses Dawn's default behavior.
    ============================================ */
 
-/* Show slider buttons on all screens for slideshow layout */
 @media screen and (min-width: 750px) {
-  /* Make slider-component a positioning context for the arrow buttons */
+  /* slider-component is the positioning context for arrow buttons */
   .product--slideshow slider-component {
     position: relative;
+    overflow: visible !important; /* Allow buttons to be visible outside bounds */
   }
 
-  /* Override Dawn's base CSS that hides slider buttons on desktop */
+  /* The slider-buttons container holds prev, counter, next - keep it in flow for counter */
   .product--slideshow .slider-buttons {
     display: flex !important;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
     gap: 1rem;
+    position: static; /* Let it flow below the image for the counter */
   }
 
-  /* Position arrow buttons on top of the image, vertically centered */
+  /* Arrow buttons get pulled out of flow and positioned over the image */
   .product--slideshow .slider-button {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 2.5rem); /* Center on image, offset for counter below */
     transform: translateY(-50%);
     z-index: 2;
     display: flex !important;
@@ -813,11 +814,13 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
   }
 
   .product--slideshow .slider-button--prev {
-    left: 1rem;
+    left: 1rem !important;
+    right: auto !important;
   }
 
   .product--slideshow .slider-button--next {
-    right: 1rem;
+    right: 1rem !important;
+    left: auto !important;
   }
 
   .product--slideshow .slider-button:hover {
@@ -838,6 +841,7 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
 
   /* Keep counter centered below the image */
   .product--slideshow .slider-counter {
+    position: static;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -846,11 +850,11 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
   }
 
   /* Force horizontal scroll layout like mobile - each slide takes full width */
-  .product--slideshow .product__media-list.slider--mobile {
+  .product--slideshow .product__media-list {
     display: flex !important;
     flex-wrap: nowrap;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: visible; /* Allow buttons to overflow vertically if needed */
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -867,11 +871,11 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
   }
 
   /* Hide scrollbar for clean look */
-  .product--slideshow .product__media-list.slider--mobile::-webkit-scrollbar {
+  .product--slideshow .product__media-list::-webkit-scrollbar {
     display: none;
   }
 
-  .product--slideshow .product__media-list.slider--mobile {
+  .product--slideshow .product__media-list {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
