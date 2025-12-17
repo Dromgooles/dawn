@@ -500,8 +500,8 @@
             "instafeed_margin_bottom": 0,
             "instafeed_margin_sides": 0,
             "show_instagram_link": true,
-            "link_alignment": "left",
-            "link_color": "#0b3c5d",
+            "link_alignment": "center",
+            "link_color": "#c06014",
             "background_color": "",
             "feed_id": "",
             "html_area": ""
