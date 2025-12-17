@@ -60,7 +60,7 @@
             "share_label": "Share",
             "text_size": 16,
             "text_color": "#0b3c5d",
-            "text_uppercase": true,
+            "text_uppercase": false,
             "icon_size": 16,
             "hide_icon": false
           }
