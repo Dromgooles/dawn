@@ -720,4 +720,11 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
   .product--slideshow .is-active .deferred-media {
     pointer-events: auto;
   }
+
+  /* Match shadow style on the zoom/magnifying glass button */
+  .product--slideshow .product__media-icon {
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.25),
+      0 1px 3px rgba(0, 0, 0, 0.15);
+  }
 }
