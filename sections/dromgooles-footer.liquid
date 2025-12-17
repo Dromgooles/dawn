@@ -321,7 +321,10 @@
             {%- case block.type -%}
               {%- when 'brand' -%}
                 {%- if block.settings.logo != blank -%}
-                  <div class="dromgooles-footer__logo dromgooles-footer__logo--mobile-{{ block.settings.logo_alignment_mobile }} dromgooles-footer__logo--desktop-{{ block.settings.logo_alignment_desktop }}" style="max-width: {{ block.settings.logo_width }}px;">
+                  <div
+                    class="dromgooles-footer__logo dromgooles-footer__logo--mobile-{{ block.settings.logo_alignment_mobile }} dromgooles-footer__logo--desktop-{{ block.settings.logo_alignment_desktop }}"
+                    style="max-width: {{ block.settings.logo_width }}px;"
+                  >
                     <img
                       src="{{ block.settings.logo | image_url: width: 400 }}"
                       alt="{{ shop.name }}"
@@ -331,7 +334,10 @@
                     >
                   </div>
                 {%- elsif settings.logo != blank -%}
-                  <div class="dromgooles-footer__logo dromgooles-footer__logo--mobile-{{ block.settings.logo_alignment_mobile }} dromgooles-footer__logo--desktop-{{ block.settings.logo_alignment_desktop }}" style="max-width: {{ block.settings.logo_width }}px;">
+                  <div
+                    class="dromgooles-footer__logo dromgooles-footer__logo--mobile-{{ block.settings.logo_alignment_mobile }} dromgooles-footer__logo--desktop-{{ block.settings.logo_alignment_desktop }}"
+                    style="max-width: {{ block.settings.logo_width }}px;"
+                  >
                     <img
                       src="{{ settings.logo | image_url: width: 400 }}"
                       alt="{{ shop.name }}"
