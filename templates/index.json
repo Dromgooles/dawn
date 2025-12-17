@@ -218,11 +218,11 @@
             "border_radius": 0
           }
         },
-        "collection_h9MiJQ": {
+        "collection_KCdiDr": {
           "type": "collection",
           "settings": {
-            "collection": "bottled-ink",
-            "custom_title": "",
+            "collection": "calligraphy",
+            "custom_title": "Calligraphy",
             "hide_title": false,
             "image_style": "cover",
             "background_color": "",
@@ -231,11 +231,11 @@
             "border_radius": 0
           }
         },
-        "collection_KCdiDr": {
+        "collection_h9MiJQ": {
           "type": "collection",
           "settings": {
-            "collection": "calligraphy",
-            "custom_title": "Calligraphy Supplies",
+            "collection": "bottled-ink",
+            "custom_title": "",
             "hide_title": false,
             "image_style": "cover",
             "background_color": "",
@@ -249,8 +249,8 @@
         "collection_Y7JwmM",
         "collection_nT8h3q",
         "collection_WNi9Cw",
-        "collection_h9MiJQ",
-        "collection_KCdiDr"
+        "collection_KCdiDr",
+        "collection_h9MiJQ"
       ],
       "name": "DRO Collection Grid",
       "settings": {
