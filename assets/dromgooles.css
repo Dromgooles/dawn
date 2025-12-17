@@ -910,6 +910,11 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
   display: none !important;
 }
 
+/* Keep wishlist button visible when BIS is present */
+.product-form__buttons:has(#BIS_trigger) .swym-button-bar {
+  display: block !important;
+}
+
 /* Hide quantity selector when BIS button is present */
 .product__info-container:has(#BIS_trigger) .product-form__quantity {
   display: none !important;
