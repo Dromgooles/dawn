@@ -373,5 +373,8 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {% comment %} Back in Stock integration - exposes inventory data to BIS app {% endcomment %}
+    {%- render 'dromgooles-back-in-stock-helper' -%}
   </body>
 </html>

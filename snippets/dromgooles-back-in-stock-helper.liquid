@@ -1,0 +1,30 @@
+{% comment %}
+  Back in Stock Helper Snippet
+
+  Exposes product inventory data and customer email to the Back in Stock app.
+  The app uses this data to:
+  1. Detect out-of-stock variants
+  2. Show "Notify Me" buttons
+  3. Pre-fill customer email for logged-in users
+
+  Usage: {% render 'dromgooles-back-in-stock-helper' %}
+
+  Note: This snippet should be rendered in theme.liquid after the main content.
+  The Back in Stock app embed must also be enabled in Theme Settings > App Embeds.
+{% endcomment %}
+
+<script id="back-in-stock-helper">
+  var _BISConfig = _BISConfig || {};
+
+  {%- if product -%}
+    _BISConfig.product = {{ product | json }};
+
+    {%- for variant in product.variants -%}
+      _BISConfig.product.variants[{{ forloop.index | minus: 1 }}]['inventory_quantity'] = {{ variant.inventory_quantity }};
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- if customer -%}
+    _BISConfig.customer = { email: {{ customer.email | json }} };
+  {%- endif -%}
+</script>
