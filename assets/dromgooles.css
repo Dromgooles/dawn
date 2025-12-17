@@ -595,3 +595,106 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
 #product-grid .tpo_option-set-wrapper.tpo_in-card {
   display: none !important;
 }
+
+/* MARK: - Product Slideshow Layout */
+
+/* ============================================
+   14. Product Slideshow Layout
+   
+   Slideshow-style gallery for product pages.
+   Shows one image at a time with prev/next controls
+   and a counter (like mobile view, but on all screens).
+   Uses horizontal scroll with snap points like mobile.
+   ============================================ */
+
+/* Show slider buttons on all screens for slideshow layout */
+@media screen and (min-width: 750px) {
+  /* Override Dawn's base CSS that hides slider buttons on desktop
+     Dawn's component-slider.css: .slider--mobile + .slider-buttons { display: none }
+     Uses !important to override the adjacent sibling selector */
+  .product--slideshow .slider-buttons {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  /* Force horizontal scroll layout like mobile - each slide takes full width */
+  .product--slideshow .product__media-list.slider--mobile {
+    display: flex !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 0;
+    padding-bottom: calc(var(--media-shadow-vertical-offset) * var(--media-shadow-visible));
+  }
+
+  /* Each slide should take 100% width and snap into place */
+  .product--slideshow .product__media-list .product__media-item {
+    min-width: 100% !important;
+    width: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  /* Hide scrollbar for clean look */
+  .product--slideshow .product__media-list.slider--mobile::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product--slideshow .product__media-list.slider--mobile {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Ensure the active item modal opener works correctly */
+  .product--slideshow .is-active .product__modal-opener:not(.product__modal-opener--image) {
+    pointer-events: none;
+  }
+
+  .product--slideshow .is-active .deferred-media {
+    pointer-events: auto;
+  }
+
+  /* Style the slider controls for slideshow layout */
+  .product--slideshow .slider-counter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 4rem;
+    justify-content: center;
+  }
+
+  /* Ensure arrow buttons are visible with proper size */
+  .product--slideshow .slider-button {
+    display: flex !important;
+    visibility: visible !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    color: rgba(var(--color-foreground), 0.75);
+  }
+
+  .product--slideshow .slider-button:hover {
+    color: rgb(var(--color-foreground));
+  }
+
+  .product--slideshow .slider-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  /* Icon sizing inside buttons (targets the SVG's .icon class) */
+  .product--slideshow .slider-button .icon {
+    width: 1rem;
+    height: 0.6rem;
+  }
+}
