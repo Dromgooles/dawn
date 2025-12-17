@@ -645,7 +645,7 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
   .product--slideshow .product__media-list.slider--mobile::-webkit-scrollbar {
     display: none;
   }
-  
+
   .product--slideshow .product__media-list.slider--mobile {
     -ms-overflow-style: none;
     scrollbar-width: none;
