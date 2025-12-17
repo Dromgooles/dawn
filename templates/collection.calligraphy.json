@@ -91,7 +91,7 @@
         "montegrappa": {
           "type": "collection",
           "settings": {
-            "collection": "lamy-rollerball",
+            "collection": "calligraphy-pen",
             "custom_title": "Calligraphy Pens",
             "hide_title": false,
             "image_style": "contain",
@@ -114,28 +114,39 @@
             "border_radius": 0
           }
         },
-        "collection_4EgVLx": {
+        "collection_J9Pxah": {
           "type": "collection",
           "settings": {
-            "collection": "retro-51-tornado-popper-rollerballs",
-            "custom_title": "",
-            "hide_title": true,
-            "image": "shopify://shop_images/Retro51_Logo.png",
-            "image_style": "contain",
+            "collection": "calligraphy-nibs",
+            "custom_title": "Nibs & Holders",
+            "hide_title": false,
+            "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
             "text_color": "",
             "border_radius": 0
           }
         },
-        "waterman": {
+        "collection_DxwygX": {
           "type": "collection",
           "settings": {
-            "collection": "sheaffer-rollerball",
-            "custom_title": "",
-            "hide_title": true,
-            "image": "shopify://shop_images/sheaffer_logo_1ad77a04-75fc-4835-a0be-6e2c7e098423.png",
-            "image_style": "contain",
+            "collection": "calligraphy-inks",
+            "custom_title": "Calligraphy Inks",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "collection_hWjkEN": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy-markers-pads",
+            "custom_title": "Markers",
+            "hide_title": false,
+            "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
             "text_color": "",
@@ -146,8 +157,9 @@
       "block_order": [
         "montegrappa",
         "montblanc",
-        "collection_4EgVLx",
-        "waterman"
+        "collection_J9Pxah",
+        "collection_DxwygX",
+        "collection_hWjkEN"
       ],
       "settings": {
         "title": "Supplies by Type",
@@ -161,7 +173,7 @@
         "title_alignment": "center",
         "title_size": "h4",
         "title_spacing": 10,
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
@@ -179,12 +191,12 @@
         "rollerball_refills_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/957027-pelikan-338-rollerball-refills-view-2_4df556d7-4569-4474-acee-42790d2c1541.jpg",
+            "image": "shopify://shop_images/FWP-Calligraphy-Product_839x1040_d5efcb2c-087b-4cd7-b040-329a8c6dcfab.webp",
             "image_overlay_opacity": 0,
-            "heading": "Rollerball Refills",
+            "heading": "Calligraphy Inks",
             "heading_size": "h2",
-            "subheading": "Keep your rollerball pens writing smoothly with our selection of quality refills.",
-            "button_label": "Shop Refills",
+            "subheading": "Dip pens require unique inks. Get yours here!",
+            "button_label": "Shop Calligraphy Inks",
             "link": "shopify://collections/refills-rollerball-fineliner",
             "button_style_secondary": false,
             "show_text_box": true,
@@ -200,7 +212,7 @@
       ],
       "settings": {
         "layout": "grid",
-        "slide_height": "adapt_image",
+        "slide_height": "small",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -212,11 +224,11 @@
     "dromgooles_collection_grid_zT6RBe": {
       "type": "dromgooles-collection-grid",
       "blocks": {
-        "collection_d8tc6W": {
+        "collection_nwHBzz": {
           "type": "collection",
           "settings": {
-            "collection": "ballpoints",
-            "custom_title": "Ballpoint Pens",
+            "collection": "fountain-pens",
+            "custom_title": "Fountain Pens",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -225,11 +237,24 @@
             "border_radius": 0
           }
         },
-        "collection_nwHBzz": {
+        "collection_LyCHY8": {
           "type": "collection",
           "settings": {
-            "collection": "fountain-pens",
-            "custom_title": "Fountain Pens",
+            "collection": "rollerballs",
+            "custom_title": "Rollerball Pens",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#121212",
+            "border_radius": 0
+          }
+        },
+        "collection_d8tc6W": {
+          "type": "collection",
+          "settings": {
+            "collection": "ballpoints",
+            "custom_title": "Ballpoint Pens",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -250,27 +275,13 @@
             "text_color": "#121212",
             "border_radius": 0
           }
-        },
-        "collection_LyCHY8": {
-          "type": "collection",
-          "settings": {
-            "collection": "calligraphy",
-            "custom_title": "Calligraphy Pens",
-            "hide_title": false,
-            "image": "shopify://shop_images/toms-studio-bloom-straight-calligraphy-pen-bluebell-hero.webp",
-            "image_style": "contain",
-            "background_color": "",
-            "background_gradient": "",
-            "text_color": "#121212",
-            "border_radius": 0
-          }
         }
       },
       "block_order": [
-        "collection_d8tc6W",
         "collection_nwHBzz",
-        "collection_XeWtH3",
-        "collection_LyCHY8"
+        "collection_LyCHY8",
+        "collection_d8tc6W",
+        "collection_XeWtH3"
       ],
       "settings": {
         "title": "Other Writing Instruments",
@@ -302,14 +313,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Need Help Choosing a Rollerball?",
+            "heading": "Need Help Choosing Calligraphy Supplies?",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our staff is passionate about helping you find the perfect writing instrument. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+            "text": "<p>Our staff is passionate about helping you find the perfect writing equipment. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
           }
         },
         "button": {
