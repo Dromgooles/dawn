@@ -45,7 +45,7 @@
         "hero_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/delta-magnifica-red-oversize-rollerball-pen_1800x1800_88914214-6951-438a-a3b3-401d3fc06e6e.webp",
+            "image": "shopify://shop_images/calligraphy-artist-writing-with-pen.jpg",
             "link": "shopify://collections/calligraphy",
             "image_overlay_opacity": 0,
             "heading": "Calligraphy Supplies",
@@ -92,9 +92,8 @@
           "type": "collection",
           "settings": {
             "collection": "lamy-rollerball",
-            "custom_title": "",
-            "hide_title": true,
-            "image": "shopify://shop_images/Lamy_Logo.png",
+            "custom_title": "Calligraphy Pens",
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -105,10 +104,9 @@
         "montblanc": {
           "type": "collection",
           "settings": {
-            "collection": "montblanc-rollerballs",
-            "custom_title": "Montblanc",
-            "hide_title": true,
-            "image": "shopify://shop_images/Mont_Blanc_Logo.png",
+            "collection": "dip-pens",
+            "custom_title": "Dip Pens",
+            "hide_title": false,
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -152,7 +150,7 @@
         "waterman"
       ],
       "settings": {
-        "title": "Popular Brands",
+        "title": "Supplies by Type",
         "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
