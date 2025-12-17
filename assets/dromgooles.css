@@ -575,3 +575,22 @@
   object-fit: contain;
   object-position: center;
 }
+
+/* MARK: - Third-Party App Overrides */
+
+/* ============================================
+   13. Third-Party App Overrides
+   
+   CSS fixes for third-party Shopify app integrations.
+   ============================================ */
+
+/* Hide Easify Product Options on collection/grid pages
+   - Easify injects product option selectors (color swatches, buttons, etc.)
+   - These should only appear on product pages, not in collection listings
+   - Classes prefixed with tpo_ are from Easify's "Third Party Options" */
+.grid__item .tpo_option-set-wrapper,
+.collection .tpo_option-set-wrapper,
+.product-grid .tpo_option-set-wrapper,
+.card-wrapper .tpo_option-set-wrapper {
+  display: none !important;
+}
