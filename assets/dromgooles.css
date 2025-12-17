@@ -892,3 +892,19 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
       0 1px 3px rgba(0, 0, 0, 0.15);
   }
 }
+
+/* MARK: - Back in Stock Integration */
+
+/* ============================================
+   Back in Stock Integration
+   
+   Hide native "Sold out" button and dynamic checkout
+   when product is sold out. The BIS app injects its
+   own "Notify Me" button to replace these.
+   ============================================ */
+
+/* Hide the sold out button and dynamic checkout when BIS takes over */
+.product-form--sold-out .product-form__submit,
+.product-form--sold-out .shopify-payment-button {
+  display: none !important;
+}

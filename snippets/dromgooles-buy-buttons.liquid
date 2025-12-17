@@ -47,13 +47,11 @@
       endif
     -%}
 
-    {%- comment -%} Only show buy buttons if product is available (BIS handles sold out state) {%- endcomment -%}
-    {%- unless is_sold_out -%}
-      <product-form
-        class="product-form"
-        data-hide-errors="{{ gift_card_recipient_feature_active }}"
-        data-section-id="{{ section.id }}"
-      >
+    <product-form
+      class="product-form{% if is_sold_out %} product-form--sold-out{% endif %}"
+      data-hide-errors="{{ gift_card_recipient_feature_active }}"
+      data-section-id="{{ section.id }}"
+    >
         <div class="product-form__error-message-wrapper" role="alert" hidden>
           <span class="svg-wrapper">
             {{- 'icon-error.svg' | inline_asset_content -}}
@@ -72,6 +70,7 @@
             type="hidden"
             name="id"
             value="{{ product.selected_or_first_available_variant.id }}"
+            {% if is_sold_out %}disabled{% endif %}
             class="product-variant-id"
           >
 
@@ -85,8 +84,15 @@
               type="submit"
               name="add"
               class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+              {% if is_sold_out %}disabled{% endif %}
             >
-              <span>{{ 'products.product.add_to_cart' | t }}</span>
+              <span>
+                {%- if is_sold_out -%}
+                  {{ 'products.product.sold_out' | t }}
+                {%- else -%}
+                  {{ 'products.product.add_to_cart' | t }}
+                {%- endif -%}
+              </span>
               {%- render 'loading-spinner' -%}
             </button>
             {%- if show_dynamic_checkout -%}
@@ -95,7 +101,6 @@
           </div>
         {%- endform -%}
       </product-form>
-    {%- endunless -%}
   {%- endif -%}
 
   {%- if show_pickup_availability -%}
