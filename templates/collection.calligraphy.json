@@ -1,0 +1,362 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_slideshow": {
+      "type": "dromgooles-slideshow",
+      "blocks": {
+        "hero_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/calligraphy-artist-writing-with-pen.jpg",
+            "link": "shopify://collections/calligraphy",
+            "image_overlay_opacity": 0,
+            "heading": "Calligraphy Supplies",
+            "heading_size": "h1",
+            "subheading": "Discover our collection of premium dip pens, nib holders, calligraphy pens, inks, and more",
+            "button_label": "Shop Calligraphy Supplies",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1",
+            "heading_color": "#0b3c5d",
+            "button_background": "#0b3c5d",
+            "button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "hero_slide"
+      ],
+      "settings": {
+        "media_link": false,
+        "layout": "grid",
+        "slide_height": "small",
+        "aspect_ratio_width": 16,
+        "aspect_ratio_height": 5,
+        "mobile_aspect_ratio_width": 16,
+        "mobile_aspect_ratio_height": 9,
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Rollerball Pens collection banner",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "popular_brands": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "montegrappa": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy-pen",
+            "custom_title": "Calligraphy Pens",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "montblanc": {
+          "type": "collection",
+          "settings": {
+            "collection": "dip-pens",
+            "custom_title": "Dip Pens",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "collection_J9Pxah": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy-nibs",
+            "custom_title": "Nibs & Holders",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "collection_DxwygX": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy-inks",
+            "custom_title": "Calligraphy Inks",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
+        "collection_hWjkEN": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy-markers-pads",
+            "custom_title": "Markers",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": [
+        "montegrappa",
+        "montblanc",
+        "collection_J9Pxah",
+        "collection_DxwygX",
+        "collection_hWjkEN"
+      ],
+      "settings": {
+        "title": "Supplies by Type",
+        "heading_size": "h1",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "adapt",
+        "card_min_height": 140,
+        "card_min_height_desktop": 180,
+        "title_alignment": "center",
+        "title_size": "h4",
+        "title_spacing": 10,
+        "columns_desktop": 5,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rollerball_refills_slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "rollerball_refills_slide": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/FWP-Calligraphy-Product_839x1040_d5efcb2c-087b-4cd7-b040-329a8c6dcfab.webp",
+            "image_overlay_opacity": 0,
+            "heading": "Calligraphy Inks",
+            "heading_size": "h2",
+            "subheading": "Dip pens require unique inks. Get yours here!",
+            "button_label": "Shop Calligraphy Inks",
+            "link": "shopify://collections/refills-rollerball-fineliner",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        }
+      },
+      "block_order": [
+        "rollerball_refills_slide"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "small",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Rollerball refills collection promotion"
+      }
+    },
+    "dromgooles_collection_grid_zT6RBe": {
+      "type": "dromgooles-collection-grid",
+      "blocks": {
+        "collection_nwHBzz": {
+          "type": "collection",
+          "settings": {
+            "collection": "fountain-pens",
+            "custom_title": "Fountain Pens",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#121212",
+            "border_radius": 0
+          }
+        },
+        "collection_LyCHY8": {
+          "type": "collection",
+          "settings": {
+            "collection": "rollerballs",
+            "custom_title": "Rollerball Pens",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#121212",
+            "border_radius": 0
+          }
+        },
+        "collection_d8tc6W": {
+          "type": "collection",
+          "settings": {
+            "collection": "ballpoints",
+            "custom_title": "Ballpoint Pens",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#121212",
+            "border_radius": 0
+          }
+        },
+        "collection_XeWtH3": {
+          "type": "collection",
+          "settings": {
+            "collection": "pencils",
+            "custom_title": "Pencils",
+            "hide_title": false,
+            "image_style": "contain",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "#121212",
+            "border_radius": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_nwHBzz",
+        "collection_LyCHY8",
+        "collection_d8tc6W",
+        "collection_XeWtH3"
+      ],
+      "settings": {
+        "title": "Other Writing Instruments",
+        "heading_size": "h1",
+        "header_alignment": "center",
+        "description": "",
+        "card_style": "standard",
+        "image_ratio": "square",
+        "card_min_height": 120,
+        "card_min_height_desktop": 160,
+        "title_alignment": "center",
+        "title_size": "h3",
+        "title_spacing": 6,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "view_all_text": "",
+        "view_all_link": "",
+        "color_scheme": "scheme-1",
+        "heading_color": "#0b3c5d",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "help_cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Help Choosing Calligraphy Supplies?",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our staff is passionate about helping you find the perfect writing equipment. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact-us",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "hero_slideshow",
+    "popular_brands",
+    "rollerball_refills_slideshow",
+    "dromgooles_collection_grid_zT6RBe",
+    "help_cta"
+  ]
+}

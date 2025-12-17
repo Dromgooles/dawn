@@ -515,9 +515,8 @@
           "type": "collection",
           "settings": {
             "collection": "calligraphy",
-            "custom_title": "Calligraphy Pens",
+            "custom_title": "Calligraphy Supplies",
             "hide_title": false,
-            "image": "shopify://shop_images/toms-studio-bloom-straight-calligraphy-pen-bluebell-hero.webp",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
