@@ -126,7 +126,6 @@
         "slide_r6hEyn"
       ],
       "settings": {
-        "name": "DRO Slideshow",
         "media_link": true,
         "layout": "full_bleed",
         "slide_height": "custom_ratio",
@@ -231,13 +230,27 @@
             "text_color": "",
             "border_radius": 0
           }
+        },
+        "collection_KCdiDr": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy",
+            "custom_title": "Calligraphy Supplies",
+            "hide_title": false,
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
         }
       },
       "block_order": [
         "collection_Y7JwmM",
         "collection_nT8h3q",
         "collection_WNi9Cw",
-        "collection_h9MiJQ"
+        "collection_h9MiJQ",
+        "collection_KCdiDr"
       ],
       "name": "DRO Collection Grid",
       "settings": {
@@ -252,7 +265,7 @@
         "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
