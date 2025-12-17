@@ -115,10 +115,37 @@
     height: auto;
   }
 
+  /* Logo alignment - mobile */
+  .dromgooles-footer__logo--mobile-left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .dromgooles-footer__logo--mobile-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dromgooles-footer__logo--mobile-right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* Logo alignment - desktop */
   @media screen and (min-width: 750px) {
-    .dromgooles-footer__logo {
+    .dromgooles-footer__logo--desktop-left {
       margin-left: 0;
       margin-right: auto;
+    }
+
+    .dromgooles-footer__logo--desktop-center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .dromgooles-footer__logo--desktop-right {
+      margin-left: auto;
+      margin-right: 0;
     }
   }
 
@@ -294,7 +321,7 @@
             {%- case block.type -%}
               {%- when 'brand' -%}
                 {%- if block.settings.logo != blank -%}
-                  <div class="dromgooles-footer__logo" style="max-width: {{ block.settings.logo_width }}px;">
+                  <div class="dromgooles-footer__logo dromgooles-footer__logo--mobile-{{ block.settings.logo_alignment_mobile }} dromgooles-footer__logo--desktop-{{ block.settings.logo_alignment_desktop }}" style="max-width: {{ block.settings.logo_width }}px;">
                     <img
                       src="{{ block.settings.logo | image_url: width: 400 }}"
                       alt="{{ shop.name }}"
@@ -304,7 +331,7 @@
                     >
                   </div>
                 {%- elsif settings.logo != blank -%}
-                  <div class="dromgooles-footer__logo" style="max-width: {{ block.settings.logo_width }}px;">
+                  <div class="dromgooles-footer__logo dromgooles-footer__logo--mobile-{{ block.settings.logo_alignment_mobile }} dromgooles-footer__logo--desktop-{{ block.settings.logo_alignment_desktop }}" style="max-width: {{ block.settings.logo_width }}px;">
                     <img
                       src="{{ settings.logo | image_url: width: 400 }}"
                       alt="{{ shop.name }}"
@@ -516,6 +543,46 @@
           "unit": "px",
           "label": "Logo width",
           "default": 200
+        },
+        {
+          "type": "select",
+          "id": "logo_alignment_mobile",
+          "label": "Logo alignment (mobile)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "logo_alignment_desktop",
+          "label": "Logo alignment (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
         },
         {
           "type": "textarea",
