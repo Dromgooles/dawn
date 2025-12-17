@@ -169,6 +169,14 @@
           "storefront_layout_drawer_position": "left",
           "storefront_layout_as_section_page": ""
         }
+      },
+      "3678330922655817062": {
+        "type": "shopify://apps/boost-ai-search-filter/blocks/boost-sd-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": true,
+        "settings": {
+          "templateId": "",
+          "productGridSelector": ""
+        }
       }
     },
     "color_schemes": {
