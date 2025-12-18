@@ -768,9 +768,28 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
    Slideshow-style gallery for product pages.
    Shows one image at a time with prev/next controls
    and a counter (like mobile view, but on all screens).
-   Desktop only - mobile uses Dawn's default behavior.
    ============================================ */
 
+/* Mobile: Ensure consistent "hinting" (peek of next image) behavior
+   The default Dawn CSS has width calculations that can break at certain
+   viewport widths due to box-sizing: content-box. This override ensures
+   the peek is always visible and consistent. */
+@media screen and (max-width: 749px) {
+  .product--slideshow .product__media-list .product__media-item {
+    /* Use border-box to avoid calculation conflicts with content-box */
+    box-sizing: border-box;
+    /* Calculate width to leave space for the "peek" of next image
+       100% - 1.5rem (left margin) - 1.5rem (peek space) - 4px (grid spacing) */
+    width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+    /* Ensure this width is respected */
+    min-width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+    max-width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+    /* Prevent flex from overriding our width */
+    flex: 0 0 auto;
+  }
+}
+
+/* Desktop: Full slideshow behavior */
 @media screen and (min-width: 750px) {
   /* slider-component is the positioning context for arrow buttons */
   .product--slideshow slider-component {
