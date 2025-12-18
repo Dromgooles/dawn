@@ -476,7 +476,7 @@
         "title_spacing": 10,
         "columns_desktop": 4,
         "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "show_view_all": false,
         "view_all_text": "View all",
         "view_all_link": "",
