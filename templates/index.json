@@ -33,6 +33,27 @@
             "button_text_color": ""
           }
         },
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/16_8ae21c71-808d-405e-bd08-fd97c50566ab.png",
+            "link": "shopify://pages/event-details",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
         "slide_mTiPj7": {
           "type": "slide",
           "settings": {
@@ -54,32 +75,11 @@
             "button_text_color": ""
           }
         },
-        "slide_2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/IMG_4620.png",
-            "link": "https://www.dromgooles.com/products/matthew-chen-nib-grinding-event-december-11-13th",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1",
-            "heading_color": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
         "slide_TPKhRt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/IMG_4683.png",
-            "link": "https://www.dromgooles.com/products/twsbi-eco-fountain-pen-cosmos-with-onyx-trim",
+            "image": "shopify://shop_images/19_e698006d-f493-450c-a103-f4ce872d8d5e.png",
+            "link": "https://www.dromgooles.com/search?q=superman",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -99,8 +99,8 @@
         "slide_r6hEyn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/IMG_4682.png",
-            "link": "https://www.dromgooles.com/products/nahvalur-eclipse-retractable-fountain-pen-hepatizon-silver",
+            "image": "shopify://shop_images/Upcoming_April_Events_3201_x_1000_px_5.jpg",
+            "link": "https://www.dromgooles.com/search?q=emily+in+paris",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -120,8 +120,8 @@
       },
       "block_order": [
         "slide_1",
-        "slide_mTiPj7",
         "slide_2",
+        "slide_mTiPj7",
         "slide_TPKhRt",
         "slide_r6hEyn"
       ],
