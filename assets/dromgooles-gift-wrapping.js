@@ -37,6 +37,16 @@ class GiftWrapping extends HTMLElement {
     if (this.giftMessageInput) {
       this.giftMessageInput.addEventListener('input', this.updateCharCount.bind(this));
       this.updateCharCount();
+
+      // Debounced update of gift message property when user types
+      this.giftMessageInput.addEventListener(
+        'input',
+        this.debounce(() => {
+          if (this.checkbox.checked) {
+            this.updateGiftMessage();
+          }
+        }, 1000)
+      );
     }
 
     // Subscribe to cart updates (for when user manually adds/removes gift wrapping)
@@ -148,32 +158,97 @@ class GiftWrapping extends HTMLElement {
       return;
     }
 
-    // Create and submit a form - this guarantees page refresh
-    const form = document.createElement('form');
-    form.method = 'POST';
-    form.action = '/cart/add';
+    // Get the gift message (if any)
+    const giftMessage = this.giftMessageInput ? this.giftMessageInput.value.trim() : '';
 
-    const idInput = document.createElement('input');
-    idInput.type = 'hidden';
-    idInput.name = 'id';
-    idInput.value = this.giftWrappingVariantId;
-    form.appendChild(idInput);
+    // Build the request body with line item properties
+    const body = {
+      items: [
+        {
+          id: parseInt(this.giftWrappingVariantId),
+          quantity: 1,
+          properties: {},
+        },
+      ],
+    };
 
-    const qtyInput = document.createElement('input');
-    qtyInput.type = 'hidden';
-    qtyInput.name = 'quantity';
-    qtyInput.value = '1';
-    form.appendChild(qtyInput);
+    // Only add gift message property if there's a message
+    if (giftMessage) {
+      body.items[0].properties['Gift Message'] = giftMessage;
+    }
 
-    // Return to cart page after adding
-    const returnInput = document.createElement('input');
-    returnInput.type = 'hidden';
-    returnInput.name = 'return_to';
-    returnInput.value = '/cart';
-    form.appendChild(returnInput);
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status) {
+          // Error occurred
+          console.error('Error adding gift wrapping:', data.description);
+          this.checkbox.checked = false;
+          if (this.giftMessageWrapper) {
+            this.giftMessageWrapper.classList.add('hidden');
+          }
+        } else {
+          // Success - reload to show updated cart
+          window.location.href = '/cart';
+        }
+      })
+      .catch((error) => {
+        console.error('Error adding gift wrapping to cart:', error);
+        this.checkbox.checked = false;
+        if (this.giftMessageWrapper) {
+          this.giftMessageWrapper.classList.add('hidden');
+        }
+      });
+  }
 
-    document.body.appendChild(form);
-    form.submit();
+  updateGiftMessage() {
+    // Update the gift message property on the existing line item
+    const giftMessage = this.giftMessageInput ? this.giftMessageInput.value.trim() : '';
+
+    // First get the cart to find the gift wrapping line item
+    fetch('/cart.js')
+      .then((response) => response.json())
+      .then((cart) => {
+        const giftItem = cart.items.find((item) => {
+          return (
+            String(item.variant_id) === String(this.giftWrappingVariantId) ||
+            item.handle === this.giftWrappingProductHandle
+          );
+        });
+
+        if (giftItem) {
+          // Update the line item with new properties
+          const updates = {
+            id: giftItem.key,
+            quantity: giftItem.quantity,
+            properties: {
+              'Gift Message': giftMessage || '',
+            },
+          };
+
+          return fetch('/cart/change.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updates),
+          });
+        }
+      })
+      .then((response) => {
+        if (response && response.json) {
+          return response.json();
+        }
+      })
+      .catch((error) => {
+        console.error('Error updating gift message:', error);
+      });
   }
 
   removeGiftWrappingFromCart() {
@@ -222,6 +297,14 @@ class GiftWrapping extends HTMLElement {
   updateCharCount() {
     if (!this.giftMessageInput || !this.charCountSpan) return;
     this.charCountSpan.textContent = this.giftMessageInput.value.length;
+  }
+
+  debounce(fn, delay) {
+    let timeoutId;
+    return (...args) => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => fn.apply(this, args), delay);
+    };
   }
 }
 

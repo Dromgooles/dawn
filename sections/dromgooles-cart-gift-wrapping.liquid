@@ -21,14 +21,16 @@
   assign gift_price_raw = gift_product.price | default: 0
 
   comment
-    Check if gift wrapping is already in cart and get variant ID from cart if present
+    Check if gift wrapping is already in cart and get variant ID and gift message from cart if present
   endcomment
   assign gift_in_cart = false
   assign cart_gift_variant_id = null
+  assign cart_gift_message = ''
   for item in cart.items
     if item.product.handle == section.settings.gift_wrapping_product_handle
       assign gift_in_cart = true
       assign cart_gift_variant_id = item.variant_id
+      assign cart_gift_message = item.properties['Gift Message'] | default: ''
       break
     endif
   endfor
@@ -99,14 +101,12 @@
             <label for="gift-message" class="form__label">{{ section.settings.gift_message_label }}</label>
             <textarea
               id="gift-message"
-              name="attributes[gift_message]"
-              form="cart"
               class="gift-wrapping__message-input"
               placeholder="{{ section.settings.gift_message_placeholder }}"
               maxlength="500"
-            >{{ cart.attributes.gift_message }}</textarea>
+            >{{ cart_gift_message }}</textarea>
             <span class="gift-wrapping__char-count caption">
-              <span id="gift-message-count">{{ cart.attributes.gift_message | size | default: 0 }}</span>/500
+              <span id="gift-message-count">{{ cart_gift_message | size | default: 0 }}</span>/500
             </span>
           </div>
         {%- endif -%}
