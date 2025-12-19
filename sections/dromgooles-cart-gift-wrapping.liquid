@@ -1,0 +1,158 @@
+{% comment %}
+  CUSTOMIZED: Gift wrapping option for cart
+  Author: Dromgoole's
+  Modified: 2024-12-19
+
+  Renders a gift wrapping option in the cart
+  Allows customers to add a gift wrapping product to their cart via checkbox
+
+  Accepts:
+  - gift_wrapping_product_handle: {String} The handle of the gift wrapping product (default: 'gift-wrapping')
+  - show_gift_message: {Boolean} Whether to show gift message textarea (default: false)
+{% endcomment %}
+
+{{ 'dromgooles-gift-wrapping.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'dromgooles-gift-wrapping.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign gift_product = all_products[section.settings.gift_wrapping_product_handle]
+  assign gift_variant = gift_product.selected_or_first_available_variant
+  assign gift_variant_id = gift_variant.id
+  assign gift_price_raw = gift_product.price | default: 0
+  
+  comment
+    Check if gift wrapping is already in cart and get variant ID from cart if present
+  endcomment
+  assign gift_in_cart = false
+  assign cart_gift_variant_id = nil
+  for item in cart.items
+    if item.product.handle == section.settings.gift_wrapping_product_handle
+      assign gift_in_cart = true
+      assign cart_gift_variant_id = item.variant_id
+      break
+    endif
+  endfor
+  
+  comment
+    Use the cart variant ID if available, otherwise use from product lookup
+  endcomment
+  if cart_gift_variant_id
+    assign gift_variant_id = cart_gift_variant_id
+  endif
+-%}
+
+<div
+  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
+  id="gift-wrapping-section"
+  data-id="{{ section.id }}"
+>
+  <div class="page-width">
+    <gift-wrapping class="gift-wrapping{% if cart == empty %} hidden{% endif %}">
+      <div class="gift-wrapping__inner">
+        <div class="gift-wrapping__checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="gift-wrapping-checkbox"
+            class="gift-wrapping__checkbox"
+            data-product-handle="{{ section.settings.gift_wrapping_product_handle }}"
+            data-variant-id="{{ gift_variant_id }}"
+            data-product-id="{{ gift_product.id }}"
+            {% if gift_in_cart %}checked{% endif %}
+            aria-describedby="gift-wrapping-description"
+          >
+          <label class="gift-wrapping__label" for="gift-wrapping-checkbox">
+            <span class="gift-wrapping__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="8" width="18" height="13" rx="2"/>
+                <path d="M12 8v13"/>
+                <path d="M3 12h18"/>
+                <path d="M19 8c0-2.5-3.5-4-7-4s-7 1.5-7 4"/>
+                <path d="M12 4v4"/>
+              </svg>
+            </span>
+            <span class="gift-wrapping__text">
+              <span class="gift-wrapping__title">{{ section.settings.gift_wrapping_label }}</span>
+              {%- if gift_price_raw > 0 -%}
+                <span class="gift-wrapping__price">({{ gift_price_raw | money }})</span>
+              {%- elsif gift_product -%}
+                <span class="gift-wrapping__price gift-wrapping__price--free">(Free)</span>
+              {%- endif -%}
+            </span>
+          </label>
+        </div>
+        <p id="gift-wrapping-description" class="gift-wrapping__description caption">
+          {{ section.settings.gift_wrapping_description }}
+        </p>
+
+        {%- if section.settings.show_gift_message -%}
+          <div class="gift-wrapping__message{% unless gift_in_cart %} hidden{% endunless %}" id="gift-message-wrapper">
+            <label for="gift-message" class="form__label">{{ section.settings.gift_message_label }}</label>
+            <textarea
+              id="gift-message"
+              name="attributes[gift_message]"
+              form="cart"
+              class="gift-wrapping__message-input"
+              placeholder="{{ section.settings.gift_message_placeholder }}"
+              maxlength="500"
+            >{{ cart.attributes.gift_message }}</textarea>
+            <span class="gift-wrapping__char-count caption">
+              <span id="gift-message-count">{{ cart.attributes.gift_message | size | default: 0 }}</span>/500
+            </span>
+          </div>
+        {%- endif -%}
+      </div>
+    </gift-wrapping>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Gift Wrapping Option",
+  "class": "gift-wrapping-section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "gift_wrapping_product_handle",
+      "label": "Gift Wrapping Product Handle",
+      "default": "gift-wrapping",
+      "info": "Enter the product handle (URL slug) for the gift wrapping product"
+    },
+    {
+      "type": "text",
+      "id": "gift_wrapping_label",
+      "label": "Checkbox Label",
+      "default": "Add gift wrapping"
+    },
+    {
+      "type": "textarea",
+      "id": "gift_wrapping_description",
+      "label": "Description",
+      "default": "Your items will be beautifully wrapped and ready to gift."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_gift_message",
+      "label": "Show Gift Message Option",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "gift_message_label",
+      "label": "Gift Message Label",
+      "default": "Gift message (optional)"
+    },
+    {
+      "type": "text",
+      "id": "gift_message_placeholder",
+      "label": "Gift Message Placeholder",
+      "default": "Enter your gift message here..."
+    }
+  ]
+}
+{% endschema %}

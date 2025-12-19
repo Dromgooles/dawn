@@ -17,6 +17,18 @@
         "padding_bottom": 36
       }
     },
+    "gift-wrapping": {
+      "type": "dromgooles-cart-gift-wrapping",
+      "settings": {
+        "color_scheme": "",
+        "gift_wrapping_product_handle": "gift-wrapping",
+        "gift_wrapping_label": "Add gift wrapping",
+        "gift_wrapping_description": "Your items will be beautifully wrapped and ready to gift.",
+        "show_gift_message": true,
+        "gift_message_label": "Gift message (optional)",
+        "gift_message_placeholder": "Enter your gift message here..."
+      }
+    },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
@@ -70,6 +82,7 @@
   },
   "order": [
     "cart-items",
+    "gift-wrapping",
     "cart-footer",
     "featured-collection"
   ]
