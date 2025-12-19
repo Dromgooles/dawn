@@ -10,12 +10,12 @@ class GiftWrapping extends HTMLElement {
     this.giftMessageWrapper = this.querySelector('#gift-message-wrapper');
     this.giftMessageInput = this.querySelector('#gift-message');
     this.charCountSpan = this.querySelector('#gift-message-count');
-    
+
     // Get data attributes (set by Liquid)
     this.giftWrappingVariantId = this.checkbox?.dataset.variantId;
     this.giftWrappingProductHandle = this.checkbox?.dataset.productHandle;
     this.giftWrappingProductId = this.checkbox?.dataset.productId;
-    
+
     // Flag to prevent re-triggering when we programmatically update checkbox
     this.isUpdating = false;
 
@@ -38,33 +38,34 @@ class GiftWrapping extends HTMLElement {
       this.giftMessageInput.addEventListener('input', this.updateCharCount.bind(this));
       this.updateCharCount();
     }
-    
+
     // Subscribe to cart updates (for when user manually adds/removes gift wrapping)
     this.subscribeToCartUpdates();
   }
-  
+
   subscribeToCartUpdates() {
     // Subscribe to Dawn's pub/sub cart update events
     if (typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined') {
       subscribe(PUB_SUB_EVENTS.cartUpdate, this.onCartUpdate.bind(this));
     }
   }
-  
+
   onCartUpdate(event) {
     // Check if the cart data includes gift wrapping
     const cartData = event?.cartData;
     if (!cartData || !cartData.items) return;
-    
+
     const hasGiftWrapping = cartData.items.some((item) => {
-      return String(item.variant_id) === String(this.giftWrappingVariantId) || 
-             item.handle === this.giftWrappingProductHandle;
+      return (
+        String(item.variant_id) === String(this.giftWrappingVariantId) || item.handle === this.giftWrappingProductHandle
+      );
     });
-    
+
     // Update checkbox state if it doesn't match cart state
     if (this.checkbox.checked !== hasGiftWrapping) {
       this.isUpdating = true;
       this.checkbox.checked = hasGiftWrapping;
-      
+
       // Update gift message visibility
       if (this.giftMessageWrapper) {
         this.giftMessageWrapper.classList.toggle('hidden', !hasGiftWrapping);
@@ -73,7 +74,7 @@ class GiftWrapping extends HTMLElement {
           this.updateCharCount();
         }
       }
-      
+
       this.isUpdating = false;
     }
   }
@@ -95,13 +96,13 @@ class GiftWrapping extends HTMLElement {
   handleCheckboxChange(event) {
     // Ignore if we're programmatically updating the checkbox
     if (this.isUpdating) return;
-    
+
     const isChecked = event.target.checked;
 
     // Show/hide gift message section
     if (this.giftMessageWrapper) {
       this.giftMessageWrapper.classList.toggle('hidden', !isChecked);
-      
+
       if (!isChecked && this.giftMessageInput) {
         this.giftMessageInput.value = '';
         this.updateCharCount();
@@ -151,26 +152,26 @@ class GiftWrapping extends HTMLElement {
     const form = document.createElement('form');
     form.method = 'POST';
     form.action = '/cart/add';
-    
+
     const idInput = document.createElement('input');
     idInput.type = 'hidden';
     idInput.name = 'id';
     idInput.value = this.giftWrappingVariantId;
     form.appendChild(idInput);
-    
+
     const qtyInput = document.createElement('input');
     qtyInput.type = 'hidden';
     qtyInput.name = 'quantity';
     qtyInput.value = '1';
     form.appendChild(qtyInput);
-    
+
     // Return to cart page after adding
     const returnInput = document.createElement('input');
     returnInput.type = 'hidden';
     returnInput.name = 'return_to';
     returnInput.value = '/cart';
     form.appendChild(returnInput);
-    
+
     document.body.appendChild(form);
     form.submit();
   }
@@ -181,8 +182,10 @@ class GiftWrapping extends HTMLElement {
       .then((response) => response.json())
       .then((cart) => {
         const giftItem = cart.items.find((item) => {
-          return String(item.variant_id) === String(this.giftWrappingVariantId) || 
-                 item.handle === this.giftWrappingProductHandle;
+          return (
+            String(item.variant_id) === String(this.giftWrappingVariantId) ||
+            item.handle === this.giftWrappingProductHandle
+          );
         });
 
         if (giftItem) {
@@ -190,19 +193,19 @@ class GiftWrapping extends HTMLElement {
           const form = document.createElement('form');
           form.method = 'POST';
           form.action = '/cart/change';
-          
+
           const idInput = document.createElement('input');
           idInput.type = 'hidden';
           idInput.name = 'id';
           idInput.value = giftItem.key;
           form.appendChild(idInput);
-          
+
           const qtyInput = document.createElement('input');
           qtyInput.type = 'hidden';
           qtyInput.name = 'quantity';
           qtyInput.value = '0';
           form.appendChild(qtyInput);
-          
+
           document.body.appendChild(form);
           form.submit();
         } else {

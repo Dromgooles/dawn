@@ -19,12 +19,12 @@
   assign gift_variant = gift_product.selected_or_first_available_variant
   assign gift_variant_id = gift_variant.id
   assign gift_price_raw = gift_product.price | default: 0
-  
+
   comment
     Check if gift wrapping is already in cart and get variant ID from cart if present
   endcomment
   assign gift_in_cart = false
-  assign cart_gift_variant_id = nil
+  assign cart_gift_variant_id = null
   for item in cart.items
     if item.product.handle == section.settings.gift_wrapping_product_handle
       assign gift_in_cart = true
@@ -32,7 +32,7 @@
       break
     endif
   endfor
-  
+
   comment
     Use the cart variant ID if available, otherwise use from product lookup
   endcomment
@@ -57,12 +57,22 @@
             data-product-handle="{{ section.settings.gift_wrapping_product_handle }}"
             data-variant-id="{{ gift_variant_id }}"
             data-product-id="{{ gift_product.id }}"
-            {% if gift_in_cart %}checked{% endif %}
+            {% if gift_in_cart %}
+              checked
+            {% endif %}
             aria-describedby="gift-wrapping-description"
           >
           <label class="gift-wrapping__label" for="gift-wrapping-checkbox">
             <span class="gift-wrapping__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <rect x="3" y="8" width="18" height="13" rx="2"/>
                 <path d="M12 8v13"/>
                 <path d="M3 12h18"/>
