@@ -45,7 +45,7 @@ class GiftWrapping extends HTMLElement {
           if (this.checkbox.checked) {
             this.updateGiftMessage();
           }
-        }, 1000)
+        }, 1000),
       );
     }
 
