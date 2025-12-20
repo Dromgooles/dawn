@@ -94,7 +94,7 @@
       }
     },
     "related-products": {
-      "type": "related-products",
+      "type": "dromgooles-related-products",
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
