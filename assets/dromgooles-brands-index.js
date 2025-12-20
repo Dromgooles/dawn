@@ -13,9 +13,13 @@
 (function () {
   'use strict';
 
+  // MARK: - Configuration
+
   // Configuration - the ID of the All Brands submenu container
   // This is a first-level submenu, so it uses "link-all-brands" pattern
   const BRANDS_SUBMENU_ID = 'link-all-brands';
+
+  // MARK: - State Variables
 
   let initialized = false;
   let brandsSubmenu = null;
@@ -27,6 +31,8 @@
   let isDragging = false;
   let indicatorTimeout = null;
   let searchInput = null;
+
+  // MARK: - Utility Functions
 
   /**
    * Check if our elements are still in the DOM
@@ -98,6 +104,8 @@
     // Set up scroll tracking
     setupScrollTracking();
   }
+
+  // MARK: - Search Functionality
 
   /**
    * Create the search bar
@@ -179,6 +187,8 @@
     }
   }
 
+  // MARK: - Alphabetical Grouping
+
   /**
    * Group brand items by their first letter
    */
@@ -252,6 +262,8 @@
     menuList.style.display = 'none';
     menuList.parentNode.insertBefore(listContainer, menuList.nextSibling);
   }
+
+  // MARK: - Letter Navigation Bar
 
   /**
    * Create the letter navigation bar
@@ -356,6 +368,8 @@
     hideIndicator();
   }
 
+  // MARK: - Scroll Handling
+
   /**
    * Scroll to a specific letter section
    */
@@ -444,6 +458,8 @@
       btn.classList.toggle('brands-letter-bar__letter--active', btn.dataset.letter === letter);
     });
   }
+
+  // MARK: - Initialization & Observer
 
   /**
    * Watch for the brands submenu to appear in the DOM

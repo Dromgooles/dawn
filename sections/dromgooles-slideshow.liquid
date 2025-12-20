@@ -1,14 +1,17 @@
 {% comment %}
-  Dromgoole's Slideshow
+  Dromgoole's Slideshow (DRO Slideshow)
 
   Extends Dawn's slideshow with "media link" functionality for clickable
   banner images.
 
-  Based on: Dawn slideshow
+  Based on: sections/slideshow.liquid
   Customizations:
     - Media link option: entire slide image becomes clickable
     - Text overlay hidden when media_link enabled
     - Perfect for promotional banners
+
+  Usage:
+    Add via theme editor: Sections > Add section > DRO Slideshow
 {% endcomment %}
 
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
@@ -556,7 +559,7 @@
     {
       "type": "slide",
       "name": "t:sections.slideshow.blocks.slide.name",
-      "limit": 6,
+      "limit": 10,
       "settings": [
         {
           "type": "image_picker",

@@ -21,6 +21,8 @@
  * 11. Responsive Adjustments
  */
 
+/* MARK: - CSS Custom Property Extensions */
+
 /* ============================================
    1. CSS Custom Property Extensions
    
@@ -39,6 +41,8 @@
   --dromgooles-blue-hex: #0b3c5d;
   --dromgooles-gray-hex: #d1d1d1;
 }
+
+/* MARK: - Typography Utilities */
 
 /* ============================================
    2. Typography Utilities
@@ -91,6 +95,8 @@
 .title-wrapper--right {
   text-align: right;
 }
+
+/* MARK: - Color Background Utilities */
 
 /* ============================================
    3. Color Background Utilities
@@ -201,6 +207,8 @@
   background-color: inherit !important;
 }
 
+/* MARK: - Border Radius Utilities */
+
 /* ============================================
    4. Border Radius Utilities
    ============================================ */
@@ -237,6 +245,8 @@
 .border-radius-30 {
   border-radius: 30px !important;
 }
+
+/* MARK: - Layout & Spacing Utilities */
 
 /* ============================================
    5. Layout & Spacing Utilities
@@ -315,6 +325,8 @@
   Do NOT redefine these - it breaks Dawn's responsive image system.
 */
 
+/* MARK: - Card & Product Grid Customizations */
+
 /* ============================================
    6. Card & Product Grid Customizations
    ============================================ */
@@ -348,6 +360,8 @@
 .featured-product-grid .grid__item {
   padding: var(--grid-desktop-vertical-spacing);
 }
+
+/* MARK: - Header Enhancements */
 
 /* ============================================
    7. Header Enhancements
@@ -387,6 +401,8 @@
   display: none;
 }
 
+/* MARK: - Slider & Carousel Fixes */
+
 /* ============================================
    8. Slider & Carousel Fixes
    ============================================ */
@@ -418,6 +434,8 @@
   }
 }
 
+/* MARK: - Footer Customizations */
+
 /* ============================================
    9. Footer Customizations
    ============================================ */
@@ -428,6 +446,8 @@
   max-width: 100%;
   height: auto;
 }
+
+/* MARK: - Component-Specific Overrides */
 
 /* ============================================
    10. Component-Specific Overrides
@@ -463,6 +483,172 @@
 .card__badge {
   z-index: 1;
 }
+
+/* Share button - inherit theme fonts */
+.share-button__button {
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+}
+
+.share-button__fallback .field__input {
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+}
+
+.share-button__fallback .field__label {
+  font-family: var(--font-body-family);
+}
+
+/* Custom Dromgoole's Share Component */
+.dromgooles-share {
+  display: block;
+  position: relative;
+}
+
+.dromgooles-share__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  font-size: var(--dromgooles-share-text-size, 1.4rem);
+  color: var(--dromgooles-share-text-color, rgb(var(--color-foreground)));
+  text-decoration: none;
+  text-transform: var(--dromgooles-share-text-transform, none);
+  letter-spacing: var(--dromgooles-share-letter-spacing, normal);
+  min-height: 4.4rem;
+  list-style: none; /* Remove marker from summary */
+}
+
+.dromgooles-share__button:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.dromgooles-share__button::-webkit-details-marker {
+  display: none;
+}
+
+.dromgooles-share__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--dromgooles-share-icon-size, 1.6rem);
+  height: var(--dromgooles-share-icon-size, 1.6rem);
+  flex-shrink: 0;
+}
+
+.dromgooles-share__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.dromgooles-share__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dromgooles-share__label {
+  white-space: nowrap;
+}
+
+.dromgooles-share__details {
+  width: fit-content;
+}
+
+.dromgooles-share__dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background: rgb(var(--color-background));
+  border-radius: var(--inputs-radius);
+  box-shadow:
+    0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity)),
+    0 4px 12px rgba(var(--color-shadow), 0.15);
+  animation: dromgoolesShareFadeIn 0.2s ease;
+}
+
+@keyframes dromgoolesShareFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dromgooles-share__field {
+  display: flex;
+  align-items: center;
+}
+
+.dromgooles-share__input {
+  width: 20rem;
+  max-width: 50vw;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-body-family);
+  font-size: 1.3rem;
+  color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  border-radius: var(--inputs-radius) 0 0 var(--inputs-radius);
+  outline: none;
+}
+
+.dromgooles-share__input:focus {
+  border-color: rgb(var(--color-foreground));
+}
+
+.dromgooles-share__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 3.6rem;
+  padding: 0;
+  background: rgba(var(--color-foreground), 0.05);
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  border-left: none;
+  border-radius: 0 var(--inputs-radius) var(--inputs-radius) 0;
+  cursor: pointer;
+  color: rgb(var(--color-foreground));
+  transition: background-color 0.15s ease;
+}
+
+.dromgooles-share__copy:hover {
+  background: rgba(var(--color-foreground), 0.1);
+}
+
+.dromgooles-share__copy svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.dromgooles-share__message {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  font-size: 1.2rem;
+  color: rgb(var(--color-foreground));
+  white-space: nowrap;
+}
+
+/* MARK: - Responsive Adjustments */
 
 /* ============================================
    11. Responsive Adjustments
@@ -525,6 +711,8 @@
   }
 }
 
+/* MARK: - Custom Product Page Placeholder Gallery */
+
 /* ============================================
    12. Custom Product Page Placeholder Gallery
    
@@ -550,4 +738,236 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+/* MARK: - Third-Party App Overrides */
+
+/* ============================================
+   13. Third-Party App Overrides
+   
+   CSS fixes for third-party Shopify app integrations.
+   ============================================ */
+
+/* Hide Easify Product Options on collection/grid pages
+   - Easify injects product option selectors (color swatches, buttons, etc.)
+   - These should only appear on product pages, not in collection listings
+   - Classes prefixed with tpo_ are from Easify's "Third Party Options"
+   - Use body template class to ensure we only target collection pages */
+body.template-collection .tpo_option-set-wrapper.tpo_in-card,
+body.template-search .tpo_option-set-wrapper.tpo_in-card,
+.collection-product-list .tpo_option-set-wrapper.tpo_in-card,
+#product-grid .tpo_option-set-wrapper.tpo_in-card {
+  display: none !important;
+}
+
+/* MARK: - Product Slideshow Layout */
+
+/* ============================================
+   14. Product Slideshow Layout
+   
+   Slideshow-style gallery for product pages.
+   Shows one image at a time with prev/next controls
+   and a counter (like mobile view, but on all screens).
+   ============================================ */
+
+/* Mobile: Ensure consistent "hinting" (peek of next image) behavior
+   The default Dawn CSS has width calculations that can break at certain
+   viewport widths due to box-sizing: content-box. This override ensures
+   the peek is always visible and consistent. */
+@media screen and (max-width: 749px) {
+  .product--slideshow .product__media-list .product__media-item {
+    /* Use border-box to avoid calculation conflicts with content-box */
+    box-sizing: border-box;
+    /* Calculate width to leave space for the "peek" of next image
+       100% - 1.5rem (left margin) - 1.5rem (peek space) - 4px (grid spacing) */
+    width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+    /* Ensure this width is respected */
+    min-width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+    max-width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+    /* Prevent flex from overriding our width */
+    flex: 0 0 auto;
+  }
+}
+
+/* Desktop: Full slideshow behavior */
+@media screen and (min-width: 750px) {
+  /* slider-component is the positioning context for arrow buttons */
+  .product--slideshow slider-component {
+    position: relative;
+    overflow: visible !important; /* Allow buttons to be visible outside bounds */
+  }
+
+  /* The slider-buttons container holds prev, counter, next - keep it in flow for counter */
+  .product--slideshow .slider-buttons {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    position: static; /* Let it flow below the image for the counter */
+  }
+
+  /* Arrow buttons get pulled out of flow and positioned over the image */
+  .product--slideshow .slider-button {
+    position: absolute;
+    top: calc(50% - 2.5rem); /* Center on image, offset for counter below */
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex !important;
+    visibility: visible !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background: rgba(var(--color-background), 0.9);
+    border: none;
+    border-radius: 50%;
+    color: rgba(var(--color-foreground), 0.75);
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.25),
+      0 1px 3px rgba(0, 0, 0, 0.15);
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+  }
+
+  .product--slideshow .slider-button--prev {
+    left: 1rem !important;
+    right: auto !important;
+  }
+
+  .product--slideshow .slider-button--next {
+    right: 1rem !important;
+    left: auto !important;
+  }
+
+  .product--slideshow .slider-button:hover {
+    background: rgba(var(--color-background), 1);
+    color: rgb(var(--color-foreground));
+  }
+
+  .product--slideshow .slider-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  /* Icon sizing inside buttons */
+  .product--slideshow .slider-button .icon {
+    width: 1rem;
+    height: 0.6rem;
+  }
+
+  /* Keep counter centered below the image */
+  .product--slideshow .slider-counter {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 4rem;
+    justify-content: center;
+  }
+
+  /* Force horizontal scroll layout like mobile - each slide takes full width */
+  .product--slideshow .product__media-list {
+    display: flex !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: visible; /* Allow buttons to overflow vertically if needed */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 0;
+    padding-bottom: calc(var(--media-shadow-vertical-offset) * var(--media-shadow-visible));
+  }
+
+  /* Each slide should take 100% width and snap into place */
+  .product--slideshow .product__media-list .product__media-item {
+    min-width: 100% !important;
+    width: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  /* Hide scrollbar for clean look */
+  .product--slideshow .product__media-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product--slideshow .product__media-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Ensure the active item modal opener works correctly */
+  .product--slideshow .is-active .product__modal-opener:not(.product__modal-opener--image) {
+    pointer-events: none;
+  }
+
+  .product--slideshow .is-active .deferred-media {
+    pointer-events: auto;
+  }
+
+  /* Match shadow style on the zoom/magnifying glass button */
+  .product--slideshow .product__media-icon {
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.25),
+      0 1px 3px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* MARK: - Back in Stock Integration */
+
+/* ============================================
+   Back in Stock Integration
+   
+   Hide native "Sold out" button and dynamic checkout
+   when product is sold out. The BIS app injects its
+   own "Notify Me" button to replace these.
+   ============================================ */
+
+/* Hide native buttons ONLY when BIS button is present */
+/* The :has() selector ensures we only hide if BIS actually injected its button */
+.product-form__buttons:has(#BIS_trigger) .product-form__submit,
+.product-form__buttons:has(#BIS_trigger) .shopify-payment-button {
+  display: none !important;
+}
+
+/* Keep wishlist button visible when BIS is present */
+.product-form__buttons:has(#BIS_trigger) .swym-button-bar {
+  display: block !important;
+}
+
+/* Hide quantity selector when BIS button is present */
+.product__info-container:has(#BIS_trigger) .product-form__quantity {
+  display: none !important;
+}
+
+/* ============================================
+   RTE (Rich Text Editor) List Fixes
+   
+   Dawn's default list-style-position: inside causes
+   multi-line list items to wrap oddly. This fix uses
+   outside positioning with proper padding for cleaner
+   bullet alignment.
+   ============================================ */
+
+.rte ul,
+.rte ol {
+  list-style-position: outside;
+  padding-left: 2.4rem;
+  margin-left: 0;
+}
+
+.rte li {
+  padding-left: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.rte ul li {
+  list-style-type: disc;
+}
+
+.rte ol li {
+  list-style-type: decimal;
 }

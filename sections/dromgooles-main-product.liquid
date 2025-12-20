@@ -1,12 +1,15 @@
 {% comment %}
-  Dromgoole's Main Product
+  Dromgoole's Main Product (DRO Main Product)
 
   Extended product page section with placeholder image support.
 
-  Based on: Dawn main-product
+  Based on: sections/main-product.liquid
   Customizations:
     - Always renders 2-column layout (no product--no-media class)
     - Uses dromgooles-product-media-gallery for placeholder support
+
+  Usage:
+    Assigned to product template in theme editor
 {% endcomment %}
 
 <product-info
@@ -55,6 +58,11 @@
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- comment -%} CUSTOMIZED: Load slideshow enhancement script for slideshow layout {%- endcomment -%}
+  {%- if section.settings.gallery_layout == 'slideshow' -%}
+    <script src="{{ 'dromgooles-product-slideshow.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
   {% if section.settings.image_zoom == 'hover' %}
@@ -487,13 +495,13 @@
               {%- when 'share' -%}
                 {% liquid
                   assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
-                  render 'share-button', block: block, share_link: share_url
+                  render 'dromgooles-share', block: block, share_link: share_url, section_id: section.id
                 %}
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
-                {%- render 'buy-buttons',
+                {%- render 'dromgooles-buy-buttons',
                   block: block,
                   product: product,
                   product_form_id: product_form_id,
@@ -742,12 +750,15 @@
     <script type="application/ld+json">
       {{ product | structured_data }}
     </script>
+
+    {% comment %} Back in Stock integration - exposes inventory data to BIS app {% endcomment %}
+    {%- render 'dromgooles-back-in-stock-helper' -%}
   </div>
 </product-info>
 
 {% schema %}
 {
-  "name": "Dromgoole's Product",
+  "name": "DRO Product",
   "tag": "section",
   "class": "section",
   "blocks": [
@@ -950,6 +961,58 @@
           "id": "share_label",
           "label": "t:sections.main-product.blocks.share.settings.text.label",
           "default": "t:sections.main-product.blocks.share.settings.text.default"
+        },
+        {
+          "type": "header",
+          "content": "Text styling"
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "min": 10,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Text size",
+          "default": 14
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "info": "Leave blank to use theme default"
+        },
+        {
+          "type": "checkbox",
+          "id": "text_uppercase",
+          "label": "Uppercase text",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon",
+          "label": "Custom icon",
+          "info": "Optional. Uses default share icon if not set."
+        },
+        {
+          "type": "range",
+          "id": "icon_size",
+          "min": 12,
+          "max": 32,
+          "step": 2,
+          "unit": "px",
+          "label": "Icon size",
+          "default": 16
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_icon",
+          "label": "Hide icon",
+          "default": false
         }
       ]
     },
@@ -2173,6 +2236,10 @@
         {
           "value": "thumbnail_slider",
           "label": "t:sections.main-product.settings.gallery_layout.options__4.label"
+        },
+        {
+          "value": "slideshow",
+          "label": "Slideshow"
         }
       ],
       "default": "stacked",

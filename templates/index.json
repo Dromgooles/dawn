@@ -33,6 +33,27 @@
             "button_text_color": ""
           }
         },
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/16_8ae21c71-808d-405e-bd08-fd97c50566ab.png",
+            "link": "shopify://pages/event-details",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
         "slide_mTiPj7": {
           "type": "slide",
           "settings": {
@@ -54,32 +75,11 @@
             "button_text_color": ""
           }
         },
-        "slide_2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/IMG_4620.png",
-            "link": "https://www.dromgooles.com/products/matthew-chen-nib-grinding-event-december-11-13th",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1",
-            "heading_color": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
         "slide_TPKhRt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/IMG_4683.png",
-            "link": "https://www.dromgooles.com/products/twsbi-eco-fountain-pen-cosmos-with-onyx-trim",
+            "image": "shopify://shop_images/19_e698006d-f493-450c-a103-f4ce872d8d5e.png",
+            "link": "https://www.dromgooles.com/search?q=superman",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -99,8 +99,8 @@
         "slide_r6hEyn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/IMG_4682.png",
-            "link": "https://www.dromgooles.com/products/nahvalur-eclipse-retractable-fountain-pen-hepatizon-silver",
+            "image": "shopify://shop_images/Upcoming_April_Events_3201_x_1000_px_5.jpg",
+            "link": "https://www.dromgooles.com/search?q=emily+in+paris",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -120,13 +120,12 @@
       },
       "block_order": [
         "slide_1",
-        "slide_mTiPj7",
         "slide_2",
+        "slide_mTiPj7",
         "slide_TPKhRt",
         "slide_r6hEyn"
       ],
       "settings": {
-        "name": "DRO Slideshow",
         "media_link": true,
         "layout": "full_bleed",
         "slide_height": "custom_ratio",
@@ -219,6 +218,20 @@
             "border_radius": 0
           }
         },
+        "collection_KCdiDr": {
+          "type": "collection",
+          "settings": {
+            "collection": "calligraphy",
+            "custom_title": "Dip Pens & Calligraphy",
+            "hide_title": false,
+            "image": "shopify://shop_images/Herbin-Straight-GlassDipPen-RougeCaroubier-OW-1_1500x_24fac66d-30a1-49b5-9cc1-202a4aa2f807.png",
+            "image_style": "cover",
+            "background_color": "",
+            "background_gradient": "",
+            "text_color": "",
+            "border_radius": 0
+          }
+        },
         "collection_h9MiJQ": {
           "type": "collection",
           "settings": {
@@ -237,6 +250,7 @@
         "collection_Y7JwmM",
         "collection_nT8h3q",
         "collection_WNi9Cw",
+        "collection_KCdiDr",
         "collection_h9MiJQ"
       ],
       "name": "DRO Collection Grid",
@@ -252,7 +266,7 @@
         "title_alignment": "center",
         "title_size": "h5",
         "title_spacing": 10,
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "show_view_all": false,
@@ -375,7 +389,7 @@
         "view_all_text": "View collection",
         "view_all_style": "solid",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "color_scheme": "scheme-1",
         "heading_color": "#0b3c5d",
         "button_background": "#0b3c5d",
@@ -486,8 +500,8 @@
             "instafeed_margin_bottom": 0,
             "instafeed_margin_sides": 0,
             "show_instagram_link": true,
-            "link_alignment": "left",
-            "link_color": "#0b3c5d",
+            "link_alignment": "center",
+            "link_color": "#c06014",
             "background_color": "",
             "feed_id": "",
             "html_area": ""

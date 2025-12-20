@@ -1,0 +1,22 @@
+{% comment %}
+  Dromgoole's Share Button Enhancement
+
+  Renders the standard Dawn share button and loads the enhancement script
+  that adds error handling for navigator.share() failures.
+
+  Accepts:
+  - block: {Object} passes in the block information.
+  - share_link: {String} url to be added to the input the user will get/copy.
+
+  Usage:
+  {% render 'dromgooles-share-button',
+    block: block,
+    share_link: share_url
+  %}
+{% endcomment %}
+
+{%- comment -%} Load our enhancement script once {%- endcomment -%}
+<script src="{{ 'dromgooles-share.js' | asset_url }}" defer="defer"></script>
+
+{%- comment -%} Render the standard Dawn share button {%- endcomment -%}
+{% render 'share-button', block: block, share_link: share_link %}

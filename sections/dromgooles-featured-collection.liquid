@@ -1,11 +1,16 @@
 {% comment %}
-  Dromgoole's Featured Collection
+  Dromgoole's Featured Collection (DRO Featured Collection)
 
-  Extends Dawn's featured-collection section with header text alignment.
+  Extends Dawn's featured-collection section with header text alignment
+  and uses custom product cards without sale badges.
 
-  Based on: Dawn featured-collection
+  Based on: sections/featured-collection.liquid
   Customizations:
     - Header alignment option (left/center/right)
+    - Uses dromgooles-card-product snippet (no sale badges)
+
+  Usage:
+    Add via theme editor: Sections > Add section > DRO Featured Collection
 {% endcomment %}
 
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
@@ -173,7 +178,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {% render 'card-product',
+                {% render 'dromgooles-card-product',
                   card_product: product,
                   media_aspect_ratio: section.settings.image_ratio,
                   image_shape: section.settings.image_shape,
@@ -208,7 +213,7 @@
                 endcase
               %}
               {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
-              {% render 'card-product',
+              {% render 'dromgooles-card-product',
                 show_vendor: section.settings.show_vendor,
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
