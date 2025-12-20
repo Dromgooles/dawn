@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-search",
+      "type": "dromgooles-main-search",
       "settings": {
         "columns_desktop": 4,
         "columns_mobile": "2",

@@ -942,3 +942,32 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
 .product__info-container:has(#BIS_trigger) .product-form__quantity {
   display: none !important;
 }
+
+/* ============================================
+   RTE (Rich Text Editor) List Fixes
+   
+   Dawn's default list-style-position: inside causes
+   multi-line list items to wrap oddly. This fix uses
+   outside positioning with proper padding for cleaner
+   bullet alignment.
+   ============================================ */
+
+.rte ul,
+.rte ol {
+  list-style-position: outside;
+  padding-left: 2.4rem;
+  margin-left: 0;
+}
+
+.rte li {
+  padding-left: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.rte ul li {
+  list-style-type: disc;
+}
+
+.rte ol li {
+  list-style-type: decimal;
+}
