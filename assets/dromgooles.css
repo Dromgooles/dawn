@@ -748,15 +748,34 @@
    CSS fixes for third-party Shopify app integrations.
    ============================================ */
 
-/* Hide Easify Product Options on collection/grid pages
+/* Hide Easify Product Options everywhere except product pages
    - Easify injects product option selectors (color swatches, buttons, etc.)
-   - These should only appear on product pages, not in collection listings
+   - These should only appear on product pages, not in collection listings,
+     featured collections, cart drawers, or any other product card contexts
    - Classes prefixed with tpo_ are from Easify's "Third Party Options"
-   - Use body template class to ensure we only target collection pages */
-body.template-collection .tpo_option-set-wrapper.tpo_in-card,
-body.template-search .tpo_option-set-wrapper.tpo_in-card,
-.collection-product-list .tpo_option-set-wrapper.tpo_in-card,
-#product-grid .tpo_option-set-wrapper.tpo_in-card {
+   - The .tpo_in-card class indicates Easify has injected into a product card */
+
+/* Hide in all product card contexts across the site */
+.tpo_option-set-wrapper.tpo_in-card {
+  display: none !important;
+}
+
+/* Also hide by template for redundancy */
+body.template-collection .tpo_option-set-wrapper,
+body.template-search .tpo_option-set-wrapper,
+body.template-index .tpo_option-set-wrapper.tpo_in-card,
+body.template-cart .tpo_option-set-wrapper.tpo_in-card {
+  display: none !important;
+}
+
+/* Hide in specific container contexts */
+.collection-product-list .tpo_option-set-wrapper,
+#product-grid .tpo_option-set-wrapper,
+.product-grid .tpo_option-set-wrapper,
+.card-wrapper .tpo_option-set-wrapper,
+.cart-drawer .tpo_option-set-wrapper,
+.featured-collection .tpo_option-set-wrapper,
+slider-component .tpo_option-set-wrapper.tpo_in-card {
   display: none !important;
 }
 
