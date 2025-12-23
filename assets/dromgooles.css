@@ -940,14 +940,12 @@ slider-component .tpo_option-set-wrapper.tpo_in-card {
 /* ============================================
    Back in Stock Integration
    
-   Hide native "Sold out" button and dynamic checkout
-   when product is sold out. The BIS app injects its
-   own "Notify Me" button to replace these.
+   Keep the native "Sold out" button visible but hide
+   Shop Pay button when BIS "Notify Me" button is present.
    ============================================ */
 
-/* Hide native buttons ONLY when BIS button is present */
-/* The :has() selector ensures we only hide if BIS actually injected its button */
-.product-form__buttons:has(#BIS_trigger) .product-form__submit,
+/* Hide Shop Pay button ONLY when BIS button is present */
+/* Keeps the native "Sold out" button visible but removes dynamic checkout */
 .product-form__buttons:has(#BIS_trigger) .shopify-payment-button {
   display: none !important;
 }
