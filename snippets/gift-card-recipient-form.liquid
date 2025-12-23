@@ -218,14 +218,13 @@
       id="Recipient-timezone-offset-{{ section.id }}"
       disabled
     >
-    
+
     {%- comment -%}
       CUSTOMIZED: Dromgoole's - Add visible line item properties for gift card recipient info
       This component duplicates the recipient form data as regular line item properties
       so they appear on orders and packing slips (like gift wrapping messages do)
     {%- endcomment -%}
     <script src="{{ 'dromgooles-gift-card-properties.js' | asset_url }}" defer="defer"></script>
-    <gift-card-properties data-section-id="{{ section.id }}">
-    </gift-card-properties>
+    <gift-card-properties data-section-id="{{ section.id }}"> </gift-card-properties>
   </recipient-form>
 </div>
