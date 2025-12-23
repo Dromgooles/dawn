@@ -26,9 +26,6 @@ if (!customElements.get('gift-card-properties')) {
         this.recipientMessage = document.querySelector(`#Recipient-message-${this.sectionId}`);
         this.recipientSendOn = document.querySelector(`#Recipient-send-on-${this.sectionId}`);
 
-        // Prefix original Shopify properties with underscore to hide them
-        this.prefixOriginalProperties();
-
         // Create hidden inputs for line item properties
         this.createHiddenFields();
 
@@ -50,43 +47,26 @@ if (!customElements.get('gift-card-properties')) {
         }
       }
 
-      prefixOriginalProperties() {
-        // Add underscore prefix to original Shopify properties to hide them
-        // (properties starting with _ are filtered out in Dawn templates)
-        if (this.recipientEmail) {
-          this.recipientEmail.name = 'properties[_Recipient email]';
-        }
-        if (this.recipientName) {
-          this.recipientName.name = 'properties[_Recipient name]';
-        }
-        if (this.recipientMessage) {
-          this.recipientMessage.name = 'properties[_Message]';
-        }
-        if (this.recipientSendOn) {
-          this.recipientSendOn.name = 'properties[_Send on]';
-        }
-      }
-
       createHiddenFields() {
         // Create hidden inputs that will become line item properties
         this.hiddenEmail = document.createElement('input');
         this.hiddenEmail.type = 'hidden';
-        this.hiddenEmail.name = 'properties[Gift Card Recipient Email]';
+        this.hiddenEmail.name = 'properties[_Gift Card Recipient Email]';
         this.hiddenEmail.disabled = true;
 
         this.hiddenName = document.createElement('input');
         this.hiddenName.type = 'hidden';
-        this.hiddenName.name = 'properties[Gift Card Recipient Name]';
+        this.hiddenName.name = 'properties[_Gift Card Recipient Name]';
         this.hiddenName.disabled = true;
 
         this.hiddenMessage = document.createElement('input');
         this.hiddenMessage.type = 'hidden';
-        this.hiddenMessage.name = 'properties[Gift Card Message]';
+        this.hiddenMessage.name = 'properties[_Gift Card Message]';
         this.hiddenMessage.disabled = true;
 
         this.hiddenSendOn = document.createElement('input');
         this.hiddenSendOn.type = 'hidden';
-        this.hiddenSendOn.name = 'properties[Gift Card Send On]';
+        this.hiddenSendOn.name = 'properties[_Gift Card Send On]';
         this.hiddenSendOn.disabled = true;
 
         // Append to the component
