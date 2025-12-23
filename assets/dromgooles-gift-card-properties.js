@@ -26,9 +26,12 @@ if (!customElements.get('gift-card-properties')) {
         this.recipientMessage = document.querySelector(`#Recipient-message-${this.sectionId}`);
         this.recipientSendOn = document.querySelector(`#Recipient-send-on-${this.sectionId}`);
 
+        // Prefix original Shopify properties with underscore to hide them
+        this.prefixOriginalProperties();
+        
         // Create hidden inputs for line item properties
         this.createHiddenFields();
-
+        
         // Listen for changes on all fields
         if (this.recipientCheckbox) {
           this.recipientCheckbox.addEventListener('change', this.updateHiddenFields.bind(this));
@@ -44,6 +47,23 @@ if (!customElements.get('gift-card-properties')) {
         }
         if (this.recipientSendOn) {
           this.recipientSendOn.addEventListener('input', this.updateHiddenFields.bind(this));
+        }
+      }
+      
+      prefixOriginalProperties() {
+        // Add underscore prefix to original Shopify properties to hide them
+        // (properties starting with _ are filtered out in Dawn templates)
+        if (this.recipientEmail) {
+          this.recipientEmail.name = 'properties[_Recipient email]';
+        }
+        if (this.recipientName) {
+          this.recipientName.name = 'properties[_Recipient name]';
+        }
+        if (this.recipientMessage) {
+          this.recipientMessage.name = 'properties[_Message]';
+        }
+        if (this.recipientSendOn) {
+          this.recipientSendOn.name = 'properties[_Send on]';
         }
       }
 
