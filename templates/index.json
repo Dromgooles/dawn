@@ -1,22 +1,13 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "dromgooles_slideshow": {
       "type": "dromgooles-slideshow",
       "blocks": {
-        "slide_1": {
+        "slide_8GAb79": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/IMG_4684.png",
-            "link": "https://dromgooles.com",
+            "image": "shopify:\/\/shop_images\/Upcoming_April_Events_3201_x_1000_px_30.png",
+            "link": "https:\/\/www.dromgooles.com\/products\/esterbrook-the-travel-journal-workshop-set-collection-1?_pos=5&_sid=58c594cfe&_ss=r",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -33,11 +24,11 @@
             "button_text_color": ""
           }
         },
-        "slide_2": {
+        "slide_1": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/16_8ae21c71-808d-405e-bd08-fd97c50566ab.png",
-            "link": "shopify://pages/event-details",
+            "image": "shopify:\/\/shop_images\/Upcoming_April_Events_3201_x_1000_px_29.png",
+            "link": "https:\/\/dromgooles.com",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -57,8 +48,8 @@
         "slide_mTiPj7": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Upcoming_April_Events_3201_x_1000_px_1.jpg",
-            "link": "https://www.dromgooles.com/search?q=liscio",
+            "image": "shopify:\/\/shop_images\/Upcoming_April_Events_3201_x_1000_px_6.jpg",
+            "link": "https:\/\/www.dromgooles.com\/search?q=liscio",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -78,8 +69,8 @@
         "slide_TPKhRt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/19_e698006d-f493-450c-a103-f4ce872d8d5e.png",
-            "link": "https://www.dromgooles.com/search?q=superman",
+            "image": "shopify:\/\/shop_images\/19_e698006d-f493-450c-a103-f4ce872d8d5e.png",
+            "link": "https:\/\/www.dromgooles.com\/search?q=superman",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -99,8 +90,8 @@
         "slide_r6hEyn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Upcoming_April_Events_3201_x_1000_px_5.jpg",
-            "link": "https://www.dromgooles.com/search?q=emily+in+paris",
+            "image": "shopify:\/\/shop_images\/Upcoming_April_Events_3201_x_1000_px_5.jpg",
+            "link": "https:\/\/www.dromgooles.com\/search?q=emily+in+paris",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -118,13 +109,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_1",
-        "slide_2",
-        "slide_mTiPj7",
-        "slide_TPKhRt",
-        "slide_r6hEyn"
-      ],
+      "block_order": ["slide_8GAb79", "slide_1", "slide_mTiPj7", "slide_TPKhRt", "slide_r6hEyn"],
       "settings": {
         "media_link": true,
         "layout": "full_bleed",
@@ -148,7 +133,7 @@
       "settings": {
         "collection": "new-arrivals",
         "products_to_show": 5,
-        "title": "New Arrivals",
+        "title": "{{ section.settings.collection.title }}",
         "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
@@ -224,7 +209,7 @@
             "collection": "calligraphy",
             "custom_title": "Dip Pens & Calligraphy",
             "hide_title": false,
-            "image": "shopify://shop_images/Herbin-Straight-GlassDipPen-RougeCaroubier-OW-1_1500x_24fac66d-30a1-49b5-9cc1-202a4aa2f807.png",
+            "image": "shopify:\/\/shop_images\/Herbin-Straight-GlassDipPen-RougeCaroubier-OW-1_1500x_24fac66d-30a1-49b5-9cc1-202a4aa2f807.png",
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
@@ -297,8 +282,8 @@
         "collection_KXYrKh": {
           "type": "collection",
           "settings": {
-            "collection": "accessories",
-            "custom_title": "",
+            "collection": "accessories-shop-all",
+            "custom_title": "Accessories",
             "hide_title": false,
             "image_style": "cover",
             "background_color": "",
@@ -334,12 +319,7 @@
           }
         }
       },
-      "block_order": [
-        "collection_ccKygV",
-        "collection_KXYrKh",
-        "collection_fNqChL",
-        "collection_jA7qkD"
-      ],
+      "block_order": ["collection_ccKygV", "collection_KXYrKh", "collection_fNqChL", "collection_jA7qkD"],
       "name": "DRO Collection Grid",
       "settings": {
         "title": "Stationery & Paper",
@@ -370,7 +350,7 @@
       "settings": {
         "collection": "last-chance-products",
         "products_to_show": 4,
-        "title": "Last Chance",
+        "title": "{{ section.settings.collection.title }}",
         "heading_size": "h1",
         "header_alignment": "center",
         "description": "",
@@ -446,7 +426,7 @@
             "collection": "sailor-all",
             "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/sailor_logo.webp",
+            "image": "shopify:\/\/shop_images\/sailor_logo.webp",
             "image_style": "cover",
             "background_color": "",
             "background_gradient": "",
@@ -455,12 +435,7 @@
           }
         }
       },
-      "block_order": [
-        "collection_mwQJqC",
-        "collection_QtapVJ",
-        "collection_ENejwP",
-        "collection_ULgeKe"
-      ],
+      "block_order": ["collection_mwQJqC", "collection_QtapVJ", "collection_ENejwP", "collection_ULgeKe"],
       "name": "DRO Collection Grid",
       "settings": {
         "title": "Trusted Quality",
@@ -490,7 +465,7 @@
       "type": "apps",
       "blocks": {
         "instafeed_app_block_CQgzNt": {
-          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "Follow us on Instagram!",
             "title_color": "#0b3c5d",
@@ -508,12 +483,8 @@
           }
         }
       },
-      "block_order": [
-        "instafeed_app_block_CQgzNt"
-      ],
-      "settings": {
-        "include_margins": true
-      }
+      "block_order": ["instafeed_app_block_CQgzNt"],
+      "settings": { "include_margins": true }
     }
   },
   "order": [

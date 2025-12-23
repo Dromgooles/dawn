@@ -4,9 +4,6 @@
  * This file contains CSS customizations for Dromgoole's store.
  * It is loaded AFTER Dawn's base.css to override default styles.
  * 
- * Dawn Version: 15.4.1
- * Last Updated: 2025
- * 
  * Organization:
  * 1. CSS Custom Property Extensions
  * 2. Typography Utilities
@@ -51,6 +48,28 @@
 /* Heading color override using scheme accent */
 .heading-accent-color {
   color: rgb(var(--color-button));
+}
+
+/* MARK: - Header Navigation Customizations */
+
+/* ============================================
+   Header - Search Icon Positioning for Drawer Nav
+   
+   When drawer navigation is enabled, keep search icon
+   and drawer menu together using a container.
+   ============================================ */
+
+.nav-search-container {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+@media screen and (min-width: 990px) {
+  /* Remove negative margin from drawer when in container */
+  .nav-search-container header-drawer {
+    margin-left: 0;
+  }
 }
 
 /* Text alignment utilities */
@@ -748,15 +767,34 @@
    CSS fixes for third-party Shopify app integrations.
    ============================================ */
 
-/* Hide Easify Product Options on collection/grid pages
+/* Hide Easify Product Options everywhere except product pages
    - Easify injects product option selectors (color swatches, buttons, etc.)
-   - These should only appear on product pages, not in collection listings
+   - These should only appear on product pages, not in collection listings,
+     featured collections, cart drawers, or any other product card contexts
    - Classes prefixed with tpo_ are from Easify's "Third Party Options"
-   - Use body template class to ensure we only target collection pages */
-body.template-collection .tpo_option-set-wrapper.tpo_in-card,
-body.template-search .tpo_option-set-wrapper.tpo_in-card,
-.collection-product-list .tpo_option-set-wrapper.tpo_in-card,
-#product-grid .tpo_option-set-wrapper.tpo_in-card {
+   - The .tpo_in-card class indicates Easify has injected into a product card */
+
+/* Hide in all product card contexts across the site */
+.tpo_option-set-wrapper.tpo_in-card {
+  display: none !important;
+}
+
+/* Also hide by template for redundancy */
+body.template-collection .tpo_option-set-wrapper,
+body.template-search .tpo_option-set-wrapper,
+body.template-index .tpo_option-set-wrapper.tpo_in-card,
+body.template-cart .tpo_option-set-wrapper.tpo_in-card {
+  display: none !important;
+}
+
+/* Hide in specific container contexts */
+.collection-product-list .tpo_option-set-wrapper,
+#product-grid .tpo_option-set-wrapper,
+.product-grid .tpo_option-set-wrapper,
+.card-wrapper .tpo_option-set-wrapper,
+.cart-drawer .tpo_option-set-wrapper,
+.featured-collection .tpo_option-set-wrapper,
+slider-component .tpo_option-set-wrapper.tpo_in-card {
   display: none !important;
 }
 
@@ -921,14 +959,12 @@ body.template-search .tpo_option-set-wrapper.tpo_in-card,
 /* ============================================
    Back in Stock Integration
    
-   Hide native "Sold out" button and dynamic checkout
-   when product is sold out. The BIS app injects its
-   own "Notify Me" button to replace these.
+   Keep the native "Sold out" button visible but hide
+   Shop Pay button when BIS "Notify Me" button is present.
    ============================================ */
 
-/* Hide native buttons ONLY when BIS button is present */
-/* The :has() selector ensures we only hide if BIS actually injected its button */
-.product-form__buttons:has(#BIS_trigger) .product-form__submit,
+/* Hide Shop Pay button ONLY when BIS button is present */
+/* Keeps the native "Sold out" button visible but removes dynamic checkout */
 .product-form__buttons:has(#BIS_trigger) .shopify-payment-button {
   display: none !important;
 }

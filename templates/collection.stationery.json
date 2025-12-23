@@ -1,22 +1,9 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
-      "settings": {
-        "show_collection_description": false,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
-      }
+      "settings": { "show_collection_description": false, "show_collection_image": false, "color_scheme": "scheme-1" }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
@@ -45,8 +32,8 @@
         "hero_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/2ef83c4116ad4.jpg",
-            "link": "shopify://collections/stationery",
+            "image": "shopify:\/\/shop_images\/2ef83c4116ad4.jpg",
+            "link": "shopify:\/\/collections\/stationery",
             "image_overlay_opacity": 0,
             "heading": "Stationery",
             "heading_size": "h1",
@@ -57,16 +44,17 @@
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
           }
         }
       },
-      "block_order": [
-        "hero_slide"
-      ],
+      "block_order": ["hero_slide"],
       "settings": {
         "media_link": false,
-        "layout": "full_bleed",
+        "layout": "grid",
         "slide_height": "small",
         "aspect_ratio_width": 16,
         "aspect_ratio_height": 5,
@@ -91,7 +79,7 @@
             "collection": "crane-thank-you-notes-and-cards",
             "custom_title": "Note Cards",
             "hide_title": false,
-            "image": "shopify://shop_images/cf19041-crane-pearl-white-neon-blue-bordered-note.jpg",
+            "image": "shopify:\/\/shop_images\/cf19041-crane-pearl-white-neon-blue-bordered-note.jpg",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -115,8 +103,8 @@
         "envelopes": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "custom_title": "Pads & Envelopes",
+            "collection": "envelopes",
+            "custom_title": "Envelopes",
             "hide_title": false,
             "image_style": "contain",
             "background_color": "",
@@ -126,11 +114,7 @@
           }
         }
       },
-      "block_order": [
-        "note_cards",
-        "greeting_cards",
-        "envelopes"
-      ],
+      "block_order": ["note_cards", "greeting_cards", "envelopes"],
       "settings": {
         "title": "Shop By Category",
         "heading_size": "h2",
@@ -161,7 +145,7 @@
         "crane": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "midori-stationery",
             "custom_title": "Midori",
             "hide_title": false,
             "image_style": "contain",
@@ -203,7 +187,7 @@
             "collection": "well-appointed-desk",
             "custom_title": "Well Appointed Desk",
             "hide_title": false,
-            "image": "shopify://shop_images/coloring-wellappointeddesk2_beb223d9-fdc5-48f0-a5e4-c38f71a59374.jpg",
+            "image": "shopify:\/\/shop_images\/coloring-wellappointeddesk2_beb223d9-fdc5-48f0-a5e4-c38f71a59374.jpg",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -212,12 +196,7 @@
           }
         }
       },
-      "block_order": [
-        "crane",
-        "g_lalo",
-        "clairefontaine",
-        "original_crown_mill"
-      ],
+      "block_order": ["crane", "g_lalo", "clairefontaine", "original_crown_mill"],
       "settings": {
         "title": "Popular Brands",
         "heading_size": "h2",
@@ -237,6 +216,7 @@
         "view_all_text": "",
         "view_all_link": "",
         "color_scheme": "scheme-1",
+        "heading_color": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -247,13 +227,13 @@
         "sealing_wax_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/custom-wax-seal-stamps-3_b0b96a97-65db-4328-9b44-d9a7da6a9095.jpg",
+            "image": "shopify:\/\/shop_images\/custom-wax-seal-stamps-3_b0b96a97-65db-4328-9b44-d9a7da6a9095.jpg",
             "image_overlay_opacity": 40,
             "heading": "Sealing Wax & Stamps",
             "heading_size": "h2",
             "subheading": "Add an elegant finishing touch to your correspondence with traditional sealing wax and custom stamps.",
             "button_label": "Shop Sealing Wax",
-            "link": "shopify://collections/sealing-wax",
+            "link": "shopify:\/\/collections\/sealing-wax",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
@@ -263,9 +243,7 @@
           }
         }
       },
-      "block_order": [
-        "sealing_wax_slide"
-      ],
+      "block_order": ["sealing_wax_slide"],
       "settings": {
         "layout": "grid",
         "slide_height": "small",
@@ -286,7 +264,7 @@
             "collection": "",
             "custom_title": "Journaling Accessories",
             "hide_title": false,
-            "image": "shopify://shop_images/brass-paper-weight-2.jpg",
+            "image": "shopify:\/\/shop_images\/brass-paper-weight-2.jpg",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -300,7 +278,7 @@
             "collection": "desk-sets",
             "custom_title": "Desk Sets",
             "hide_title": false,
-            "image": "shopify://shop_images/R51_Desk_set_STAINLESS_2_edit.png",
+            "image": "shopify:\/\/shop_images\/R51_Desk_set_STAINLESS_2_edit.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -314,7 +292,7 @@
             "collection": "stamp-pads-ink",
             "custom_title": "Stamp Pads & Ink",
             "hide_title": false,
-            "image": "shopify://shop_images/DSC09730.jpg",
+            "image": "shopify:\/\/shop_images\/DSC09730.jpg",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -323,11 +301,7 @@
           }
         }
       },
-      "block_order": [
-        "paper_weights",
-        "desk_sets",
-        "stamp_pads"
-      ],
+      "block_order": ["paper_weights", "desk_sets", "stamp_pads"],
       "settings": {
         "title": "Accessories",
         "heading_size": "h2",
@@ -358,13 +332,13 @@
         "pens_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/fountain-pens-dromgooles.jpg",
+            "image": "shopify:\/\/shop_images\/fountain-pens-dromgooles.jpg",
             "image_overlay_opacity": 40,
             "heading": "Looking for a Pen?",
             "heading_size": "h2",
             "subheading": "Browse our collection of fine writing instruments to pair with your stationery.",
             "button_label": "Shop Fountain Pens",
-            "link": "shopify://collections/fountain-pens",
+            "link": "shopify:\/\/collections\/fountain-pens",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
@@ -374,9 +348,7 @@
           }
         }
       },
-      "block_order": [
-        "pens_slide"
-      ],
+      "block_order": ["pens_slide"],
       "settings": {
         "layout": "grid",
         "slide_height": "small",
@@ -393,22 +365,19 @@
       "blocks": {
         "heading": {
           "type": "heading",
-          "settings": {
-            "heading": "Need Help Choosing Stationery?",
-            "heading_size": "h1"
-          }
+          "settings": { "heading": "Need Help Choosing Stationery?", "heading_size": "h1" }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our knowledgeable staff can help you find the perfect stationery for any occasion. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+            "text": "<p>Our knowledgeable staff can help you find the perfect stationery for any occasion. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.<\/p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "Contact Us",
-            "button_link": "shopify://pages/contact-us",
+            "button_link": "shopify:\/\/pages\/contact-us",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -416,11 +385,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",

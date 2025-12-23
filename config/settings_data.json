@@ -1,21 +1,13 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
-    "logo": "shopify://shop_images/Dromgoole-Logo_Full_Blue.png",
+    "logo": "shopify:\/\/shop_images\/Dromgoole-Logo_Full_Blue.png",
     "logo_width": 300,
-    "favicon": "shopify://shop_images/favicon.jpg",
+    "favicon": "shopify:\/\/shop_images\/favicon.jpg",
     "type_header_font": "lato_n4",
     "heading_scale": 100,
     "type_body_font": "lato_n4",
     "body_scale": 100,
+    "page_width": 1600,
     "spacing_sections": 16,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
@@ -102,13 +94,13 @@
     "drawer_shadow_blur": 5,
     "badge_position": "bottom left",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "scheme-5",
+    "sale_badge_color_scheme": "scheme-3",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
     "brand_image_width": 150,
-    "social_facebook_link": "https://www.facebook.com/dromgooles/",
-    "social_instagram_link": "https://www.instagram.com/dromgoolespens/",
-    "social_youtube_link": "https://www.youtube.com/@dromgoolespens8451",
+    "social_facebook_link": "https:\/\/www.facebook.com\/dromgooles\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/dromgoolespens\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/@dromgoolespens8451",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
@@ -124,38 +116,28 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "sections": {
-      "main-password-header": {
-        "type": "main-password-header",
-        "settings": {
-          "color_scheme": "scheme-1"
-        }
-      },
-      "main-password-footer": {
-        "type": "main-password-footer",
-        "settings": {
-          "color_scheme": "scheme-1"
-        }
-      }
+      "main-password-header": { "type": "main-password-header", "settings": { "color_scheme": "scheme-1" } },
+      "main-password-footer": { "type": "main-password-footer", "settings": { "color_scheme": "scheme-1" } }
     },
     "content_for_index": [],
     "blocks": {
       "316487575649303945": {
-        "type": "shopify://apps/easify-options/blocks/app-embed-block/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
+        "type": "shopify:\/\/apps\/easify-options\/blocks\/app-embed-block\/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
         "disabled": false,
         "settings": {}
       },
       "12526071353035850722": {
-        "type": "shopify://apps/amp-back-in-stock/blocks/app-embed/bfa6a8c4-24e2-411a-9396-e35031b33f34",
+        "type": "shopify:\/\/apps\/amp-back-in-stock\/blocks\/app-embed\/bfa6a8c4-24e2-411a-9396-e35031b33f34",
         "disabled": false,
         "settings": {}
       },
       "13019466082614940324": {
-        "type": "shopify://apps/linkify-product-colors/blocks/app-embed-block/1fdc741b-f4ed-4b8c-aee7-aa5e4ad76aa8",
+        "type": "shopify:\/\/apps\/linkify-product-colors\/blocks\/app-embed-block\/1fdc741b-f4ed-4b8c-aee7-aa5e4ad76aa8",
         "disabled": false,
         "settings": {}
       },
       "5946647744298494267": {
-        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "type": "shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-app-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
         "settings": {
           "storefront_layout_enabled": false,
@@ -168,6 +150,25 @@
           "storefront_layout_action_popup_position": "left",
           "storefront_layout_drawer_position": "left",
           "storefront_layout_as_section_page": ""
+        }
+      },
+      "10641372206048101839": {
+        "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-global-embed\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": false,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#0b3c5d",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#333333",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": "Hello from Dromgooles! Message us here if you have any questions, and a staff member will be with you as soon as possible."
         }
       }
     },
@@ -242,7 +243,7 @@
   },
   "presets": {
     "Default": {
-      "favicon": "shopify://shop_images/favicon.jpg",
+      "favicon": "shopify:\/\/shop_images\/favicon.jpg",
       "logo_width": 250,
       "color_schemes": {
         "scheme-1": {
@@ -423,18 +424,8 @@
       "show_cart_note": false,
       "cart_drawer_collection": "",
       "sections": {
-        "main-password-header": {
-          "type": "main-password-header",
-          "settings": {
-            "color_scheme": "scheme-1"
-          }
-        },
-        "main-password-footer": {
-          "type": "main-password-footer",
-          "settings": {
-            "color_scheme": "scheme-1"
-          }
-        }
+        "main-password-header": { "type": "main-password-header", "settings": { "color_scheme": "scheme-1" } },
+        "main-password-footer": { "type": "main-password-footer", "settings": { "color_scheme": "scheme-1" } }
       }
     }
   }
