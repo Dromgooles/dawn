@@ -50,6 +50,28 @@
   color: rgb(var(--color-button));
 }
 
+/* MARK: - Header Navigation Customizations */
+
+/* ============================================
+   Header - Search Icon Positioning for Drawer Nav
+   
+   When drawer navigation is enabled, keep search icon
+   and drawer menu together using a container.
+   ============================================ */
+
+.nav-search-container {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+@media screen and (min-width: 990px) {
+  /* Remove negative margin from drawer when in container */
+  .nav-search-container header-drawer {
+    margin-left: 0;
+  }
+}
+
 /* Text alignment utilities */
 .text-left {
   text-align: left !important;

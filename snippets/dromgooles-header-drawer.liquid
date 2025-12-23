@@ -1,0 +1,13 @@
+{% comment %}
+  Renders the header drawer/hamburger menu
+  
+  Accepts:
+  - block: {Object} Block object with settings (optional)
+  
+  Usage:
+  {% render 'dromgooles-header-drawer', block: block %}
+{% endcomment %}
+
+{%- if section.settings.menu != blank -%}
+  {%- render 'header-drawer' -%}
+{%- endif -%}
