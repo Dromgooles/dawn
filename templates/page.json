@@ -1,14 +1,40 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "main": { "type": "main-page", "settings": { "padding_top": 28, "padding_bottom": 28 } },
+    "dromgooles_featured_collection_qzEmYb": {
+      "type": "dromgooles-featured-collection",
+      "name": "DRO Featured Collection",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "collection": "new-arrivals",
+        "products_to_show": 4,
+        "title": "{{ section.settings.collection.title }}",
+        "heading_size": "h1",
+        "header_alignment": "center",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "quick_add": "none",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_view_all": true,
+        "view_all_text": "",
+        "view_all_style": "solid",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "color_scheme": "",
+        "heading_color": "#0b3c5d",
+        "button_background": "#0b3c5d",
+        "button_text_color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main", "dromgooles_featured_collection_qzEmYb"]
 }

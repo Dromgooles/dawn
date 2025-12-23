@@ -1,26 +1,13 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+      "settings": { "color_scheme": "", "padding_top": 36, "padding_bottom": 36 }
     },
     "gift-wrapping": {
       "type": "dromgooles-cart-gift-wrapping",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "gift_wrapping_product_handle": "gift-wrapping",
         "gift_wrapping_label": "Add gift wrapping",
         "gift_wrapping_description": "Your items will be beautifully wrapped and ready to gift.",
@@ -32,31 +19,18 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
-        "subtotal": {
-          "type": "subtotal",
-          "settings": {}
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {}
-        }
+        "subtotal": { "type": "subtotal", "settings": {} },
+        "buttons": { "type": "buttons", "settings": {} }
       },
-      "block_order": [
-        "subtotal",
-        "buttons"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
+      "block_order": ["subtotal", "buttons"],
+      "settings": { "color_scheme": "", "padding_top": 40, "padding_bottom": 40 }
     },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
         "collection": "new-arrivals",
         "products_to_show": 5,
-        "title": "Featured collection",
+        "title": "{{ section.settings.collection.title }}",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -80,10 +54,5 @@
       }
     }
   },
-  "order": [
-    "cart-items",
-    "gift-wrapping",
-    "cart-footer",
-    "featured-collection"
-  ]
+  "order": ["cart-items", "gift-wrapping", "cart-footer", "featured-collection"]
 }
