@@ -28,10 +28,10 @@ if (!customElements.get('gift-card-properties')) {
 
         // Prefix original Shopify properties with underscore to hide them
         this.prefixOriginalProperties();
-        
+
         // Create hidden inputs for line item properties
         this.createHiddenFields();
-        
+
         // Listen for changes on all fields
         if (this.recipientCheckbox) {
           this.recipientCheckbox.addEventListener('change', this.updateHiddenFields.bind(this));
@@ -49,7 +49,7 @@ if (!customElements.get('gift-card-properties')) {
           this.recipientSendOn.addEventListener('input', this.updateHiddenFields.bind(this));
         }
       }
-      
+
       prefixOriginalProperties() {
         // Add underscore prefix to original Shopify properties to hide them
         // (properties starting with _ are filtered out in Dawn templates)
