@@ -9,6 +9,7 @@
   - Each element is a draggable block in the theme editor with position setting (left/center/right)
   - Account icon always visible on mobile (no small-hide class)
   - Simplified layout using three groups: left, center, right
+  - Drawer-only menu (removed dropdown/mega menu options for simplicity)
 {% endcomment %}
 
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -25,10 +26,6 @@
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-{%- if section.settings.menu_type_desktop == 'mega' -%}
-  <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
-{%- endif -%}
-
 <style>
   header-drawer {
     justify-self: start;
@@ -38,14 +35,6 @@
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
     .scrolled-past-header .header__heading-logo-wrapper {
       width: 75%;
-    }
-  {%- endif -%}
-
-  {%- if section.settings.menu_type_desktop != "drawer" -%}
-    @media screen and (min-width: 990px) {
-      header-drawer {
-        display: none;
-      }
     }
   {%- endif -%}
 
@@ -166,7 +155,7 @@
   {% endif %}
   class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
 >
-  <header class="header header--blocks page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}">
+  <header class="header header--blocks page-width drawer-menu{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}">
     {%- comment -%} Left group {%- endcomment -%}
     <div class="header__left-group">
       {%- for block in section.blocks -%}
@@ -260,10 +249,7 @@
 </{{ header_tag }}>
 
 {%- if settings.cart_type == 'notification' -%}
-  {%- render 'cart-notification',
-    color_scheme: section.settings.color_scheme,
-    desktop_menu_type: section.settings.menu_type_desktop
-  -%}
+  {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 {%- endif -%}
 
 {% javascript %}
@@ -422,7 +408,7 @@
 
 {% schema %}
 {
-  "name": "Dromgoole's Header",
+  "name": "DRO Header",
   "class": "section-header",
   "settings": [
     {
@@ -434,26 +420,6 @@
       "id": "menu",
       "default": "main-menu",
       "label": "Menu"
-    },
-    {
-      "type": "select",
-      "id": "menu_type_desktop",
-      "options": [
-        {
-          "value": "dropdown",
-          "label": "Dropdown"
-        },
-        {
-          "value": "mega",
-          "label": "Mega menu"
-        },
-        {
-          "value": "drawer",
-          "label": "Drawer"
-        }
-      ],
-      "default": "drawer",
-      "label": "Desktop menu type"
     },
     {
       "type": "color_scheme",
