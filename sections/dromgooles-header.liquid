@@ -113,6 +113,22 @@
     align-items: center;
     justify-content: center;
   }
+
+  /* Handle third-party app injected elements (e.g., Swym wishlist) */
+  .header__left-group > div,
+  .header__right-group > div,
+  .header__center-group > div {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Ensure swym wishlist button aligns properly */
+  .header__right-group .swym-header-launcher,
+  .header__left-group .swym-header-launcher {
+    display: flex;
+    align-items: center;
+    height: 44px;
+  }
 </style>
 
 {%- style -%}
