@@ -64,9 +64,7 @@
           }
         }
       },
-      "block_order": [
-        "hero_slide"
-      ],
+      "block_order": ["hero_slide"],
       "settings": {
         "media_link": false,
         "layout": "grid",
@@ -168,14 +166,7 @@
           }
         }
       },
-      "block_order": [
-        "a4",
-        "a5",
-        "a6",
-        "a7",
-        "b5",
-        "b6"
-      ],
+      "block_order": ["a4", "a5", "a6", "a7", "b5", "b6"],
       "settings": {
         "title": "Shop By Size",
         "heading_size": "h1",
@@ -218,10 +209,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_qDaWBR",
-        "text_fMEapb"
-      ],
+      "block_order": ["heading_qDaWBR", "text_fMEapb"],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/paper_sizes.png",
@@ -323,14 +311,7 @@
           }
         }
       },
-      "block_order": [
-        "dotted",
-        "lined",
-        "grid",
-        "blank",
-        "specialty",
-        "bullet"
-      ],
+      "block_order": ["dotted", "lined", "grid", "blank", "specialty", "bullet"],
       "settings": {
         "title": "Shop By Ruling",
         "heading_size": "h1",
@@ -424,13 +405,7 @@
           }
         }
       },
-      "block_order": [
-        "hardcover",
-        "softcover",
-        "wirebound",
-        "staplebound",
-        "refillable"
-      ],
+      "block_order": ["hardcover", "softcover", "wirebound", "staplebound", "refillable"],
       "settings": {
         "title": "Shop By Binding",
         "heading_size": "h1",
@@ -525,13 +500,7 @@
           }
         }
       },
-      "block_order": [
-        "leuchtturm1917",
-        "rhodia",
-        "clairefontaine",
-        "travelers",
-        "karst"
-      ],
+      "block_order": ["leuchtturm1917", "rhodia", "clairefontaine", "travelers", "karst"],
       "settings": {
         "title": "Popular Brands",
         "heading_size": "h1",

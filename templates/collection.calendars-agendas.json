@@ -1,22 +1,9 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
-      "settings": {
-        "show_collection_description": false,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
-      }
+      "settings": { "show_collection_description": false, "show_collection_image": false, "color_scheme": "scheme-1" }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
@@ -45,8 +32,8 @@
         "hero_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/22408006_b.webp",
-            "link": "shopify://collections/all-calendars-and-agendas",
+            "image": "shopify:\/\/shop_images\/22408006_b.webp",
+            "link": "shopify:\/\/collections\/calendars-agendas",
             "image_overlay_opacity": 0,
             "heading": "Calendars & Agendas",
             "heading_size": "h1",
@@ -64,9 +51,7 @@
           }
         }
       },
-      "block_order": [
-        "hero_slide"
-      ],
+      "block_order": ["hero_slide"],
       "settings": {
         "media_link": false,
         "layout": "grid",
@@ -268,13 +253,7 @@
           }
         }
       },
-      "block_order": [
-        "leuchtturm",
-        "hobonichi",
-        "quo_vadis",
-        "rhodia",
-        "letts"
-      ],
+      "block_order": ["leuchtturm", "hobonichi", "quo_vadis", "rhodia", "letts"],
       "settings": {
         "title": "Popular Brands",
         "heading_size": "h1",
@@ -305,8 +284,8 @@
         "desk_accessories_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Accesssorize_Your_Writing_Process.jpg",
-            "link": "shopify://collections/desk-supplies-accessories",
+            "image": "shopify:\/\/shop_images\/Accesssorize_Your_Writing_Process.jpg",
+            "link": "shopify:\/\/collections\/desk-supplies-accessories",
             "image_overlay_opacity": 0,
             "heading": "Complete Your Desk",
             "heading_size": "h2",
@@ -324,9 +303,7 @@
           }
         }
       },
-      "block_order": [
-        "desk_accessories_slide"
-      ],
+      "block_order": ["desk_accessories_slide"],
       "settings": {
         "media_link": false,
         "layout": "grid",
@@ -351,8 +328,8 @@
         "notebooks_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/PLOTTER-Narrow-refill-grid_0003_Layer-4.png",
-            "link": "shopify://collections/notebooks-journals",
+            "image": "shopify:\/\/shop_images\/PLOTTER-Narrow-refill-grid_0003_Layer-4.png",
+            "link": "shopify:\/\/collections\/notebooks-journals",
             "image_overlay_opacity": 0,
             "heading": "Looking for Notebooks?",
             "heading_size": "h2",
@@ -370,9 +347,7 @@
           }
         }
       },
-      "block_order": [
-        "notebooks_slide"
-      ],
+      "block_order": ["notebooks_slide"],
       "settings": {
         "media_link": false,
         "layout": "grid",
@@ -396,22 +371,19 @@
       "blocks": {
         "heading": {
           "type": "heading",
-          "settings": {
-            "heading": "Need Help Choosing a Planner?",
-            "heading_size": "h1"
-          }
+          "settings": { "heading": "Need Help Choosing a Planner?", "heading_size": "h1" }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our knowledgeable staff can help you find the perfect planner or calendar for your lifestyle. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+            "text": "<p>Our knowledgeable staff can help you find the perfect planner or calendar for your lifestyle. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.<\/p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "Contact Us",
-            "button_link": "shopify://pages/contact-us",
+            "button_link": "shopify:\/\/pages\/contact-us",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -419,11 +391,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",

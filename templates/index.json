@@ -45,6 +45,27 @@
             "button_text_color": ""
           }
         },
+        "slide_8nkKeq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Upcoming_April_Events_3201_x_1000_px_31.png",
+            "link": "https:\/\/www.dromgooles.com\/search?q=tom%27s+gift+set",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1",
+            "heading_color": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
         "slide_mTiPj7": {
           "type": "slide",
           "settings": {
@@ -109,7 +130,7 @@
           }
         }
       },
-      "block_order": ["slide_8GAb79", "slide_1", "slide_mTiPj7", "slide_TPKhRt", "slide_r6hEyn"],
+      "block_order": ["slide_8GAb79", "slide_1", "slide_8nkKeq", "slide_mTiPj7", "slide_TPKhRt", "slide_r6hEyn"],
       "settings": {
         "media_link": true,
         "layout": "full_bleed",

@@ -1,22 +1,9 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
-      "settings": {
-        "show_collection_description": false,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
-      }
+      "settings": { "show_collection_description": false, "show_collection_image": false, "color_scheme": "scheme-1" }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
@@ -45,8 +32,8 @@
         "hero_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/delta-magnifica-red-oversize-rollerball-pen_1800x1800_88914214-6951-438a-a3b3-401d3fc06e6e.webp",
-            "link": "shopify://collections/all-rollerballs",
+            "image": "shopify:\/\/shop_images\/delta-magnifica-red-oversize-rollerball-pen_1800x1800_88914214-6951-438a-a3b3-401d3fc06e6e.webp",
+            "link": "shopify:\/\/collections\/all-rollerballs",
             "image_overlay_opacity": 0,
             "heading": "Rollerball Pens",
             "heading_size": "h1",
@@ -64,9 +51,7 @@
           }
         }
       },
-      "block_order": [
-        "hero_slide"
-      ],
+      "block_order": ["hero_slide"],
       "settings": {
         "media_link": false,
         "layout": "grid",
@@ -94,7 +79,7 @@
             "collection": "new-arrivals-pens-pencils-copy",
             "custom_title": "New Arrivals",
             "hide_title": true,
-            "image": "shopify://shop_images/New_Arrivals_69f7ecfd-e632-4847-8730-58bec7490fb2.png",
+            "image": "shopify:\/\/shop_images\/New_Arrivals_69f7ecfd-e632-4847-8730-58bec7490fb2.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -108,7 +93,7 @@
             "collection": "limited-special-edition-rollerballs",
             "custom_title": "Limited & Special Edition",
             "hide_title": true,
-            "image": "shopify://shop_images/Limited_Special.png",
+            "image": "shopify:\/\/shop_images\/Limited_Special.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -122,7 +107,7 @@
             "collection": "pre-owned-rollerballs",
             "custom_title": "Pre-Owned",
             "hide_title": true,
-            "image": "shopify://shop_images/Pre_Owned.png",
+            "image": "shopify:\/\/shop_images\/Pre_Owned.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -131,11 +116,7 @@
           }
         }
       },
-      "block_order": [
-        "collection_xnTRff",
-        "collection_iC9Eaj",
-        "collection_QCi4Dz"
-      ],
+      "block_order": ["collection_xnTRff", "collection_iC9Eaj", "collection_QCi4Dz"],
       "settings": {
         "title": "Shop Special Selections",
         "heading_size": "h1",
@@ -169,7 +150,7 @@
             "collection": "lamy-rollerball",
             "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/Lamy_Logo.png",
+            "image": "shopify:\/\/shop_images\/Lamy_Logo.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -183,7 +164,7 @@
             "collection": "montblanc-rollerballs",
             "custom_title": "Montblanc",
             "hide_title": true,
-            "image": "shopify://shop_images/Mont_Blanc_Logo.png",
+            "image": "shopify:\/\/shop_images\/Mont_Blanc_Logo.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -197,7 +178,7 @@
             "collection": "retro-51-tornado-popper-rollerballs",
             "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/Retro51_Logo.png",
+            "image": "shopify:\/\/shop_images\/Retro51_Logo.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -211,7 +192,7 @@
             "collection": "sheaffer-rollerball",
             "custom_title": "",
             "hide_title": true,
-            "image": "shopify://shop_images/sheaffer_logo_1ad77a04-75fc-4835-a0be-6e2c7e098423.png",
+            "image": "shopify:\/\/shop_images\/sheaffer_logo_1ad77a04-75fc-4835-a0be-6e2c7e098423.png",
             "image_style": "contain",
             "background_color": "",
             "background_gradient": "",
@@ -220,12 +201,7 @@
           }
         }
       },
-      "block_order": [
-        "montegrappa",
-        "montblanc",
-        "collection_4EgVLx",
-        "waterman"
-      ],
+      "block_order": ["montegrappa", "montblanc", "collection_4EgVLx", "waterman"],
       "settings": {
         "title": "Popular Brands",
         "heading_size": "h1",
@@ -439,13 +415,13 @@
         "rollerball_refills_slide": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/957027-pelikan-338-rollerball-refills-view-2_4df556d7-4569-4474-acee-42790d2c1541.jpg",
+            "image": "shopify:\/\/shop_images\/957027-pelikan-338-rollerball-refills-view-2_4df556d7-4569-4474-acee-42790d2c1541.jpg",
             "image_overlay_opacity": 0,
             "heading": "Rollerball Refills",
             "heading_size": "h2",
             "subheading": "Keep your rollerball pens writing smoothly with our selection of quality refills.",
             "button_label": "Shop Refills",
-            "link": "shopify://collections/refills-rollerball-fineliner",
+            "link": "shopify:\/\/collections\/refills-rollerball-fineliner",
             "button_style_secondary": false,
             "show_text_box": true,
             "box_align": "middle-left",
@@ -455,9 +431,7 @@
           }
         }
       },
-      "block_order": [
-        "rollerball_refills_slide"
-      ],
+      "block_order": ["rollerball_refills_slide"],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -525,12 +499,7 @@
           }
         }
       },
-      "block_order": [
-        "collection_d8tc6W",
-        "collection_nwHBzz",
-        "collection_XeWtH3",
-        "collection_LyCHY8"
-      ],
+      "block_order": ["collection_d8tc6W", "collection_nwHBzz", "collection_XeWtH3", "collection_LyCHY8"],
       "settings": {
         "title": "Other Writing Instruments",
         "heading_size": "h1",
@@ -560,22 +529,19 @@
       "blocks": {
         "heading": {
           "type": "heading",
-          "settings": {
-            "heading": "Need Help Choosing a Rollerball?",
-            "heading_size": "h1"
-          }
+          "settings": { "heading": "Need Help Choosing a Rollerball?", "heading_size": "h1" }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our staff is passionate about helping you find the perfect writing instrument. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.</p>"
+            "text": "<p>Our staff is passionate about helping you find the perfect writing instrument. Visit us at Dromgoole's in Houston, TX, or contact us for personalized recommendations.<\/p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "Contact Us",
-            "button_link": "shopify://pages/contact-us",
+            "button_link": "shopify:\/\/pages\/contact-us",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -583,11 +549,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
