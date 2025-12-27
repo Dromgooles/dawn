@@ -127,7 +127,7 @@ class PredictiveSearch extends SearchForm {
     // Filter out hidden elements (duplicated page and article resources) thanks
     // to this https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent
     const allVisibleElements = Array.from(this.querySelectorAll('li, button.predictive-search__item')).filter(
-      (element) => element.offsetParent !== null
+      (element) => element.offsetParent !== null,
     );
     let activeElementIndex = 0;
 
@@ -176,9 +176,12 @@ class PredictiveSearch extends SearchForm {
       return;
     }
 
-    fetch(`${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&resources[type]=product,query,collection,page,article&resources[options][fields]=title,product_type,variants.title,vendor,variants.sku,tag&section_id=predictive-search`, {
-      signal: this.abortController.signal,
-    })
+    fetch(
+      `${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&resources[type]=product,query,collection,page,article&resources[options][fields]=title,product_type,variants.title,vendor,variants.sku,tag&section_id=predictive-search`,
+      {
+        signal: this.abortController.signal,
+      },
+    )
       .then((response) => {
         if (!response.ok) {
           var error = new Error(response.status);
